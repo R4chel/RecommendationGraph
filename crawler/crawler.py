@@ -1,14 +1,16 @@
 ''' 
-Created October 8, 2013
+Created July 28, 2014
 
-@author Rachel Ehrlich
+@author Adam Campbell, Rachel Ehrlich, Max Fowler
 '''
 import json
 import pywikibot
-import wikipedia_utils
 import re
 import time
+import scraperwiki
 from py2neo import neo4j, cypher
+
+wikipedia_utils = scraperwiki.swimport("wikipedia_uitils")
 
 def get_pages(infobox_type):
     site = pywikibot.getSite('en')
@@ -43,7 +45,6 @@ def get_infobox(title):
     #check if title is in list
     val = wikipedia_utils.GetWikipediaPage(title)
     if val is None:
-        print title
         return None
     res = wikipedia_utils.ParseTemplates(val["text"])
     infobox_comedian = dict(res["templates"]).get("Infobox comedian")
