@@ -9,7 +9,7 @@ import re
 import time
 import mwparserfromhell
 from py2neo import neo4j, cypher
-
+from settings import GRAPHDB
 
 def get_pages(infobox_type):
     site = pywikibot.getSite('en')
@@ -111,9 +111,7 @@ def store_edges_to_db(db,infobox_label,rel_label, is_forward_rel):
     
 
 def open_db():
-    db = neo4j.GraphDatabaseService()
-    return db
-
+    return GRAPHDB
 
 def store_people_to_db(people, db):
     for person in people:

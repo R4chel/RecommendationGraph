@@ -1,6 +1,6 @@
 # iterate through all nodes in database and create random test relevancy edges between them
 
-from database import GRAPHDB
+from settings import GRAPHDB
 from py2neo import neo4j, cypher
 import random
 

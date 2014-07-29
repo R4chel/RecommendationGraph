@@ -1,7 +1,7 @@
 import os
-from flask import Flask
+from flask import Flask, url_for, render_template
 from py2neo import neo4j, cypher
-from database import GRAPHDB
+from settings import GRAPHDB, STATIC_PATH
 
 
 
@@ -39,12 +39,29 @@ def find_lovers(GRAPHDB):
 app = Flask(__name__)
 app.debug = True
 
-@app.route('/')
+@app.route('/hello/')
 def hello():
     # Query the database
     result = find_lovers(GRAPHDB)
     # Pull out the data we want from the single row of results
     return result[0]['name'] + " " + result[1].type + " " + result[2]['name']
+
+@app.route('/test/')
+def testPage():
+    return render_template('test.html', name="Johnson")
+
+@app.route('/')
+def graphVis():
+    graphjs = "d3vis1.js"
+    return render_template('d3vis.html', graphjs=graphjs)
+
+
+# STATIC
+########################################################################################################################
+@app.route('/static/<path:path>')
+def static_proxy(path):
+    file_path = os.path.join(STATIC_PATH, path)
+    return app.send_static_file(file_path)
 
 
 #  RUN FLASK APP
