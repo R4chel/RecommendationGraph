@@ -7,10 +7,9 @@ import json
 import pywikibot
 import re
 import time
-import scraperwiki
+import mwparserfromhell
 from py2neo import neo4j, cypher
 
-wikipedia_utils = scraperwiki.swimport("wikipedia_uitils")
 
 def get_pages(infobox_type):
     site = pywikibot.getSite('en')
@@ -41,7 +40,7 @@ def extract_title(s):
     return s
  
 
-def get_infobox(title):  
+'''def get_infobox(page):  
     #check if title is in list
     val = wikipedia_utils.GetWikipediaPage(title)
     if val is None:
@@ -49,7 +48,7 @@ def get_infobox(title):
     res = wikipedia_utils.ParseTemplates(val["text"])
     infobox_comedian = dict(res["templates"]).get("Infobox comedian")
     return infobox_comedian 
-
+'''
 def extract_list(str):
     if str is None:
         return
