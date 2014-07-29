@@ -3,6 +3,8 @@ Created July 28, 2014
 
 @author Adam Campbell, Rachel Ehrlich, Max Fowler
 '''
+
+import database
 import json
 import pywikibot
 import re
@@ -16,6 +18,15 @@ def get_pages(infobox_type):
     infobox_template = pywikibot.Page(site, "Template:Infobox " + infobox_type)
     pages = list(infobox_template.embeddedin(False, 0))
     return pages
+
+def parse_title(title):
+    site = pywikibot.getSite('en')
+    page = pywikibot.Page(site, title)
+    return parse_page(page)
+
+def parse_page(page):
+    text = page.get()
+    return mwparserfromhell.parse(text)
 
 def clean(s):
     ''' remove references and comments '''
