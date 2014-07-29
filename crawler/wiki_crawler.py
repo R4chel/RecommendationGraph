@@ -18,7 +18,7 @@ def load_by_infobox_type(infobox_type):
     i = 0
     for page in pages:
         title = page.title().encode("UTF-8")
-        node = add_title_to_db(title)
+        node = add_title_to_db(title, [infobox_type])
         text = page.get()
         parsed = mwparserfromhell.parse(text)
         links = parsed.filter_wikilinks()
