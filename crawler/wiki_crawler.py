@@ -17,13 +17,13 @@ def load_by_infobox_type(infobox_type):
     print len(pages)
     i = 0
     for page in pages:
-        title = page.title().encode("UTF-8")
+        title = page.title().encode("UTF-8").split('#')[0]
         node = add_title_to_db(title, [infobox_type])
         text = page.get()
         parsed = mwparserfromhell.parse(text)
         links = parsed.filter_wikilinks()
         for link in links:
-            link_title = link.title.encode("UTF-8")
+            link_title = link.title.encode("UTF-8").split('#')[0]
             adj_node = add_title_to_db(link_title)
             path = neo4j.Path(node, "links_to", adj_node)
             path.get_or_create(GRAPHDB)
@@ -35,7 +35,6 @@ def add_title_to_db(title, labels=[]):
     for label in labels:
         node.add_labels(label)
     return node
-
 
 def get_pages(infobox_type):
     site = pywikibot.getSite('en')
