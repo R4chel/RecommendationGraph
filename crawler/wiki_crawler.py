@@ -26,6 +26,8 @@ def extract_title(s):
         s = re.sub("\]\]", "",s)
         l = s.split("|")
         s = l[0]
+        l = s.split("#")
+        s = l[0]
     return s
 
 def get_pages(infobox_type):
