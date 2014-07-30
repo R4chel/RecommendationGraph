@@ -35,6 +35,11 @@ def load_by_infobox_type(infobox_type, depth):
 
                 if filter(link_title.startswith, ["File:", "Category:"]):
                     continue
+                language_regex = re.compile("^[a-zA-Z][a-zA-Z]:.*$")
+                if language_regex.match(link_title):
+                    print "DEBUG: Rejecting language based title: " + link_title
+                    continue
+
                 link_page = pywikibot.Page(site, link_title)
                 pages_to_crawl.append((link_page, depth_remaining))
         print i
