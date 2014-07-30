@@ -5,15 +5,15 @@ Created July 28, 2014
 '''
 
 from settings import GRAPHDB
+from enum import Enum
 import mwparserfromhell
 import pywikibot
 from py2neo import neo4j, cypher
 import re
 import unicodedata
 
-def load_by_infobox_type(infobox_type, depth):
-    found_pages = get_pages(infobox_type)
-    pages_to_crawl = map((lambda x: (x, depth)), found_pages)
+def crawl_pages(input_pages, depth):
+    pages_to_crawl = map((lambda x: (x, depth)), input_pages)
     pages_to_link = []
     site = pywikibot.getSite('en')
 
@@ -22,72 +22,101 @@ def load_by_infobox_type(infobox_type, depth):
         (page, depth_remaining) = pages_to_crawl.pop()
         pages_to_link.append(page)
         depth_remaining -= 1
-        title = clean_string(page.title())
+        title = clean_title(page)
         infoboxes = get_infoboxes(page)
+        node = add_page_to_db(title, infoboxes)
+
         categories = get_categories(page)
-        node = add_title_to_db(title, infoboxes+categories)
+        for category in categories:
+            adj_node = add_category_to_db(category)
+            path = neo4j.Path(node, "has category", adj_node)
+            path.get_or_create(GRAPHDB)
 
         if depth_remaining >= 0:
-            text = page.get()
-            parsed = mwparserfromhell.parse(text)
-            links = parsed.filter_wikilinks()
-            for link in links:
-                link_title = clean_string(link.title.strip_code())
+            linked_pages = page.linkedPages()
+            for link in linked_pages:
+                link_title = clean_title(link)
 
-                if filter(link_title.startswith, ["File:", "Category:"]):
+                if filter(link_title.startswith, ["File:", "Category:", "Wikipedia:", "Template:"]):
                     continue
                 language_regex = re.compile("^[a-zA-Z][a-zA-Z]:.*$")
                 if language_regex.match(link_title):
                     print "DEBUG: Rejecting language based title: " + link_title
                     continue
-
-                link_page = pywikibot.Page(site, link_title)
-                pages_to_crawl.append((link_page, depth_remaining))
+                pages_to_crawl.append((link, depth_remaining))
         print i
         i += 1
-
+    print "******* " + str(len(pages_to_link))
+    j = 0
     for page in pages_to_link:
-        page_title = clean_string(page.title())
+        page_title = clean_title(page)
         page_node = GRAPHDB.get_indexed_node("TitleIndex", "title", page_title)
-        text = page.get()
-        parsed = mwparserfromhell.parse(text)
-        links = parsed.filter_wikilinks()
+        links = page.linkedPages()
 
         for link in links:
-            link_title = clean_string(link.title.strip_code())
+            link_title = clean_title(link)
+            if filter(link_title.startswith, ["File:", "Category:", "Wikipedia:", "Template:"]):
+                continue
+
+
             adj_node = GRAPHDB.get_indexed_node("TitleIndex", "title", link_title)
             if adj_node:
                 path = neo4j.Path(page_node, "links_to", adj_node)
                 path.get_or_create(GRAPHDB)
+        print j
+        j += 1
 
 
-def add_title_to_db(title, labels=[]):
+
+def add_page_to_db(title, labels=[]):
     node = GRAPHDB.get_or_create_indexed_node("TitleIndex", "title", title, {"title": title})
     for label in labels:
         node.add_labels(label)
+#    node.add_labels("Page")
     return node
 
-def get_pages(infobox_type):
+def add_category_to_db(category):
+    node = GRAPHDB.get_or_create_indexed_node("TitleIndex", "title", category, {"title": category})
+    node.add_labels("Category")
+    return node
+
+def get_infobox_pages(searchtype, param):
     site = pywikibot.getSite('en')
-    infobox_template = pywikibot.Page(site, "Template:Infobox " + infobox_type)
+    infobox_template = pywikibot.Page(site, searchtype + param)
     pages = list(infobox_template.embeddedin(False, 0))
     return pages
+
+def get_category_pages(cat_name):
+    site = pywikibot.getSite('en')
+    cat = pywikibot.Category(site, cat_name)
+    return list(cat.members())
+
+def get_page(page_name):
+    site = pywikibot.getSite('en')
+    return pywikibot.Page(site, page_name)
 
 def get_infoboxes(page):
     templates = []
     for template in page.itertemplates():
-        if template.title().startswith(u'Template:Infobox'):
-            templates.append(template.title().encode()[len('Template:'):])
+        template_title = clean_title(template)
+        if template_title.startswith(u'Template:Infobox '):
+            templates.append(template_title[len('Template:'):])
     return templates
 
 def get_categories(page):
     categories = []
     for category in page.categories():
-        categories.append(category.title())
+        if not category.isHiddenCategory():
+            categories.append(clean_title(category))
     return categories
 
-def clean_string(s):
-    return unicodedata.normalize('NFKD', s).encode('ascii','ignore').split('#')[0]
+def clean_title(s):
+    return unicodedata.normalize('NFKD', s.title()).encode('ascii','ignore').split('#')[0]
+
+class SearchType(Enum):
+    infobox = "Template:Infobox "
+    category = "Category:"
+    template = "Template:"
 
 if __name__ == '__main__':
-    load_by_infobox_type("language game", 0)
+    crawl_pages(get_category_pages('Kingdom Hearts characters'), 0)
