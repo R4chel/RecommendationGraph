@@ -93,11 +93,11 @@ def get_infoboxes(page):
 def get_categories(page):
     categories = []
     for category in page.categories():
-        categories.append(clean_title(category)[len('Category:'):])
+        categories.append(clean_title(category))
     return categories
 
 def clean_title(s):
     return unicodedata.normalize('NFKD', s.title()).encode('ascii','ignore').split('#')[0]
 
 if __name__ == '__main__':
-    load_by_infobox_type("Algorithm", 1)
+    load_by_infobox_type("movie quote", 0)
