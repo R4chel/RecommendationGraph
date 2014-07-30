@@ -17,16 +17,17 @@ def neo4jToGexf(output_file):
     for index,row in enumerate(rows):
         node = row[0]
         node_id = node._id
-        node_name = node_id # TODO: change this
+        node_name = node["title"]
         n=graph.addNode(node_id,node_name)
-
         #n.addAttribute(idAttType,"institution")
 
     # edges
-    rows, metadata = cypher.execute(GRAPHDB, "MATCH (a)-[r:RELEVANCY]->(b) RETURN a,r,b")
+    # rows, metadata = cypher.execute(GRAPHDB, "MATCH (a)-[r:RELEVANCY]->(b) RETURN a,r,b")
+    rows, metadata = cypher.execute(GRAPHDB, "MATCH (a)-[r]->(b) RETURN a,r,b")
     edge_number = 0
     for nodeA, rel, nodeB in rows:
-        weight = rel["weight"]
+        # weight = rel["weight"] # TODO: make this relevancy
+        weight = 1
         e=graph.addEdge(edge_number,nodeA._id,nodeB._id,weight)
         edge_number += 1
         #e.setColor("255","0","0");
