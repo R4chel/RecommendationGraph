@@ -9,6 +9,7 @@ import mwparserfromhell
 import pywikibot
 from py2neo import neo4j, cypher
 import re
+import unicodedata
 
 def load_by_infobox_type(infobox_type, depth):
     found_pages = get_pages(infobox_type)
@@ -46,6 +47,8 @@ def load_by_infobox_type(infobox_type, depth):
         i += 1
 
     for page in pages_to_link:
+        page_title = page.title().encode("UTF-8").split('#')[0]
+        page_node = GRAPHDB.get_indexed_node("TitleIndex", "title", page_title)
         text = page.get()
         parsed = mwparserfromhell.parse(text)
         links = parsed.filter_wikilinks()
@@ -54,7 +57,7 @@ def load_by_infobox_type(infobox_type, depth):
             link_title = link.title.encode("UTF-8").split('#')[0]
             adj_node = GRAPHDB.get_indexed_node("TitleIndex", "title", link_title)
             if adj_node:
-                path = neo4j.Path(node, "links_to", adj_node)
+                path = neo4j.Path(page_node, "links_to", adj_node)
                 path.get_or_create(GRAPHDB)
 
 
@@ -73,8 +76,8 @@ def get_pages(infobox_type):
 def get_infoboxes(page):
     templates = []
     for template in page.itertemplates():
-        if template.title().startswith('Template:Infobox'):
-            templates.append(template.title()[len('Template:')])
+        if template.title().startswith(u'Template:Infobox'):
+            templates.append(template.title().encode()[len('Template:'):])
     return templates
 
 def get_categories(page):
@@ -84,4 +87,4 @@ def get_categories(page):
     return categories
 
 if __name__ == '__main__':
-    load_by_infobox_type("Star Wars character", 0)
+    load_by_infobox_type("language game", 0)
