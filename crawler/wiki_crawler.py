@@ -37,7 +37,7 @@ def load_by_infobox_type(infobox_type, depth):
             for link in linked_pages:
                 link_title = clean_title(link)
 
-                if filter(link_title.startswith, ["File:", "Category:"]):
+                if filter(link_title.startswith, ["File:", "Category:", "Wikipedia:"]):
                     continue
                 language_regex = re.compile("^[a-zA-Z][a-zA-Z]:.*$")
                 if language_regex.match(link_title):
