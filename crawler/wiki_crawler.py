@@ -5,15 +5,15 @@ Created July 28, 2014
 '''
 
 from settings import GRAPHDB
+from enum import Enum
 import mwparserfromhell
 import pywikibot
 from py2neo import neo4j, cypher
 import re
 import unicodedata
 
-def load_by_infobox_type(infobox_type, depth):
-    found_pages = get_pages(infobox_type)
-    pages_to_crawl = map((lambda x: (x, depth)), found_pages)
+def crawl_pages(input_pages, depth):
+    pages_to_crawl = map((lambda x: (x, depth)), input_pages)
     pages_to_link = []
     site = pywikibot.getSite('en')
 
@@ -80,9 +80,9 @@ def add_category_to_db(category):
     node.add_labels("Category")
     return node
 
-def get_pages(infobox_type):
+def get_pages(searchtype, param):
     site = pywikibot.getSite('en')
-    infobox_template = pywikibot.Page(site, "Template:Infobox " + infobox_type)
+    infobox_template = pywikibot.Page(site, searchtype + param)
     pages = list(infobox_template.embeddedin(False, 0))
     return pages
 
@@ -97,11 +97,16 @@ def get_infoboxes(page):
 def get_categories(page):
     categories = []
     for category in page.categories():
-        categories.append(clean_title(category))
+        if not category.isHiddenCategory():
+            categories.append(clean_title(category))
     return categories
 
 def clean_title(s):
     return unicodedata.normalize('NFKD', s.title()).encode('ascii','ignore').split('#')[0]
 
+class SearchType(Enum):
+    infobox = "Template:Infobox "
+    category = "Category:"
+
 if __name__ == '__main__':
-    load_by_infobox_type("movie quote", 0)
+    crawl_pages(get_pages(SearchType.infobox, 'Shakespearean character'), 0)
