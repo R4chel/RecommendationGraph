@@ -22,7 +22,7 @@ def load_by_infobox_type(infobox_type, depth):
         (page, depth_remaining) = pages_to_crawl.pop()
         pages_to_link.append(page)
         depth_remaining -= 1
-        title = page.title().encode("UTF-8").split('#')[0]
+        title = clean_string(page.title())
         infoboxes = get_infoboxes(page)
         categories = get_categories(page)
         node = add_title_to_db(title, infoboxes+categories)
@@ -32,7 +32,7 @@ def load_by_infobox_type(infobox_type, depth):
             parsed = mwparserfromhell.parse(text)
             links = parsed.filter_wikilinks()
             for link in links:
-                link_title = link.title.encode("UTF-8").split('#')[0]
+                link_title = clean_string(link.title)
 
                 if filter(link_title.startswith, ["File:", "Category:"]):
                     continue
@@ -47,14 +47,14 @@ def load_by_infobox_type(infobox_type, depth):
         i += 1
 
     for page in pages_to_link:
-        page_title = page.title().encode("UTF-8").split('#')[0]
+        page_title = clean_string(page.title())
         page_node = GRAPHDB.get_indexed_node("TitleIndex", "title", page_title)
         text = page.get()
         parsed = mwparserfromhell.parse(text)
         links = parsed.filter_wikilinks()
 
         for link in links:
-            link_title = link.title.encode("UTF-8").split('#')[0]
+            link_title = clean_string(link.title)
             adj_node = GRAPHDB.get_indexed_node("TitleIndex", "title", link_title)
             if adj_node:
                 path = neo4j.Path(page_node, "links_to", adj_node)
@@ -85,6 +85,9 @@ def get_categories(page):
     for category in page.categories():
         categories.append(category.title())
     return categories
+
+def clean_string(s):
+    return unicodedata.normalize('NFKD', s).encode('ascii','ignore').split('#')[0]
 
 if __name__ == '__main__':
     load_by_infobox_type("language game", 0)
