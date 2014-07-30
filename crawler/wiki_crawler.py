@@ -37,7 +37,7 @@ def load_by_infobox_type(infobox_type, depth):
             for link in linked_pages:
                 link_title = clean_title(link)
 
-                if filter(link_title.startswith, ["File:", "Category:", "Wikipedia:"]):
+                if filter(link_title.startswith, ["File:", "Category:", "Wikipedia:", "Template:"]):
                     continue
                 language_regex = re.compile("^[a-zA-Z][a-zA-Z]:.*$")
                 if language_regex.match(link_title):
@@ -55,6 +55,10 @@ def load_by_infobox_type(infobox_type, depth):
 
         for link in links:
             link_title = clean_title(link)
+            if filter(link_title.startswith, ["File:", "Category:", "Wikipedia:", "Template:"]):
+                continue
+
+
             adj_node = GRAPHDB.get_indexed_node("TitleIndex", "title", link_title)
             if adj_node:
                 path = neo4j.Path(page_node, "links_to", adj_node)
