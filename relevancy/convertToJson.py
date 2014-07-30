@@ -7,19 +7,19 @@ import os, json
 def outputD3JSON(output_file):
 
     nodes = []
-    edges = []
+    links = []
     node_id_to_index = {}
 
     to_output = {
         "nodes":nodes,
-        "edges":edges
+        "links":links
     }
 
     rows, metadata = cypher.execute(GRAPHDB, "MATCH (n) RETURN n")
 
     for index,row in enumerate(rows):
         node = row[0]
-        node_id = node.id
+        node_id = node._id
         node_to_write = {
             "id":node_id
         }
@@ -28,20 +28,25 @@ def outputD3JSON(output_file):
 
     rows, metadata = cypher.execute(GRAPHDB, "MATCH (a)-[r:RELEVANCY]->(b) RETURN a,r,b")
     for nodeA, rel, nodeB in rows:
-        rel_properties = rel.get_properties()
         weight = rel["weight"]
         edge_to_write = {
-            "source":node_id_to_index[nodeA.id],
-            "target":node_id_to_index[nodeB.id],
+            "source":node_id_to_index[nodeA._id],
+            "target":node_id_to_index[nodeB._id],
             "weight":weight
         }
-        edges.append(edge_to_write)
+        links.append(edge_to_write)
 
     to_write = json.dumps(to_output)
     with open(output_file, "w") as f:
         f.write(to_write)
 
 
+def outputSigmaJSON(output_file):
+    # TODO: implement this
+    print "+EE: outputSigmaJson not yet implemented!"
+
+
+
 if __name__ == "__main__":
-    output_file_path = os.path.join(STATIC_PATH, "graph.json")
-    outputD3JSON(output_file_path)
+    output_file_path = os.path.join(STATIC_PATH, "sigmagraph.json")
+    outputSigmaJSON(output_file_path)

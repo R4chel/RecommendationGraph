@@ -4,7 +4,6 @@ from py2neo import neo4j, cypher
 from settings import GRAPHDB, STATIC_PATH
 
 
-
 # HELPERS
 ########################################################################################################################
 
@@ -19,7 +18,7 @@ def create_graph(GRAPHDB):
         from_node, to_node = GRAPHDB.create({"name": "Neo"}, {"name": "you"})
 
         # create a 'loves' relationship from the 'from' node to the 'to' node
-        from_node.create_relationship_to(to_node, "loves")
+        GRAPHDB.create((from_node, "loves", to_node),)
 
     # To learn more, read the excellent Neo4j Manual at http://docs.neo4j.org
 
@@ -50,10 +49,15 @@ def hello():
 def testPage():
     return render_template('test.html', name="Johnson")
 
-@app.route('/')
-def graphVis():
+@app.route('/d3/')
+def d3Vis():
     graphjs = "d3vis1.js"
     return render_template('d3vis.html', graphjs=graphjs)
+
+@app.route('/sigma/')
+def sigmaVis():
+    graphjs = "sigmavis1.js"
+    return render_template('sigmavis.html', graphjs=graphjs)
 
 
 # STATIC

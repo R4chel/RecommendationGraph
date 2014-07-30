@@ -4,13 +4,11 @@ Created July 28, 2014
 @author Adam Campbell, Rachel Ehrlich, Max Fowler
 '''
 
-#from database import GRAPHDB
+from settings import GRAPHDB
 import mwparserfromhell
 import pywikibot
 from py2neo import neo4j, cypher
 import re
-
-GRAPHDB = neo4j.GraphDatabaseService()
 
 def load_by_infobox_type(infobox_type):
     pages = get_pages(infobox_type)
