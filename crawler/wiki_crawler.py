@@ -18,7 +18,7 @@ def load_by_infobox_type(infobox_type, depth):
     i = 0
     while len(pages_to_crawl) > 0:
         (page, depth_remaining) = pages_to_crawl.pop()
-        pages_to_link.add(page)
+        pages_to_link.append(page)
         depth_remaining = depth_remaining - 1
 
         title = page.title().encode("UTF-8").split('#')[0]
@@ -31,6 +31,10 @@ def load_by_infobox_type(infobox_type, depth):
             links = parsed.filter_wikilinks()
             for link in links:
                 link_title = link.title.encode("UTF-8").split('#')[0]
+
+                if filter(link_title.startswith, ["File:", "Category:"]):
+                    continue
+
                 #TODO: wikipedia get page with link_title
                 #TODO: add that page to pages_to_crawl in tuple (page, depth_remaining)
         print i
