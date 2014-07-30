@@ -32,7 +32,7 @@ def load_by_infobox_type(infobox_type, depth):
             parsed = mwparserfromhell.parse(text)
             links = parsed.filter_wikilinks()
             for link in links:
-                link_title = clean_string(link.title)
+                link_title = clean_string(link.title.strip_code())
 
                 if filter(link_title.startswith, ["File:", "Category:"]):
                     continue
@@ -54,7 +54,7 @@ def load_by_infobox_type(infobox_type, depth):
         links = parsed.filter_wikilinks()
 
         for link in links:
-            link_title = clean_string(link.title)
+            link_title = clean_string(link.title.strip_code())
             adj_node = GRAPHDB.get_indexed_node("TitleIndex", "title", link_title)
             if adj_node:
                 path = neo4j.Path(page_node, "links_to", adj_node)
