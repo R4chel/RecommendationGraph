@@ -70,9 +70,9 @@ def crawl_pages(input_pages, depth):
 
 def add_page_to_db(title, labels=[]):
     node = GRAPHDB.get_or_create_indexed_node("TitleIndex", "title", title, {"title": title})
-    node.add_labels("Page")
     for label in labels:
         node.add_labels(label)
+#    node.add_labels("Page")
     return node
 
 def add_category_to_db(category):
@@ -80,11 +80,20 @@ def add_category_to_db(category):
     node.add_labels("Category")
     return node
 
-def get_pages(searchtype, param):
+def get_infobox_pages(searchtype, param):
     site = pywikibot.getSite('en')
     infobox_template = pywikibot.Page(site, searchtype + param)
     pages = list(infobox_template.embeddedin(False, 0))
     return pages
+
+def get_category_pages(cat_name):
+    site = pywikibot.getSite('en')
+    cat = pywikibot.Category(site, cat_name)
+    return list(cat.members())
+
+def get_page(page_name):
+    site = pywikibot.getSite('en')
+    return pywikibot.Page(site, page_name)
 
 def get_infoboxes(page):
     templates = []
@@ -107,6 +116,7 @@ def clean_title(s):
 class SearchType(Enum):
     infobox = "Template:Infobox "
     category = "Category:"
+    template = "Template:"
 
 if __name__ == '__main__':
-    crawl_pages(get_pages(SearchType.infobox, 'Shakespearean character'), 0)
+    crawl_pages(get_category_pages('Kingdom Hearts characters'), 0)
