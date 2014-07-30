@@ -1,2 +1,6 @@
 .idea*
-
+*.DS_STORE
+*.pyc
+static/graph.json
+static/sigmagraph.json
+static/d3graph.json

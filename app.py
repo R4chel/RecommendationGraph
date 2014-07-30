@@ -1,8 +1,7 @@
 import os
-from flask import Flask
+from flask import Flask, url_for, render_template
 from py2neo import neo4j, cypher
-from database import GRAPHDB
-
+from settings import GRAPHDB, STATIC_PATH
 
 
 # HELPERS
@@ -19,7 +18,7 @@ def create_graph(GRAPHDB):
         from_node, to_node = GRAPHDB.create({"name": "Neo"}, {"name": "you"})
 
         # create a 'loves' relationship from the 'from' node to the 'to' node
-        from_node.create_relationship_to(to_node, "loves")
+        GRAPHDB.create((from_node, "loves", to_node),)
 
     # To learn more, read the excellent Neo4j Manual at http://docs.neo4j.org
 
@@ -39,12 +38,34 @@ def find_lovers(GRAPHDB):
 app = Flask(__name__)
 app.debug = True
 
-@app.route('/')
+@app.route('/hello/')
 def hello():
     # Query the database
     result = find_lovers(GRAPHDB)
     # Pull out the data we want from the single row of results
     return result[0]['name'] + " " + result[1].type + " " + result[2]['name']
+
+@app.route('/test/')
+def testPage():
+    return render_template('test.html', name="Johnson")
+
+@app.route('/d3/')
+def d3Vis():
+    graphjs = "d3vis1.js"
+    return render_template('d3vis.html', graphjs=graphjs)
+
+@app.route('/sigma/')
+def sigmaVis():
+    graphjs = "sigmavis1.js"
+    return render_template('sigmavis.html', graphjs=graphjs)
+
+
+# STATIC
+########################################################################################################################
+@app.route('/static/<path:path>')
+def static_proxy(path):
+    file_path = os.path.join(STATIC_PATH, path)
+    return app.send_static_file(file_path)
 
 
 #  RUN FLASK APP
