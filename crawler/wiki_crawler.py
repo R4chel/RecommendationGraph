@@ -29,7 +29,7 @@ def load_by_infobox_type(infobox_type, depth):
         categories = get_categories(page)
         for category in categories:
             adj_node = add_category_to_db(category)
-            path = neo4j.Path(node, "links_to", adj_node)
+            path = neo4j.Path(node, "has category", adj_node)
             path.get_or_create(GRAPHDB)
 
         if depth_remaining >= 0:
@@ -94,7 +94,7 @@ def get_infoboxes(page):
 def get_categories(page):
     categories = []
     for category in page.categories():
-        categories.append(category.title())
+        categories.append(category.title()[len(category.title()):])
     return categories
 
 def clean_string(s):
