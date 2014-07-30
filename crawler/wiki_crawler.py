@@ -22,9 +22,9 @@ def load_by_infobox_type(infobox_type, depth):
         (page, depth_remaining) = pages_to_crawl.pop()
         pages_to_link.append(page)
         depth_remaining -= 1
-        title = clean_string(page.title())
+        title = clean_string(page)
         infoboxes = get_infoboxes(page)
-        node = add_title_to_db(title, infoboxes)
+        node = add_page_to_db(title, infoboxes)
 
         categories = get_categories(page)
         for category in categories:
@@ -33,11 +33,9 @@ def load_by_infobox_type(infobox_type, depth):
             path.get_or_create(GRAPHDB)
 
         if depth_remaining >= 0:
-            text = page.get()
-            parsed = mwparserfromhell.parse(text)
-            links = parsed.filter_wikilinks()
-            for link in links:
-                link_title = clean_string(link.title.strip_code())
+            linked_pages = page.linkedPages()
+            for link in linked_pages:
+                link_title = clean_string(link)
 
                 if filter(link_title.startswith, ["File:", "Category:"]):
                     continue
@@ -45,21 +43,17 @@ def load_by_infobox_type(infobox_type, depth):
                 if language_regex.match(link_title):
                     print "DEBUG: Rejecting language based title: " + link_title
                     continue
-
-                link_page = pywikibot.Page(site, link_title)
-                pages_to_crawl.append((link_page, depth_remaining))
+                pages_to_crawl.append((link, depth_remaining))
         print i
         i += 1
 
     for page in pages_to_link:
-        page_title = clean_string(page.title())
+        page_title = clean_string(page)
         page_node = GRAPHDB.get_indexed_node("TitleIndex", "title", page_title)
-        text = page.get()
-        parsed = mwparserfromhell.parse(text)
-        links = parsed.filter_wikilinks()
+        links = page.linkedPages()
 
         for link in links:
-            link_title = clean_string(link.title.strip_code())
+            link_title = clean_string(link)
             adj_node = GRAPHDB.get_indexed_node("TitleIndex", "title", link_title)
             if adj_node:
                 path = neo4j.Path(page_node, "links_to", adj_node)
@@ -87,18 +81,20 @@ def get_pages(infobox_type):
 def get_infoboxes(page):
     templates = []
     for template in page.itertemplates():
-        if template.title().startswith(u'Template:Infobox'):
+        if template.title().startswith(u'Template:Infobox '):
             templates.append(template.title().encode()[len('Template:'):])
     return templates
 
 def get_categories(page):
     categories = []
     for category in page.categories():
-        categories.append(category.title().encode()[len(category.title()):])
+        print category.title()
+        categories.append(category.title().encode()[len('Category:'):])
+    print categories
     return categories
 
 def clean_string(s):
-    return unicodedata.normalize('NFKD', s).encode('ascii','ignore').split('#')[0]
+    return unicodedata.normalize('NFKD', s.title()).encode('ascii','ignore').split('#')[0]
 
 if __name__ == '__main__':
-    load_by_infobox_type("language game", 0)
+    load_by_infobox_type("Algorithm", 0)
