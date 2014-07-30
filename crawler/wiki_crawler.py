@@ -20,7 +20,7 @@ def load_by_infobox_type(infobox_type, depth):
     while len(pages_to_crawl) > 0:
         (page, depth_remaining) = pages_to_crawl.pop()
         pages_to_link.append(page)
-        depth_remaining = depth_remaining - 1
+        depth_remaining -= 1
         title = page.title().encode("UTF-8").split('#')[0]
         infoboxes = get_infoboxes(page)
         categories = get_categories(page)
@@ -46,9 +46,11 @@ def load_by_infobox_type(infobox_type, depth):
         links = parsed.filter_wikilinks()
 
         for link in links:
-            #TODO: if other end of link is in database, connect the two
-            #path = neo4j.Path(node, "links_to", adj_node)
-            #path.get_or_create(GRAPHDB)
+            link_title = link.title.encode("UTF-8").split('#')[0]
+            adj_node = GRAPHDB.get_indexed_node("TitleIndex", "title", link_title)
+            if adj_node:
+                path = neo4j.Path(node, "links_to", adj_node)
+                path.get_or_create(GRAPHDB)
 
 
 def add_title_to_db(title, labels=[]):
