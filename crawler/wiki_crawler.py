@@ -22,7 +22,7 @@ def load_by_infobox_type(infobox_type, depth):
         (page, depth_remaining) = pages_to_crawl.pop()
         pages_to_link.append(page)
         depth_remaining -= 1
-        title = clean_string(page)
+        title = clean_title(page)
         infoboxes = get_infoboxes(page)
         node = add_page_to_db(title, infoboxes)
 
@@ -35,7 +35,7 @@ def load_by_infobox_type(infobox_type, depth):
         if depth_remaining >= 0:
             linked_pages = page.linkedPages()
             for link in linked_pages:
-                link_title = clean_string(link)
+                link_title = clean_title(link)
 
                 if filter(link_title.startswith, ["File:", "Category:"]):
                     continue
@@ -46,19 +46,21 @@ def load_by_infobox_type(infobox_type, depth):
                 pages_to_crawl.append((link, depth_remaining))
         print i
         i += 1
-
+    print "******* " + str(len(pages_to_link))
+    j = 0
     for page in pages_to_link:
-        page_title = clean_string(page)
+        page_title = clean_title(page)
         page_node = GRAPHDB.get_indexed_node("TitleIndex", "title", page_title)
         links = page.linkedPages()
 
         for link in links:
-            link_title = clean_string(link)
+            link_title = clean_title(link)
             adj_node = GRAPHDB.get_indexed_node("TitleIndex", "title", link_title)
             if adj_node:
                 path = neo4j.Path(page_node, "links_to", adj_node)
                 path.get_or_create(GRAPHDB)
-
+        print j
+        j += 1
 
 def add_page_to_db(title, labels=[]):
     node = GRAPHDB.get_or_create_indexed_node("TitleIndex", "title", title, {"title": title})
@@ -81,20 +83,19 @@ def get_pages(infobox_type):
 def get_infoboxes(page):
     templates = []
     for template in page.itertemplates():
-        if template.title().startswith(u'Template:Infobox '):
-            templates.append(template.title().encode()[len('Template:'):])
+        template_title = clean_title(template)
+        if template_title.startswith(u'Template:Infobox '):
+            templates.append(template_title[len('Template:'):])
     return templates
 
 def get_categories(page):
     categories = []
     for category in page.categories():
-        print category.title()
-        categories.append(category.title().encode()[len('Category:'):])
-    print categories
+        categories.append(clean_title(category)[len('Category:'):])
     return categories
 
-def clean_string(s):
+def clean_title(s):
     return unicodedata.normalize('NFKD', s.title()).encode('ascii','ignore').split('#')[0]
 
 if __name__ == '__main__':
-    load_by_infobox_type("Algorithm", 0)
+    load_by_infobox_type("Algorithm", 1)
