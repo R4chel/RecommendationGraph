@@ -62,11 +62,13 @@ def load_by_infobox_type(infobox_type, depth):
         print j
         j += 1
 
+
+
 def add_page_to_db(title, labels=[]):
     node = GRAPHDB.get_or_create_indexed_node("TitleIndex", "title", title, {"title": title})
+    node.add_labels("Page")
     for label in labels:
         node.add_labels(label)
-    node.add_labels("Page")
     return node
 
 def add_category_to_db(category):
