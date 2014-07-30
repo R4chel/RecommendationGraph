@@ -94,7 +94,7 @@ def get_infoboxes(page):
 def get_categories(page):
     categories = []
     for category in page.categories():
-        categories.append(category.title()[len(category.title()):])
+        categories.append(category.title().encode()[len(category.title()):])
     return categories
 
 def clean_string(s):
