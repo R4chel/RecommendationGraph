@@ -21,11 +21,11 @@ def load_by_infobox_type(infobox_type, depth):
     while len(pages_to_crawl) > 0:
         (page, depth_remaining) = pages_to_crawl.pop()
         pages_to_link.add(page)
-        depth_remaining = depth_remaining - 1
-
+        depth_remaining -= 1
         title = page.title().encode("UTF-8").split('#')[0]
-        #TODO: use the actual infobox_type here; discard if none?
-        node = add_title_to_db(title, [infobox_type])
+        infoboxes = get_infoboxes(page)
+        categories = get_categories(page)
+        node = add_title_to_db(title, infoboxes+categories)
 
         if depth_remaining >= 0:
             text = page.get()
@@ -60,6 +60,19 @@ def get_pages(infobox_type):
     infobox_template = pywikibot.Page(site, "Template:Infobox " + infobox_type)
     pages = list(infobox_template.embeddedin(False, 0))
     return pages
+
+def get_infoboxes(page):
+    templates = []
+    for template in page.itertemplates():
+        if template.title().startswith('Template:Infobox'):
+            templates.append(template.title()[len('Template:')])
+    return templates
+
+def get_categories(page):
+    categories = []
+    for category in page.categories():
+        categories.append(category.title())
+    return categories
 
 if __name__ == '__main__':
     load_by_infobox_type("Star Wars character", 0)
