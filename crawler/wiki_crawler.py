@@ -14,6 +14,7 @@ def load_by_infobox_type(infobox_type, depth):
     found_pages = get_pages(infobox_type)
     pages_to_crawl = map((lambda x: (x, depth)), found_pages)
     pages_to_link = []
+    site = pywikibot.getSite('en')
 
     i = 0
     while len(pages_to_crawl) > 0:
@@ -34,9 +35,8 @@ def load_by_infobox_type(infobox_type, depth):
 
                 if filter(link_title.startswith, ["File:", "Category:"]):
                     continue
-
-                #TODO: wikipedia get page with link_title
-                #TODO: add that page to pages_to_crawl in tuple (page, depth_remaining)
+                link_page = pywikibot.Page(site, link_title)
+                pages_to_crawl.append((link_page, depth_remaining))
         print i
         i += 1
 
