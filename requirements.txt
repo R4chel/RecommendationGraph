@@ -2,7 +2,6 @@ Flask==0.9
 Jinja2==2.6
 Werkzeug==0.8.3
 dumptruck==0.1.6
-httplib2==0.9-pywikibot1
 mwparserfromhell==0.3.3
 py2neo==1.6.4
 pywikibot==2.0b1
