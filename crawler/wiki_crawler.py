@@ -24,8 +24,13 @@ def load_by_infobox_type(infobox_type, depth):
         depth_remaining -= 1
         title = clean_string(page.title())
         infoboxes = get_infoboxes(page)
+        node = add_title_to_db(title, infoboxes)
+
         categories = get_categories(page)
-        node = add_title_to_db(title, infoboxes+categories)
+        for category in categories:
+            adj_node = add_category_to_db(category)
+            path = neo4j.Path(node, "links_to", adj_node)
+            path.get_or_create(GRAPHDB)
 
         if depth_remaining >= 0:
             text = page.get()
@@ -61,10 +66,16 @@ def load_by_infobox_type(infobox_type, depth):
                 path.get_or_create(GRAPHDB)
 
 
-def add_title_to_db(title, labels=[]):
+def add_page_to_db(title, labels=[]):
     node = GRAPHDB.get_or_create_indexed_node("TitleIndex", "title", title, {"title": title})
     for label in labels:
         node.add_labels(label)
+    node.add_labels("Page")
+    return node
+
+def add_category_to_db(category):
+    node = GRAPHDB.get_or_create_indexed_node("TitleIndex", "title", category, {"title": category})
+    node.add_labels("Category")
     return node
 
 def get_pages(infobox_type):
