@@ -11,16 +11,22 @@ from py2neo import neo4j, cypher
 import re
 import unicodedata
 
-def crawl_pages(input_pages, depth):
-    pages_to_crawl = map((lambda x: (x, depth)), input_pages)
+def crawl_pages(pages_to_crawl, depth_remaining):
+    pages_to_crawl_next = []
     pages_to_link = []
     site = pywikibot.getSite('en')
+    depth_remaining -= 1
 
     i = 0
-    while len(pages_to_crawl) > 0:
-        (page, depth_remaining) = pages_to_crawl.pop()
+    while len(pages_to_crawl) > 0 or len(pages_to_crawl_next) > 0:
+        if len(pages_to_crawl) == 0:
+            pages_to_crawl = pages_to_crawl_next
+            pages_to_crawl_next = []
+            depth_remaining -= 1
+
+        page = pages_to_crawl.pop()
         pages_to_link.append(page)
-        depth_remaining -= 1
+        
         title = clean_title(page)
         infoboxes = get_infoboxes(page)
         node = add_page_to_db(title, infoboxes)
@@ -42,7 +48,7 @@ def crawl_pages(input_pages, depth):
                 if language_regex.match(link_title):
                     print "DEBUG: Rejecting language based title: " + link_title
                     continue
-                pages_to_crawl.append((link, depth_remaining))
+                pages_to_crawl_next.append(link)
         print i
         i += 1
     print "******* " + str(len(pages_to_link))
