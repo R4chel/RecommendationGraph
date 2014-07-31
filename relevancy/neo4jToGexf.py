@@ -9,8 +9,8 @@ def neo4jToGexf(output_file):
     print "++ neo4jToGef"
 
     # use gexf to write
-    g = gexf.Gexf("recgraph","neo4j gexf output")
-    graph=g.addGraph("directed","static","neo4j graph")
+    g = gexf.Gexf("recgraph", "neo4j gexf output")
+    graph=g.addGraph("directed", "static", "neo4j graph")
 
     # nodes
     rows, metadata = cypher.execute(GRAPHDB, "MATCH (n) RETURN n")

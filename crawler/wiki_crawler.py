@@ -10,9 +10,12 @@ import pywikibot
 from py2neo import neo4j, cypher
 import re
 import unicodedata
+import time
 
 def crawl_pages(input_pages, depth):
+    print "c"
     pages_to_crawl = map((lambda x: (x, depth)), input_pages)
+    print "d"
     pages_to_link = []
     site = pywikibot.getSite('en')
 
@@ -82,13 +85,14 @@ def add_category_to_db(category):
 def get_infobox_pages(searchtype, param):
     site = pywikibot.getSite('en')
     infobox_template = pywikibot.Page(site, searchtype + param)
-    pages = list(infobox_template.embeddedin(False, 0))
+    pages = infobox_template.embeddedin(False, 0)
     return pages
 
 def get_category_pages(cat_name, recurse):
     site = pywikibot.getSite('en')
     cat = pywikibot.Category(site, cat_name)
-    return list(cat.members(recurse=recurse))
+    print "a"
+    return cat.members(recurse=recurse)
 
 def get_page(page_name):
     site = pywikibot.getSite('en')
@@ -120,4 +124,9 @@ class SearchType(Enum):
     template = "Template:"
 
 if __name__ == '__main__':
-    crawl_pages(get_category_pages('Software companies based in the San Francisco Bay Area', True), 0)
+    start = time.time()
+    print "0.0"
+    pages = get_category_pages('Software companies based in the San Francisco Bay Area', False)
+
+    print "b"
+    crawl_pages(pages, 0)
