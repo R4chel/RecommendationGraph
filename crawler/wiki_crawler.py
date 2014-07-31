@@ -6,7 +6,6 @@ Created July 28, 2014
 
 from settings import GRAPHDB
 from enum import Enum
-import mwparserfromhell
 import pywikibot
 from py2neo import neo4j, cypher
 import re

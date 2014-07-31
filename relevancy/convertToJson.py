@@ -16,7 +16,6 @@ def outputD3JSON(output_file):
     }
 
     rows, metadata = cypher.execute(GRAPHDB, "MATCH (n) RETURN n")
-
     for index,row in enumerate(rows):
         node = row[0]
         node_id = node._id
