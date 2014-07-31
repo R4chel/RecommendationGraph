@@ -22,8 +22,12 @@ def crawl_pages(pages_to_crawl, depth_remaining):
     depth_remaining -= 1
 
     i = 0
+
+    edge_batch = neo4j.WriteBatch(GRAPHDB)
     while pages_to_crawl:
         for page in pages_to_crawl:
+            if page in pages_to_link:
+                continue
             pages_to_link.append(page)
             
             title = clean_title(page)
@@ -33,9 +37,9 @@ def crawl_pages(pages_to_crawl, depth_remaining):
             categories = get_categories(page)
             for category in categories:
                 adj_node = add_category_to_db(category)
-                path = neo4j.Path(node, "has category", adj_node)
-                path.get_or_create(GRAPHDB)
-
+#                path = neo4j.Path(node, "has category", adj_node)
+#                path.get_or_create(GRAPHDB)
+                edge_batch.get_or_create_path(node, "has_category", adj_node)
             if depth_remaining >= 0:
                 linked_pages = page.linkedPages()
                 for link in linked_pages:
@@ -55,6 +59,7 @@ def crawl_pages(pages_to_crawl, depth_remaining):
         pages_to_crawl_next = []
         depth_remaining -= 1
 
+
     print "******* " + str(len(pages_to_link))
     j = 0
     for page in pages_to_link:
@@ -70,11 +75,12 @@ def crawl_pages(pages_to_crawl, depth_remaining):
 
             adj_node = GRAPHDB.get_indexed_node("TitleIndex", "title", link_title)
             if adj_node:
-                path = neo4j.Path(page_node, "links_to", adj_node)
-                path.get_or_create(GRAPHDB)
+#                path = neo4j.Path(page_node, "links_to", adj_node)
+#                path.get_or_create(GRAPHDB)
+                edge_batch.get_or_create_path(page_node, "links_to", adj_node)
         print j
         j += 1
-
+    edge_batch.submit()
 
 
 def add_page_to_db(title, labels=[]):
@@ -133,7 +139,7 @@ class SearchType(Enum):
 if __name__ == '__main__':
     START = time.time()
     print "START: 0.0"
-    query = 'literary genre'
+    query = 'algorithm'
     search_depth = 0
     searchtype = SearchType.infobox
 
