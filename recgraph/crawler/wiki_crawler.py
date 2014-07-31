@@ -24,39 +24,39 @@ def crawl_pages(input_pages, depth):
     depth_remaining -= 1
 
     i = 0
-    while len(pages_to_crawl) > 0 or len(pages_to_crawl_next) > 0:
-        if len(pages_to_crawl) == 0:
-            pages_to_crawl = pages_to_crawl_next
-            pages_to_crawl_next = []
-            depth_remaining -= 1
+    while pages_to_crawl:
+        for page in pages_to_crawl
+            pages_to_link.append(page)
+            
+            title = clean_title(page)
+            infoboxes = get_infoboxes(page)
+            node = add_page_to_db(title, infoboxes)
 
-        page = pages_to_crawl.pop()
-        pages_to_link.append(page)
-        
-        title = clean_title(page)
-        infoboxes = get_infoboxes(page)
-        node = add_page_to_db(title, infoboxes)
+            categories = get_categories(page)
+            for category in categories:
+                adj_node = add_category_to_db(category)
+                path = neo4j.Path(node, "has category", adj_node)
+                path.get_or_create(GRAPHDB)
 
-        categories = get_categories(page)
-        for category in categories:
-            adj_node = add_category_to_db(category)
-            path = neo4j.Path(node, "has category", adj_node)
-            path.get_or_create(GRAPHDB)
+            if depth_remaining >= 0:
+                linked_pages = page.linkedPages()
+                for link in linked_pages:
+                    link_title = clean_title(link)
 
-        if depth_remaining >= 0:
-            linked_pages = page.linkedPages()
-            for link in linked_pages:
-                link_title = clean_title(link)
+                    if filter(link_title.startswith, ["File:", "Category:", "Wikipedia:", "Template:"]):
+                        continue
+                    language_regex = re.compile("^[a-zA-Z][a-zA-Z]:.*$")
+                    if language_regex.match(link_title):
+                        print "DEBUG: Rejecting language based title: " + link_title
+                        continue
+                    pages_to_crawl_next.append(link)
+            print i
+            i += 1
 
-                if filter(link_title.startswith, ["File:", "Category:", "Wikipedia:", "Template:"]):
-                    continue
-                language_regex = re.compile("^[a-zA-Z][a-zA-Z]:.*$")
-                if language_regex.match(link_title):
-                    print "DEBUG: Rejecting language based title: " + link_title
-                    continue
-                pages_to_crawl_next.append(link)
-        print i
-        i += 1
+        pages_to_crawl = pages_to_crawl_next
+        pages_to_crawl_next = []
+        depth_remaining -= 1
+
     print "******* " + str(len(pages_to_link))
     j = 0
     for page in pages_to_link:
