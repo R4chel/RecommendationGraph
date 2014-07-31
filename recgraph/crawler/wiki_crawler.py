@@ -82,16 +82,16 @@ def add_category_to_db(category):
     node.add_labels("Category")
     return node
 
-def get_infobox_pages(searchtype, param):
+def get_template_pages(searchtype, param):
     site = pywikibot.getSite('en')
     infobox_template = pywikibot.Page(site, searchtype + param)
     pages = list(infobox_template.embeddedin(False, 0))
     return pages
 
-def get_category_pages(cat_name):
+def get_category_pages(cat_name, recurse):
     site = pywikibot.getSite('en')
     cat = pywikibot.Category(site, cat_name)
-    return list(cat.members())
+    return list(cat.members(recurse=recurse))
 
 def get_page(page_name):
     site = pywikibot.getSite('en')
@@ -105,10 +105,12 @@ def get_infoboxes(page):
             templates.append(template_title[len('Template:'):])
     return templates
 
+HIDDEN_CATEGORY = pywikibot.Category(pywikibot.getSite('en'), 'Category:Hidden categories')
 def get_categories(page):
     categories = []
     for category in page.categories():
-        if not category.isHiddenCategory():
+
+        if not list(category.categories()).__contains__(HIDDEN_CATEGORY):
             categories.append(clean_title(category))
     return categories
 
@@ -119,6 +121,17 @@ class SearchType(Enum):
     infobox = "Template:Infobox "
     category = "Category:"
     template = "Template:"
+    page = "Page"
 
 if __name__ == '__main__':
-    crawl_pages(get_category_pages('Kingdom Hearts characters'), 0)
+    query = 'Software companies based in the San Francisco Bay Area'
+    search_depth = 0
+    searchtype = SearchType.category
+
+    if searchtype in [SearchType.infobox, SearchType.template]:
+        pages = get_template_pages(searchtype, query)
+    else if searchtype == SearchType.category:
+        pages = get_category_pages(query, True)
+    else if searchtype == SearchType.page:
+        pages = [get_page(query)]
+    crawl_pages(pages, search_depth)
