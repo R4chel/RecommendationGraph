@@ -23,7 +23,7 @@ def crawl_pages(pages_to_crawl, depth_remaining):
 
     i = 0
     while pages_to_crawl:
-        for page in pages_to_crawl
+        for page in pages_to_crawl:
             pages_to_link.append(page)
             
             title = clean_title(page)
