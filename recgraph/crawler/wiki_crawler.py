@@ -16,9 +16,7 @@ import pywikibot
 
 
 def crawl_pages(input_pages, depth):
-    print "c"
     pages_to_crawl = map((lambda x: (x, depth)), input_pages)
-    print "d"
     pages_to_link = []
     site = pywikibot.getSite('en')
 
@@ -94,7 +92,6 @@ def get_template_pages(searchtype, param):
 def get_category_pages(cat_name, recurse):
     site = pywikibot.getSite('en')
     cat = pywikibot.Category(site, cat_name)
-    print "a"
     return cat.members(recurse=recurse)
 
 def get_page(page_name):
@@ -128,16 +125,20 @@ class SearchType(Enum):
     page = "Page"
 
 if __name__ == '__main__':
-    start = time.time()
-    print "0.0"
-    query = 'Software companies based in the San Francisco Bay Area'
+    START = time.time()
+    print "START: 0.0"
+    query = 'literary genre'
     search_depth = 0
-    searchtype = SearchType.category
+    searchtype = SearchType.infobox
 
     if searchtype in [SearchType.infobox, SearchType.template]:
         pages = get_template_pages(searchtype, query)
     elif searchtype == SearchType.category:
-        pages = get_category_pages(query, True)
+        pages = get_category_pages(query, False)
     elif searchtype == SearchType.page:
         pages = [get_page(query)]
+
     crawl_pages(pages, search_depth)
+
+    ctime = time.time() - START
+    print "END: " + str(ctime)
