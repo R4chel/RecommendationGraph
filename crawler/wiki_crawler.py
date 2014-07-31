@@ -108,7 +108,7 @@ def get_categories(page):
     for category in page.categories():
 
         if not list(category.categories()).__contains__(HIDDEN_CATEGORY):
-            categories.append(clean_title(category))
+            categories.append(clean_title(category)[len("Category:"):])
     return categories
 
 def clean_title(s):
