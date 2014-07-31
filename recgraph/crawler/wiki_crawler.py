@@ -4,13 +4,16 @@ Created July 28, 2014
 @author Adam Campbell, Rachel Ehrlich, Max Fowler
 '''
 
-from settings import GRAPHDB
-from enum import Enum
-import pywikibot
-from py2neo import neo4j, cypher
 import re
 import unicodedata
 import time
+
+from py2neo import neo4j
+
+from recgraph.settings import GRAPHDB
+from enum import Enum
+import pywikibot
+
 
 def crawl_pages(input_pages, depth):
     print "c"
@@ -82,7 +85,7 @@ def add_category_to_db(category):
     node.add_labels("Category")
     return node
 
-def get_infobox_pages(searchtype, param):
+def get_template_pages(searchtype, param):
     site = pywikibot.getSite('en')
     infobox_template = pywikibot.Page(site, searchtype + param)
     pages = infobox_template.embeddedin(False, 0)
@@ -122,11 +125,19 @@ class SearchType(Enum):
     infobox = "Template:Infobox "
     category = "Category:"
     template = "Template:"
+    page = "Page"
 
 if __name__ == '__main__':
     start = time.time()
     print "0.0"
-    pages = get_category_pages('Software companies based in the San Francisco Bay Area', False)
+    query = 'Software companies based in the San Francisco Bay Area'
+    search_depth = 0
+    searchtype = SearchType.category
 
-    print "b"
-    crawl_pages(pages, 0)
+    if searchtype in [SearchType.infobox, SearchType.template]:
+        pages = get_template_pages(searchtype, query)
+    elif searchtype == SearchType.category:
+        pages = get_category_pages(query, True)
+    elif searchtype == SearchType.page:
+        pages = [get_page(query)]
+    crawl_pages(pages, search_depth)

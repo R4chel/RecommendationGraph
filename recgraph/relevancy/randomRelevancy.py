@@ -1,9 +1,11 @@
 # iterate through all nodes in database and create random test relevancy edges between them
 
-from settings import GRAPHDB, STATIC_PATH
-from py2neo import neo4j, cypher
-import random, os
-from relevancy.convertToJson import outputD3JSON
+import random
+
+from py2neo import cypher
+
+from recgraph.settings import GRAPHDB
+
 
 def randomRelevancyEdges():
     def handle_row(row):
