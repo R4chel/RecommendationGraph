@@ -1,8 +1,9 @@
 import os
-from flask import Flask, url_for, render_template
-from py2neo import neo4j, cypher
-from settings import GRAPHDB, STATIC_PATH
 
+from flask import Flask, render_template
+from py2neo import cypher
+
+from recgraph.settings import GRAPHDB, STATIC_PATH
 
 # HELPERS
 ########################################################################################################################
@@ -64,6 +65,7 @@ def sigmaVis():
 ########################################################################################################################
 @app.route('/static/<path:path>')
 def static_proxy(path):
+    print "STATIC PATH: " + STATIC_PATH
     file_path = os.path.join(STATIC_PATH, path)
     return app.send_static_file(file_path)
 

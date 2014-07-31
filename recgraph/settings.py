@@ -3,7 +3,7 @@ from py2neo import neo4j
 from urlparse import urlparse
 
 # root project path
-PROJECT_PATH = os.path.dirname(__file__)
+PROJECT_PATH = os.path.dirname(os.path.dirname(__file__))
 STATIC_PATH = os.path.join(PROJECT_PATH, "static")
 
 NEO4J_URL = os.environ.get('NEO4J_URL')

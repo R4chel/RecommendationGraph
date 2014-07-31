@@ -4,12 +4,15 @@ Created July 28, 2014
 @author Adam Campbell, Rachel Ehrlich, Max Fowler
 '''
 
-from settings import GRAPHDB
-from enum import Enum
-import pywikibot
-from py2neo import neo4j, cypher
 import re
 import unicodedata
+
+from py2neo import neo4j
+
+from recgraph.settings import GRAPHDB
+from enum import Enum
+import pywikibot
+
 
 def crawl_pages(input_pages, depth):
     pages_to_crawl = map((lambda x: (x, depth)), input_pages)

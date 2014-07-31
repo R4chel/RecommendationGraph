@@ -4,14 +4,16 @@ Created July 28, 2014
 @author Adam Campbell, Rachel Ehrlich, Max Fowler
 '''
 
-import database
 import json
-import pywikibot
 import re
 import time
-import mwparserfromhell
+
 from py2neo import neo4j, cypher
-from settings import GRAPHDB
+
+import pywikibot
+import mwparserfromhell
+from recgraph.settings import GRAPHDB
+
 
 def get_pages(infobox_type):
     site = pywikibot.getSite('en')

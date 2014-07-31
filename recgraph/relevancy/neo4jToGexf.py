@@ -1,8 +1,11 @@
 # takes everything in the neo4j database and puts it into a gexf file
 
-from settings import GRAPHDB, STATIC_PATH
-from py2neo import neo4j, cypher
-import gexf, os
+import os
+
+from py2neo import cypher
+import gexf
+
+from recgraph.settings import GRAPHDB, PROJECT_PATH
 
 
 def neo4jToGexf(output_file):
@@ -11,15 +14,25 @@ def neo4jToGexf(output_file):
     # use gexf to write
     g = gexf.Gexf("recgraph","neo4j gexf output")
     graph=g.addGraph("directed","static","neo4j graph")
+    # add infobox attribute to graph
+    infobox_attribute_id = graph.addNodeAttribute("infobox","none", "string")
 
     # nodes
     rows, metadata = cypher.execute(GRAPHDB, "MATCH (n) RETURN n")
     for index,row in enumerate(rows):
         node = row[0]
+        # set the infobox if there is one
+        labels = node.get_labels()
+        if labels:
+            infobox = list(labels)[0]
+        else:
+            infobox = "none"
         node_id = node._id
+        # get the title of the node
         node_name = node["title"]
+        # add it to the graph
         n=graph.addNode(node_id,node_name)
-        #n.addAttribute(idAttType,"institution")
+        n.addAttribute(infobox_attribute_id,infobox)
 
     # edges
     # rows, metadata = cypher.execute(GRAPHDB, "MATCH (a)-[r:RELEVANCY]->(b) RETURN a,r,b")
@@ -38,5 +51,6 @@ def neo4jToGexf(output_file):
         g.write(f)
 
 if __name__ == "__main__":
-    output_file_path = os.path.join(STATIC_PATH, "neo4j.gexf")
+    data_path = os.path.join(PROJECT_PATH, "data")
+    output_file_path = os.path.join(data_path, "neo4j.gexf")
     neo4jToGexf(output_file_path)

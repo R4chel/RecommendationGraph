@@ -1,8 +1,12 @@
 # convert all nodes in neo4j database into a json file which d3 can understand
 
-from settings import GRAPHDB, STATIC_PATH
-from py2neo import neo4j, cypher
-import os, json
+import os
+import json
+
+from py2neo import cypher
+
+from recgraph.settings import GRAPHDB, STATIC_PATH
+
 
 def outputD3JSON(output_file):
 
