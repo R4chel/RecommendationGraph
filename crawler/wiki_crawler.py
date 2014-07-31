@@ -79,7 +79,7 @@ def add_category_to_db(category):
     node.add_labels("Category")
     return node
 
-def get_infobox_pages(searchtype, param):
+def get_template_pages(searchtype, param):
     site = pywikibot.getSite('en')
     infobox_template = pywikibot.Page(site, searchtype + param)
     pages = list(infobox_template.embeddedin(False, 0))
@@ -118,6 +118,17 @@ class SearchType(Enum):
     infobox = "Template:Infobox "
     category = "Category:"
     template = "Template:"
+    page = "Page"
 
 if __name__ == '__main__':
-    crawl_pages(get_category_pages('Software companies based in the San Francisco Bay Area', True), 0)
+    query = 'Software companies based in the San Francisco Bay Area'
+    search_depth = 0
+    searchtype = SearchType.category
+
+    if searchtype in [SearchType.infobox, SearchType.template]:
+        pages = get_template_pages(searchtype, query)
+    else if searchtype == SearchType.category:
+        pages = get_category_pages(query, True)
+    else if searchtype == SearchType.page:
+        pages = [get_page(query)]
+    crawl_pages(pages, search_depth)
