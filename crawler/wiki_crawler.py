@@ -86,10 +86,10 @@ def get_infobox_pages(searchtype, param):
     pages = list(infobox_template.embeddedin(False, 0))
     return pages
 
-def get_category_pages(cat_name):
+def get_category_pages(cat_name, recurse):
     site = pywikibot.getSite('en')
     cat = pywikibot.Category(site, cat_name)
-    return list(cat.members())
+    return list(cat.members(recurse=recurse))
 
 def get_page(page_name):
     site = pywikibot.getSite('en')
@@ -103,10 +103,12 @@ def get_infoboxes(page):
             templates.append(template_title[len('Template:'):])
     return templates
 
+HIDDEN_CATEGORY = pywikibot.Category(pywikibot.getSite('en'), 'Category:Hidden categories')
 def get_categories(page):
     categories = []
     for category in page.categories():
-        if not category.isHiddenCategory():
+
+        if not list(category.categories()).__contains__(HIDDEN_CATEGORY):
             categories.append(clean_title(category))
     return categories
 
@@ -119,4 +121,4 @@ class SearchType(Enum):
     template = "Template:"
 
 if __name__ == '__main__':
-    crawl_pages(get_category_pages('Kingdom Hearts characters'), 0)
+    crawl_pages(get_category_pages('Software companies based in the San Francisco Bay Area', True), 0)
