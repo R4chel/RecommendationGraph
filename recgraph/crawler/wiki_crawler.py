@@ -15,7 +15,7 @@ from enum import Enum
 import pywikibot
 
 
-def crawl_pages(input_pages, depth):
+def crawl_pages(pages_to_crawl, depth_remaining):
     pages_to_crawl_next = []
     pages_to_link = []
     site = pywikibot.getSite('en')
