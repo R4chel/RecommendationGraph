@@ -33,16 +33,14 @@ function testGraph() {
 }
 
 function renderGraph() {
-    console.log("render!");
+    var path_to_file = $("#gexf").data("gexf");
       sigma.parsers.gexf(
-//    '/static/output/sf1.gexf',
-      'https://s3.amazonaws.com/recgraph/sf1.gexf',
+    path_to_file,
     { // Here is the ID of the DOM element that
       // will contain the graph:
       container: 'container'
     },
     function(s) {
-        alert('sigma!');
       // This function will be executed when the
       // graph is displayed, with "s" the related
       // sigma instance.
@@ -51,6 +49,5 @@ function renderGraph() {
 }
 
 $(document).ready(function() {
-    console.log("ready!");
     renderGraph();
 });

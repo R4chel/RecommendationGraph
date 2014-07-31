@@ -55,10 +55,11 @@ def d3Vis():
     graphjs = "d3vis1.js"
     return render_template('d3vis.html', graphjs=graphjs)
 
-@app.route('/sigma/')
-def sigmaVis():
+@app.route('/sigma/<path:path>/')
+def sigmaVis(path):
     graphjs = "sigmavis1.js"
-    return render_template('sigmavis.html', graphjs=graphjs)
+    gexf_path = "/static/output/" + path + ".gexf"
+    return render_template('sigmavis.html', graphjs=graphjs, gexf_path=gexf_path)
 
 
 # STATIC
