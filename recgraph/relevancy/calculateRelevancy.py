@@ -1,9 +1,12 @@
-from relevancy.randomRelevancy import randomRelevancyEdges
-from relevancy.simpleRelevancy import simpleRelevancyEdges
-from relevancy.convertToJson import outputD3JSON, outputSigmaJSON
-from settings import STATIC_PATH, GRAPHDB
-from py2neo import neo4j, cypher
 import os
+
+from py2neo import cypher
+
+from recgraph.relevancy.randomRelevancy import randomRelevancyEdges
+from recgraph.relevancy.simpleRelevancy import simpleRelevancyEdges
+from recgraph.relevancy.convertToJson import outputD3JSON, outputSigmaJSON
+from recgraph.settings import STATIC_PATH, GRAPHDB
+
 
 
 # settings which determine how relevancy and is calculated and which visualization is being used

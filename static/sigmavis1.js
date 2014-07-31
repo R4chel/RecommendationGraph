@@ -1,4 +1,4 @@
-function renderGraph() {
+function testGraph() {
     // Let's first initialize sigma:
     var s = new sigma('container');
 
@@ -32,7 +32,22 @@ function renderGraph() {
     s.refresh();
 }
 
+function renderGraph() {
+    var path_to_file = $("#gexf").data("gexf");
+      sigma.parsers.gexf(
+    path_to_file,
+    { // Here is the ID of the DOM element that
+      // will contain the graph:
+      container: 'container'
+    },
+    function(s) {
+      // This function will be executed when the
+      // graph is displayed, with "s" the related
+      // sigma instance.
+    }
+  );
+}
+
 $(document).ready(function() {
-    alert("loaded!");
     renderGraph();
 });

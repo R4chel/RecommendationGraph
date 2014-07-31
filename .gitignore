@@ -4,3 +4,6 @@
 static/graph.json
 static/sigmagraph.json
 static/d3graph.json
+static/output/*
+static/neo4j.gexf
+data/*

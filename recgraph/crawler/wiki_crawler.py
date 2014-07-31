@@ -4,15 +4,21 @@ Created July 28, 2014
 @author Adam Campbell, Rachel Ehrlich, Max Fowler
 '''
 
-from settings import GRAPHDB
-from enum import Enum
-import pywikibot
-from py2neo import neo4j, cypher
 import re
 import unicodedata
+import time
 
-def crawl_pages(pages_to_crawl, depth_remaining):
+from py2neo import neo4j
+
+from recgraph.settings import GRAPHDB
+from enum import Enum
+import pywikibot
+
+
+def crawl_pages(input_pages, depth):
+    print "c"
     pages_to_crawl_next = []
+    print "d"
     pages_to_link = []
     site = pywikibot.getSite('en')
     depth_remaining -= 1
@@ -88,13 +94,14 @@ def add_category_to_db(category):
 def get_template_pages(searchtype, param):
     site = pywikibot.getSite('en')
     infobox_template = pywikibot.Page(site, searchtype + param)
-    pages = list(infobox_template.embeddedin(False, 0))
+    pages = infobox_template.embeddedin(False, 0)
     return pages
 
 def get_category_pages(cat_name, recurse):
     site = pywikibot.getSite('en')
     cat = pywikibot.Category(site, cat_name)
-    return list(cat.members(recurse=recurse))
+    print "a"
+    return cat.members(recurse=recurse)
 
 def get_page(page_name):
     site = pywikibot.getSite('en')
@@ -127,14 +134,16 @@ class SearchType(Enum):
     page = "Page"
 
 if __name__ == '__main__':
+    start = time.time()
+    print "0.0"
     query = 'Software companies based in the San Francisco Bay Area'
     search_depth = 0
     searchtype = SearchType.category
 
     if searchtype in [SearchType.infobox, SearchType.template]:
         pages = get_template_pages(searchtype, query)
-    else if searchtype == SearchType.category:
+    elif searchtype == SearchType.category:
         pages = get_category_pages(query, True)
-    else if searchtype == SearchType.page:
+    elif searchtype == SearchType.page:
         pages = [get_page(query)]
     crawl_pages(pages, search_depth)
