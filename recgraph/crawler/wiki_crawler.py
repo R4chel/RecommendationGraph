@@ -14,6 +14,7 @@ from recgraph.settings import GRAPHDB
 from enum import Enum
 import pywikibot
 
+SITE = pywikibot.getSite('en')
 
 def crawl_pages(pages_to_crawl, depth_remaining):
     pages_to_crawl_next = []
@@ -37,11 +38,9 @@ def crawl_pages(pages_to_crawl, depth_remaining):
             categories = get_categories(page)
             for category in categories:
                 adj_node = add_category_to_db(category)
-#                path = neo4j.Path(node, "has category", adj_node)
-#                path.get_or_create(GRAPHDB)
                 edge_batch.get_or_create_path(node, "has_category", adj_node)
             if depth_remaining >= 0:
-                linked_pages = page.linkedPages()
+                linked_pages = get_linked_pages(page)
                 for link in linked_pages:
                     link_title = clean_title(link)
 
@@ -65,7 +64,7 @@ def crawl_pages(pages_to_crawl, depth_remaining):
     for page in pages_to_link:
         page_title = clean_title(page)
         page_node = GRAPHDB.get_indexed_node("TitleIndex", "title", page_title)
-        links = page.linkedPages()
+        links = get_linked_pages(page)
 
         for link in links:
             link_title = clean_title(link)
@@ -75,8 +74,6 @@ def crawl_pages(pages_to_crawl, depth_remaining):
 
             adj_node = GRAPHDB.get_indexed_node("TitleIndex", "title", link_title)
             if adj_node:
-#                path = neo4j.Path(page_node, "links_to", adj_node)
-#                path.get_or_create(GRAPHDB)
                 edge_batch.get_or_create_path(page_node, "links_to", adj_node)
         print j
         j += 1
@@ -126,6 +123,12 @@ def get_categories(page):
         if not list(category.categories()).__contains__(HIDDEN_CATEGORY):
             categories.append(clean_title(category)[len("Category:"):])
     return categories
+
+def get_linked_pages(page):
+    text = page.get()
+    parsed = pywikibot.mwparserfromhell.parse(text)
+    links = parsed.filter_wikilinks()
+    return map(lambda x : pywikibot.Page(SITE, x.title), links)
 
 def clean_title(s):
     return unicodedata.normalize('NFKD', s.title()).encode('ascii','ignore').split('#')[0]
