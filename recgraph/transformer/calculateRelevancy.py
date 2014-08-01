@@ -2,14 +2,14 @@ import os
 
 from py2neo import cypher
 
-from recgraph.relevancy.randomRelevancy import randomRelevancyEdges
-from recgraph.relevancy.simpleRelevancy import simpleRelevancyEdges
-from recgraph.relevancy.convertToJson import outputD3JSON, outputSigmaJSON
+from recgraph.transformer.randomRelevancy import randomRelevancyEdges
+from recgraph.transformer.simpleRelevancy import simpleRelevancyEdges
+from recgraph.transformer.convertToJson import outputD3JSON, outputSigmaJSON
 from recgraph.settings import STATIC_PATH, GRAPHDB
 
 
 
-# settings which determine how relevancy and is calculated and which visualization is being used
+# settings which determine how transformer and is calculated and which visualization is being used
 WHICH_RELEVANCY_ALGORITHM = "random"
 WHICH_VIS = "d3"
 
@@ -20,10 +20,10 @@ def clearRelevancy():
 
 def calculateRelevancy():
 
-    # clear old relevancy
+    # clear old transformer
     clearRelevancy()
 
-    # calculate relevancy
+    # calculate transformer
     if WHICH_RELEVANCY_ALGORITHM == "random":
         randomRelevancyEdges()
     elif WHICH_RELEVANCY_ALGORITHM == "simple":
