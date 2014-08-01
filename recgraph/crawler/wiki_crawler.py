@@ -19,7 +19,6 @@ SITE = pywikibot.getSite('en')
 def crawl_pages(pages_to_crawl, depth_remaining):
     pages_to_crawl_next = []
     pages_to_link = []
-    site = pywikibot.getSite('en')
     depth_remaining -= 1
 
     i = 0
@@ -31,7 +30,7 @@ def crawl_pages(pages_to_crawl, depth_remaining):
                 continue
             pages_to_link.append(page)
             
-            title = clean_title(page)
+            title = clean_title(page.title())
             infoboxes = get_infoboxes(page)
             node = add_page_to_db(title, infoboxes)
 
@@ -40,10 +39,10 @@ def crawl_pages(pages_to_crawl, depth_remaining):
                 adj_node = add_category_to_db(category)
                 edge_batch.get_or_create_path(node, "has_category", adj_node)
             if depth_remaining >= 0:
-                linked_pages = get_linked_pages(page)
-                for link in linked_pages:
-                    link_title = clean_title(link)
-
+                linked_pages = get_links(page)
+                for messy_link in linked_pages:
+                    link_title = clean_title(messy_link.title.strip_code())
+                    link = pywikibot.Page(SITE, link_title)
                     if filter(link_title.startswith, ["File:", "Category:", "Wikipedia:", "Template:"]):
                         continue
                     language_regex = re.compile("^[a-zA-Z][a-zA-Z]:.*$")
@@ -51,6 +50,7 @@ def crawl_pages(pages_to_crawl, depth_remaining):
                         print "DEBUG: Rejecting language based title: " + link_title
                         continue
                     pages_to_crawl_next.append(link)
+            time.sleep(1)
             print i
             i += 1
 
@@ -62,12 +62,12 @@ def crawl_pages(pages_to_crawl, depth_remaining):
     print "******* " + str(len(pages_to_link))
     j = 0
     for page in pages_to_link:
-        page_title = clean_title(page)
+        page_title = clean_title(page.title())
         page_node = GRAPHDB.get_indexed_node("TitleIndex", "title", page_title)
-        links = get_linked_pages(page)
+        links = get_links(page)
 
-        for link in links:
-            link_title = clean_title(link)
+        for messy_link in links:
+            link_title = clean_title(messy_link.title.strip_code())
             if filter(link_title.startswith, ["File:", "Category:", "Wikipedia:", "Template:"]):
                 continue
 
@@ -93,24 +93,21 @@ def add_category_to_db(category):
     return node
 
 def get_template_pages(searchtype, param):
-    site = pywikibot.getSite('en')
-    infobox_template = pywikibot.Page(site, searchtype + param)
+    infobox_template = pywikibot.Page(SITE, searchtype + param)
     pages = infobox_template.embeddedin(False, 0)
     return pages
 
 def get_category_pages(cat_name, recurse):
-    site = pywikibot.getSite('en')
-    cat = pywikibot.Category(site, cat_name)
+    cat = pywikibot.Category(SITE, cat_name)
     return cat.members(recurse=recurse)
 
 def get_page(page_name):
-    site = pywikibot.getSite('en')
-    return pywikibot.Page(site, page_name)
+    return pywikibot.Page(SITE, page_name)
 
 def get_infoboxes(page):
     templates = []
     for template in page.itertemplates():
-        template_title = clean_title(template)
+        template_title = clean_title(template.title())
         if template_title.startswith(u'Template:Infobox '):
             templates.append(template_title[len('Template:'):])
     return templates
@@ -121,17 +118,16 @@ def get_categories(page):
     for category in page.categories():
 
         if not list(category.categories()).__contains__(HIDDEN_CATEGORY):
-            categories.append(clean_title(category)[len("Category:"):])
+            categories.append(clean_title(category.title())[len("Category:"):])
     return categories
 
-def get_linked_pages(page):
+def get_links(page):
     text = page.get()
     parsed = pywikibot.mwparserfromhell.parse(text)
-    links = parsed.filter_wikilinks()
-    return map(lambda x : pywikibot.Page(SITE, x.title), links)
+    return parsed.ifilter_wikilinks()
 
 def clean_title(s):
-    return unicodedata.normalize('NFKD', s.title()).encode('ascii','ignore').split('#')[0]
+    return unicodedata.normalize('NFKD', s).encode('ascii','ignore').split('#')[0]
 
 class SearchType(Enum):
     infobox = "Template:Infobox "
@@ -142,7 +138,7 @@ class SearchType(Enum):
 if __name__ == '__main__':
     START = time.time()
     print "START: 0.0"
-    query = 'algorithm'
+    query = 'color'
     search_depth = 0
     searchtype = SearchType.infobox
 
