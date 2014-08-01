@@ -9,7 +9,7 @@ from recgraph.settings import GRAPHDB, PROJECT_PATH
 
 
 def neo4jToGexf(output_file):
-    print "++ neo4jToGef"
+    print "++ neo4jToGexf"
 
     # use gexf to write
     g = gexf.Gexf("recgraph","neo4j gexf output")
@@ -39,7 +39,7 @@ def neo4jToGexf(output_file):
     rows, metadata = cypher.execute(GRAPHDB, "MATCH (a)-[r]->(b) RETURN a,r,b")
     edge_number = 0
     for nodeA, rel, nodeB in rows:
-        # weight = rel["weight"] # TODO: make this relevancy
+        # weight = rel["weight"] # TODO: make this transformer
         weight = 1
         e=graph.addEdge(edge_number,nodeA._id,nodeB._id,weight)
         edge_number += 1
