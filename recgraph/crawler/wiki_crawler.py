@@ -16,15 +16,14 @@ import pywikibot
 
 SITE = pywikibot.getSite('en')
 
-def crawl_pages(pages_to_crawl, depth_remaining):
+def crawl_pages(pages_to_crawl, depth_remaining, color=False):
     pages_to_crawl_next = []
     pages_to_link = []
     depth_remaining -= 1
 
-    i = 0
-
     edge_batch = neo4j.WriteBatch(GRAPHDB)
     while pages_to_crawl:
+        i = 0
         for page in pages_to_crawl:
             if page in pages_to_link:
                 continue
@@ -32,7 +31,11 @@ def crawl_pages(pages_to_crawl, depth_remaining):
             
             title = clean_title(page.title())
             infoboxes = get_infoboxes(page)
-            node = add_page_to_db(title, infoboxes)
+
+            if color:
+                node = add_color_to_db(title, infoboxes, get_hex(page))
+            else:
+                node = add_page_to_db(title, infoboxes)
 
             categories = get_categories(page)
             for category in categories:
@@ -50,8 +53,8 @@ def crawl_pages(pages_to_crawl, depth_remaining):
                         print "DEBUG: Rejecting language based title: " + link_title
                         continue
                     pages_to_crawl_next.append(link)
-            time.sleep(1)
-            print i
+            time.sleep(25)
+            print str(i)
             i += 1
 
         pages_to_crawl = pages_to_crawl_next
@@ -87,6 +90,15 @@ def add_page_to_db(title, labels=[]):
 #    node.add_labels("Page")
     return node
 
+def add_color_to_db(title, labels=[], hex=None):
+    if not hex:
+        return add_page_to_db(title, labels)
+    node = GRAPHDB.get_or_create_indexed_node("TitleIndex", "title", title, {"title": title, "hex": hex})
+    for label in labels:
+        node.add_labels(label)
+    node.add_labels("Color")
+    return node
+
 def add_category_to_db(category):
     node = GRAPHDB.get_or_create_indexed_node("TitleIndex", "title", category, {"title": category})
     node.add_labels("Category")
@@ -94,6 +106,7 @@ def add_category_to_db(category):
 
 def get_template_pages(searchtype, param):
     infobox_template = pywikibot.Page(SITE, searchtype + param)
+    time.sleep(10)
     pages = infobox_template.embeddedin(False, 0)
     return pages
 
@@ -129,6 +142,13 @@ def get_links(page):
 def clean_title(s):
     return unicodedata.normalize('NFKD', s).encode('ascii','ignore').split('#')[0]
 
+def get_hex(page):
+    regex = re.compile("hex\s*=\s*([0-9A-Fa-f]{6,6})",re.IGNORECASE)
+    vals = regex.findall(page.get())
+    if vals:
+        return vals[0]
+    return None
+
 class SearchType(Enum):
     infobox = "Template:Infobox "
     category = "Category:"
@@ -149,7 +169,7 @@ if __name__ == '__main__':
     elif searchtype == SearchType.page:
         pages = [get_page(query)]
 
-    crawl_pages(pages, search_depth)
+    crawl_pages(pages, search_depth, True)
 
     ctime = time.time() - START
     print "END: " + str(ctime)
