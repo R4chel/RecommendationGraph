@@ -8,6 +8,7 @@ STATIC_PATH = os.path.join(PROJECT_PATH, "static")
 
 NEO4J_URL = os.environ.get('NEO4J_URL')
 USE_REMOTE_DB = os.environ.get('USE_REMOTE_DB')
+
 # database configuration
 if NEO4J_URL and USE_REMOTE_DB:
     graph_db_url = urlparse(os.environ.get('NEO4J_URL'))
@@ -20,3 +21,4 @@ if NEO4J_URL and USE_REMOTE_DB:
 else:
     NEO4J_URL = "http://localhost:7474/db/data/"
     GRAPHDB = neo4j.GraphDatabaseService(NEO4J_URL)
+

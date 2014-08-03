@@ -29,7 +29,7 @@ def neo4jToGexf(output_file):
             infobox = "none"
         node_id = node._id
         # get the title of the node
-        node_name = node["title"]
+        node_name = node.get("title") or node.get("name")
         # add it to the graph
         n=graph.addNode(node_id,node_name)
         n.addAttribute(infobox_attribute_id,infobox)
