@@ -21,8 +21,9 @@
           <attvalue for="1" value="#000000"></attvalue>
           <attvalue for="myColor" value="#000000"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="9.099536" y="114.645515" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="14.395636" y="337.3561" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
       </node>
       <node id="1" label="Color">
         <attvalues>
@@ -30,8 +31,8 @@
           <attvalue for="1" value="#0000FF"></attvalue>
           <attvalue for="myColor" value="#0000FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-50.39963" y="90.55805" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="43.082245" y="334.90344" z="0.0"></viz:position>
         <viz:color r="0" g="0" b="255"></viz:color>
       </node>
       <node id="2" label="Darkness">
@@ -40,8 +41,8 @@
           <attvalue for="1" value="#00FFFF"></attvalue>
           <attvalue for="myColor" value="#00FFFF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="8.363337" y="89.798325" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="223.91206" y="252.74448" z="0.0"></viz:position>
         <viz:color r="0" g="255" b="255"></viz:color>
       </node>
       <node id="3" label="Nothing">
@@ -50,8 +51,8 @@
           <attvalue for="1" value="#00FF00"></attvalue>
           <attvalue for="myColor" value="#00FF00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="47.418453" y="149.05453" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="193.78482" y="276.52094" z="0.0"></viz:position>
         <viz:color r="0" g="255" b="0"></viz:color>
       </node>
       <node id="4" label="Shades of black">
@@ -60,8 +61,8 @@
           <attvalue for="1" value="#6F00FF"></attvalue>
           <attvalue for="myColor" value="#6F00FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-28.229225" y="92.64616" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="330.5154" y="-69.1082" z="0.0"></viz:position>
         <viz:color r="111" g="0" b="255"></viz:color>
       </node>
       <node id="5" label="Web colors">
@@ -70,8 +71,8 @@
           <attvalue for="1" value="#FF0000"></attvalue>
           <attvalue for="myColor" value="#FF0000"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-9.914905" y="-4.757897" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-275.1366" y="195.74533" z="0.0"></viz:position>
         <viz:color r="255" g="0" b="0"></viz:color>
       </node>
       <node id="6" label="Blue">
@@ -80,8 +81,8 @@
           <attvalue for="1" value="#882D17"></attvalue>
           <attvalue for="myColor" value="#882D17"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="17.665142" y="-8.509696" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="189.83453" y="-279.24762" z="0.0"></viz:position>
         <viz:color r="136" g="45" b="23"></viz:color>
       </node>
       <node id="7" label="Optical spectrum">
@@ -90,8 +91,8 @@
           <attvalue for="1" value="#FFFF00"></attvalue>
           <attvalue for="myColor" value="#FFFF00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="34.561024" y="-27.597734" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-33.54458" y="335.99277" z="0.0"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="8" label="Rainbow">
@@ -100,8 +101,8 @@
           <attvalue for="1" value="#7F00FF"></attvalue>
           <attvalue for="myColor" value="#7F00FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-75.86752" y="24.759907" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="283.2317" y="-183.83742" z="0.0"></viz:position>
         <viz:color r="127" g="0" b="255"></viz:color>
       </node>
       <node id="9" label="Shades of blue">
@@ -110,8 +111,8 @@
           <attvalue for="1" value="#800080"></attvalue>
           <attvalue for="myColor" value="#800080"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-11.499237" y="63.191998" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="247.9129" y="-229.25005" z="0.0"></viz:position>
         <viz:color r="128" g="0" b="128"></viz:color>
       </node>
       <node id="10" label="Cyan">
@@ -120,8 +121,8 @@
           <attvalue for="1" value="#964B00"></attvalue>
           <attvalue for="myColor" value="#964B00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="11.097697" y="40.45746" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="94.71193" y="-324.10806" z="0.0"></viz:position>
         <viz:color r="150" g="75" b="0"></viz:color>
       </node>
       <node id="11" label="Shades of cyan">
@@ -130,8 +131,8 @@
           <attvalue for="1" value="#FF00FF"></attvalue>
           <attvalue for="myColor" value="#FF00FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-68.44197" y="59.73524" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-251.14662" y="225.70282" z="0.0"></viz:position>
         <viz:color r="255" g="0" b="255"></viz:color>
       </node>
       <node id="12" label="Shades of green">
@@ -140,8 +141,8 @@
           <attvalue for="1" value="#FF7F00"></attvalue>
           <attvalue for="myColor" value="#FF7F00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="49.08138" y="35.475952" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-201.56712" y="270.90048" z="0.0"></viz:position>
         <viz:color r="255" g="127" b="0"></viz:color>
       </node>
       <node id="13" label="Green">
@@ -150,8 +151,8 @@
           <attvalue for="1" value="#1291FF"></attvalue>
           <attvalue for="myColor" value="#1291FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="23.370607" y="94.8303" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="269.461" y="203.4875" z="0.0"></viz:position>
         <viz:color r="18" g="145" b="255"></viz:color>
       </node>
       <node id="14" label="Indigo">
@@ -160,8 +161,8 @@
           <attvalue for="1" value="#F4CA16"></attvalue>
           <attvalue for="myColor" value="#F4CA16"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-41.120876" y="-14.327714" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-331.4644" y="64.402985" z="0.0"></viz:position>
         <viz:color r="244" g="202" b="22"></viz:color>
       </node>
       <node id="15" label="Shades of violet">
@@ -170,8 +171,8 @@
           <attvalue for="1" value="#66023C"></attvalue>
           <attvalue for="myColor" value="#66023C"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-59.459576" y="5.7295413" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="336.22272" y="-31.155622" z="0.0"></viz:position>
         <viz:color r="102" g="2" b="60"></viz:color>
       </node>
       <node id="16" label="Red">
@@ -180,8 +181,8 @@
           <attvalue for="1" value="#F0E68C"></attvalue>
           <attvalue for="myColor" value="#F0E68C"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="2.7171557" y="-33.366245" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-337.58636" y="7.1994543" z="0.0"></viz:position>
         <viz:color r="240" g="230" b="140"></viz:color>
       </node>
       <node id="17" label="Shades of pink">
@@ -190,8 +191,8 @@
           <attvalue for="1" value="#FFCBDB"></attvalue>
           <attvalue for="myColor" value="#FFCBDB"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-103.53605" y="-52.95055" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-144.0305" y="305.404" z="0.0"></viz:position>
         <viz:color r="255" g="203" b="219"></viz:color>
       </node>
       <node id="18" label="Shades of red">
@@ -200,8 +201,8 @@
           <attvalue for="1" value="#DC143C"></attvalue>
           <attvalue for="myColor" value="#DC143C"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-65.17808" y="-67.19463" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-260.54068" y="-214.79045" z="0.0"></viz:position>
         <viz:color r="220" g="20" b="60"></viz:color>
       </node>
       <node id="19" label="Sienna">
@@ -210,8 +211,8 @@
           <attvalue for="1" value="#FFD700"></attvalue>
           <attvalue for="myColor" value="#FFD700"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="61.777287" y="-45.55342" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-135.29062" y="309.3749" z="0.0"></viz:position>
         <viz:color r="255" g="215" b="0"></viz:color>
       </node>
       <node id="20" label="Iron oxide pigments">
@@ -220,8 +221,8 @@
           <attvalue for="1" value="#CC7722"></attvalue>
           <attvalue for="myColor" value="#CC7722"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-137.27228" y="-3.9700062" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-181.81967" y="-284.5312" z="0.0"></viz:position>
         <viz:color r="204" g="119" b="34"></viz:color>
       </node>
       <node id="21" label="Shades of brown">
@@ -230,8 +231,8 @@
           <attvalue for="1" value="#E34234"></attvalue>
           <attvalue for="myColor" value="#E34234"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="17.371164" y="-83.21896" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-306.41998" y="-141.85617" z="0.0"></viz:position>
         <viz:color r="227" g="66" b="52"></viz:color>
       </node>
       <node id="22" label="Yellow">
@@ -240,8 +241,8 @@
           <attvalue for="1" value="#FF7F50"></attvalue>
           <attvalue for="myColor" value="#FF7F50"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="94.13467" y="9.263086" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-193.78482" y="276.52094" z="0.0"></viz:position>
         <viz:color r="255" g="127" b="80"></viz:color>
       </node>
       <node id="23" label="Shades of yellow">
@@ -250,8 +251,8 @@
           <attvalue for="1" value="#ED872D"></attvalue>
           <attvalue for="myColor" value="#ED872D"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="55.068817" y="-12.13529" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-336.22272" y="-31.155622" z="0.0"></viz:position>
         <viz:color r="237" g="135" b="45"></viz:color>
       </node>
       <node id="24" label="Violet (color)">
@@ -260,8 +261,8 @@
           <attvalue for="1" value="#635147"></attvalue>
           <attvalue for="myColor" value="#635147"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-37.745907" y="-55.069447" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="337.6546" y="-2.3999798" z="0.0"></viz:position>
         <viz:color r="99" g="81" b="71"></viz:color>
       </node>
       <node id="25" label="Purple">
@@ -270,8 +271,8 @@
           <attvalue for="1" value="#000080"></attvalue>
           <attvalue for="myColor" value="#000080"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="2.661406" y="18.103848" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="23.979797" y="336.81058" z="0.0"></viz:position>
         <viz:color r="0" g="0" b="128"></viz:color>
       </node>
       <node id="26" label="Brown">
@@ -280,8 +281,8 @@
           <attvalue for="1" value="#B0E0E6"></attvalue>
           <attvalue for="myColor" value="#B0E0E6"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="28.148981" y="-140.70743" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-19.189655" y="-337.1174" z="0.0"></viz:position>
         <viz:color r="176" g="224" b="230"></viz:color>
       </node>
       <node id="27" label="Shades of orange">
@@ -290,8 +291,8 @@
           <attvalue for="1" value="#000f89"></attvalue>
           <attvalue for="myColor" value="#000f89"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-13.437054" y="-62.453457" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="52.58509" y="333.5434" z="0.0"></viz:position>
         <viz:color r="0" g="15" b="137"></viz:color>
       </node>
       <node id="28" label="Magenta">
@@ -300,8 +301,8 @@
           <attvalue for="1" value="#808080"></attvalue>
           <attvalue for="myColor" value="#808080"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-17.255304" y="34.307423" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="220.29672" y="-255.90182" z="0.0"></viz:position>
         <viz:color r="128" g="128" b="128"></viz:color>
       </node>
       <node id="29" label="Shades of magenta">
@@ -310,8 +311,8 @@
           <attvalue for="1" value="#D2B48C"></attvalue>
           <attvalue for="myColor" value="#D2B48C"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-15.447247" y="-88.08319" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-234.48378" y="-242.96861" z="0.0"></viz:position>
         <viz:color r="210" g="180" b="140"></viz:color>
       </node>
       <node id="30" label="Mauve">
@@ -320,8 +321,8 @@
           <attvalue for="1" value="#E0B0FF"></attvalue>
           <attvalue for="myColor" value="#E0B0FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="33.658928" y="-71.043724" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-288.34314" y="-175.71173" z="0.0"></viz:position>
         <viz:color r="224" g="176" b="255"></viz:color>
       </node>
       <node id="31" label="Beige">
@@ -330,8 +331,8 @@
           <attvalue for="1" value="#F5F5DC"></attvalue>
           <attvalue for="myColor" value="#F5F5DC"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="39.714165" y="74.927734" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-324.77304" y="92.4059" z="0.0"></viz:position>
         <viz:color r="245" g="245" b="220"></viz:color>
       </node>
       <node id="32" label="Bistre">
@@ -340,8 +341,8 @@
           <attvalue for="1" value="#3D2B1F"></attvalue>
           <attvalue for="myColor" value="#3D2B1F"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="168.71979" y="13.23599" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="304.37256" y="146.19756" z="0.0"></viz:position>
         <viz:color r="61" g="43" b="31"></viz:color>
       </node>
       <node id="33" label="Azure (color)">
@@ -350,8 +351,8 @@
           <attvalue for="1" value="#007FFF"></attvalue>
           <attvalue for="myColor" value="#007FFF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-46.010414" y="35.797714" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="144.0305" y="305.404" z="0.0"></viz:position>
         <viz:color r="0" g="127" b="255"></viz:color>
       </node>
       <node id="34" label="Teal">
@@ -360,8 +361,8 @@
           <attvalue for="1" value="#008080"></attvalue>
           <attvalue for="myColor" value="#008080"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="94.74658" y="-82.17418" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="152.65398" y="301.18625" z="0.0"></viz:position>
         <viz:color r="0" g="128" b="128"></viz:color>
       </node>
       <node id="35" label="Olive (color)">
@@ -370,8 +371,8 @@
           <attvalue for="1" value="#808000"></attvalue>
           <attvalue for="myColor" value="#808000"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="107.96048" y="46.67175" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="234.48378" y="-242.96861" z="0.0"></viz:position>
         <viz:color r="128" g="128" b="0"></viz:color>
       </node>
       <node id="36" label="Salmon (color)">
@@ -380,8 +381,8 @@
           <attvalue for="1" value="#FA8072"></attvalue>
           <attvalue for="myColor" value="#FA8072"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="66.76141" y="14.729496" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-312.18918" y="128.66356" z="0.0"></viz:position>
         <viz:color r="250" g="128" b="114"></viz:color>
       </node>
       <node id="37" label="Fuchsia (color)">
@@ -390,8 +391,8 @@
           <attvalue for="1" value="#FF00FF"></attvalue>
           <attvalue for="myColor" value="#FF00FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-39.41894" y="20.337063" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-257.46115" y="218.4723" z="0.0"></viz:position>
         <viz:color r="255" g="0" b="255"></viz:color>
       </node>
       <node id="38" label="Peach (color)">
@@ -400,8 +401,8 @@
           <attvalue for="1" value="#FFE5B4"></attvalue>
           <attvalue for="myColor" value="#FFE5B4"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-53.925022" y="-40.76172" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-99.30952" y="322.729" z="0.0"></viz:position>
         <viz:color r="255" g="229" b="180"></viz:color>
       </node>
       <node id="39" label="Silver (color)">
@@ -410,8 +411,8 @@
           <attvalue for="1" value="#C0C0C0"></attvalue>
           <attvalue for="myColor" value="#C0C0C0"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="113.120155" y="-6.7152305" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-76.13955" y="-328.9668" z="0.0"></viz:position>
         <viz:color r="192" g="192" b="192"></viz:color>
       </node>
       <node id="40" label="Cardinal (color)">
@@ -420,8 +421,8 @@
           <attvalue for="1" value="#C41E3A"></attvalue>
           <attvalue for="myColor" value="#C41E3A"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-189.99043" y="10.656021" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-121.97799" y="-314.86148" z="0.0"></viz:position>
         <viz:color r="196" g="30" b="58"></viz:color>
       </node>
       <node id="41" label="Lavender (color)">
@@ -430,8 +431,8 @@
           <attvalue for="1" value="#E6E6FA"></attvalue>
           <attvalue for="myColor" value="#E6E6FA"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="107.47491" y="-31.284996" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-332.34637" y="-59.684753" z="0.0"></viz:position>
         <viz:color r="230" g="230" b="250"></viz:color>
       </node>
       <node id="42" label="Venetian red">
@@ -440,8 +441,8 @@
           <attvalue for="1" value="#C80815"></attvalue>
           <attvalue for="myColor" value="#C80815"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-149.58026" y="13.748095" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-156.91988" y="-298.98584" z="0.0"></viz:position>
         <viz:color r="200" g="8" b="21"></viz:color>
       </node>
       <node id="43" label="Liver (color)">
@@ -450,8 +451,8 @@
           <attvalue for="1" value="#674C47"></attvalue>
           <attvalue for="myColor" value="#674C47"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="144.5248" y="-73.40598" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="333.90872" y="-50.213066" z="0.0"></viz:position>
         <viz:color r="103" g="76" b="71"></viz:color>
       </node>
       <node id="44" label="Copper (color)">
@@ -460,8 +461,8 @@
           <attvalue for="1" value="#B87333"></attvalue>
           <attvalue for="myColor" value="#B87333"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="135.9239" y="47.246914" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-47.8385" y="-334.25717" z="0.0"></viz:position>
         <viz:color r="184" g="115" b="51"></viz:color>
       </node>
       <node id="45" label="Dodger blue">
@@ -470,8 +471,8 @@
           <attvalue for="1" value="#1E90FF"></attvalue>
           <attvalue for="myColor" value="#1E90FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-90.44507" y="0.6202336" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="285.81628" y="179.79274" z="0.0"></viz:position>
         <viz:color r="30" g="144" b="255"></viz:color>
       </node>
       <node id="46" label="Lemon (color)">
@@ -480,8 +481,8 @@
           <attvalue for="1" value="#FFFACD"></attvalue>
           <attvalue for="myColor" value="#FFFACD"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="19.800617" y="-116.51999" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-62.045437" y="331.91376" z="0.0"></viz:position>
         <viz:color r="255" g="250" b="205"></viz:color>
       </node>
       <node id="47" label="Persian blue">
@@ -490,8 +491,8 @@
           <attvalue for="1" value="#1C39BB"></attvalue>
           <attvalue for="myColor" value="#1C39BB"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-136.8641" y="-55.549847" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="280.58984" y="187.84496" z="0.0"></viz:position>
         <viz:color r="28" g="57" b="187"></viz:color>
       </node>
       <node id="48" label="Puce">
@@ -500,8 +501,8 @@
           <attvalue for="1" value="#722F37"></attvalue>
           <attvalue for="myColor" value="#722F37"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="4.992472" y="-111.6685" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="310.3287" y="-133.08829" z="0.0"></viz:position>
         <viz:color r="114" g="47" b="55"></viz:color>
       </node>
       <node id="49" label="Periwinkle (color)">
@@ -510,8 +511,8 @@
           <attvalue for="1" value="#CCCCFF"></attvalue>
           <attvalue for="myColor" value="#CCCCFF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="72.25546" y="-66.41682" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-189.83453" y="-279.24762" z="0.0"></viz:position>
         <viz:color r="204" g="204" b="255"></viz:color>
       </node>
       <node id="50" label="Amber (color)">
@@ -520,8 +521,8 @@
           <attvalue for="1" value="#FFBF00"></attvalue>
           <attvalue for="myColor" value="#FFBF00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="62.40991" y="-88.2214" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-169.52391" y="292.02402" z="0.0"></viz:position>
         <viz:color r="255" g="191" b="0"></viz:color>
       </node>
       <node id="51" label="Scarlet (color)">
@@ -530,8 +531,8 @@
           <attvalue for="1" value="#FF2400"></attvalue>
           <attvalue for="myColor" value="#FF2400"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-48.20006" y="-118.2464" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-237.91385" y="239.6109" z="0.0"></viz:position>
         <viz:color r="255" g="36" b="0"></viz:color>
       </node>
       <node id="52" label="Cerulean">
@@ -540,8 +541,8 @@
           <attvalue for="1" value="#007BA7"></attvalue>
           <attvalue for="myColor" value="#007BA7"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="31.334328" y="52.611828" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="135.29062" y="309.3749" z="0.0"></viz:position>
         <viz:color r="0" g="123" b="167"></viz:color>
       </node>
       <node id="53" label="Orchid (color)">
@@ -550,8 +551,8 @@
           <attvalue for="1" value="#DA70D6"></attvalue>
           <attvalue for="myColor" value="#DA70D6"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="66.67332" y="51.635483" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-241.29585" y="-236.20479" z="0.0"></viz:position>
         <viz:color r="218" g="112" b="214"></viz:color>
       </node>
       <node id="54" label="Viridian">
@@ -560,8 +561,8 @@
           <attvalue for="1" value="#40826D"></attvalue>
           <attvalue for="myColor" value="#40826D"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="11.973853" y="140.55086" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="308.40552" y="137.48611" z="0.0"></viz:position>
         <viz:color r="64" g="130" b="109"></viz:color>
       </node>
       <node id="55" label="Sepia (color)">
@@ -570,8 +571,8 @@
           <attvalue for="1" value="#704214"></attvalue>
           <attvalue for="myColor" value="#704214"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="93.75843" y="66.16736" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="320.5382" y="-106.16798" z="0.0"></viz:position>
         <viz:color r="112" g="66" b="20"></viz:color>
       </node>
       <node id="56" label="Cobalt blue">
@@ -580,8 +581,8 @@
           <attvalue for="1" value="#0047AB"></attvalue>
           <attvalue for="myColor" value="#0047AB"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="91.21901" y="119.77448" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="108.44356" y="319.7755" z="0.0"></viz:position>
         <viz:color r="0" g="71" b="171"></viz:color>
       </node>
       <node id="57" label="Turquoise (color)">
@@ -590,8 +591,8 @@
           <attvalue for="1" value="#40E0D0"></attvalue>
           <attvalue for="myColor" value="#40E0D0"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-36.9129" y="73.31111" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="312.18918" y="128.66356" z="0.0"></viz:position>
         <viz:color r="64" g="224" b="208"></viz:color>
       </node>
       <node id="58" label="Cerise (color)">
@@ -600,8 +601,8 @@
           <attvalue for="1" value="#DE3163"></attvalue>
           <attvalue for="myColor" value="#DE3163"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-78.8606" y="-45.689037" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-272.32632" y="-199.63658" z="0.0"></viz:position>
         <viz:color r="222" g="49" b="99"></viz:color>
       </node>
       <node id="59" label="Lilac (color)">
@@ -610,8 +611,8 @@
           <attvalue for="1" value="#DCD0FF"></attvalue>
           <attvalue for="myColor" value="#DCD0FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="23.140085" y="-49.029728" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-266.54123" y="-207.29729" z="0.0"></viz:position>
         <viz:color r="220" g="208" b="255"></viz:color>
       </node>
       <node id="60" label="Cream (colour)">
@@ -620,8 +621,8 @@
           <attvalue for="1" value="#FFFDD0"></attvalue>
           <attvalue for="myColor" value="#FFFDD0"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="74.73343" y="-118.683395" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-52.58509" y="333.5434" z="0.0"></viz:position>
         <viz:color r="255" g="253" b="208"></viz:color>
       </node>
       <node id="61" label="Maroon">
@@ -630,8 +631,8 @@
           <attvalue for="1" value="#800000"></attvalue>
           <attvalue for="myColor" value="#800000"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-93.68095" y="-75.726326" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="266.54123" y="-207.29729" z="0.0"></viz:position>
         <viz:color r="128" g="0" b="0"></viz:color>
       </node>
       <node id="62" label="Chartreuse (color)">
@@ -640,8 +641,8 @@
           <attvalue for="1" value="#7FFF00"></attvalue>
           <attvalue for="myColor" value="#7FFF00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="27.90101" y="22.72494" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="277.8913" y="-191.81451" z="0.0"></viz:position>
         <viz:color r="127" g="255" b="0"></viz:color>
       </node>
       <node id="63" label="British racing green">
@@ -650,8 +651,8 @@
           <attvalue for="1" value="#014225"></attvalue>
           <attvalue for="myColor" value="#014225"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="33.471924" y="118.01062" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="231.00632" y="246.27722" z="0.0"></viz:position>
         <viz:color r="1" g="66" b="37"></viz:color>
       </node>
       <node id="64" label="Lime (color)">
@@ -660,8 +661,8 @@
           <attvalue for="1" value="#BFFF00"></attvalue>
           <attvalue for="myColor" value="#BFFF00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="99.44602" y="96.58167" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-57.321056" y="-332.7622" z="0.0"></viz:position>
         <viz:color r="191" g="255" b="0"></viz:color>
       </node>
       <node id="65" label="Red-violet">
@@ -670,8 +671,8 @@
           <attvalue for="1" value="#C71585"></attvalue>
           <attvalue for="myColor" value="#C71585"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-23.136255" y="-33.91109" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-148.35724" y="-303.32578" z="0.0"></viz:position>
         <viz:color r="199" g="21" b="133"></viz:color>
       </node>
       <node id="66" label="School bus yellow">
@@ -680,8 +681,8 @@
           <attvalue for="1" value="#FFD800"></attvalue>
           <attvalue for="myColor" value="#FFD800"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-43.125183" y="-84.727806" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-126.44138" y="313.09576" z="0.0"></viz:position>
         <viz:color r="255" g="216" b="0"></viz:color>
       </node>
       <node id="67" label="Safety orange">
@@ -690,8 +691,8 @@
           <attvalue for="1" value="#E87600"></attvalue>
           <attvalue for="myColor" value="#E87600"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-99.36474" y="-24.087532" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-333.90872" y="-50.213066" z="0.0"></viz:position>
         <viz:color r="232" g="118" b="0"></viz:color>
       </node>
       <node id="68" label="Cosmic latte">
@@ -700,8 +701,8 @@
           <attvalue for="1" value="#FFF8E7"></attvalue>
           <attvalue for="myColor" value="#FFF8E7"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="44.717182" y="-92.26059" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-80.808075" y="327.85126" z="0.0"></viz:position>
         <viz:color r="255" g="248" b="231"></viz:color>
       </node>
       <node id="69" label="Mahogany (color)">
@@ -710,8 +711,8 @@
           <attvalue for="1" value="#C04000"></attvalue>
           <attvalue for="myColor" value="#C04000"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="64.6858" y="-141.98192" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-66.75728" y="-330.99826" z="0.0"></viz:position>
         <viz:color r="192" g="64" b="0"></viz:color>
       </node>
       <node id="70" label="Naples yellow">
@@ -720,8 +721,8 @@
           <attvalue for="1" value="#FADA5E"></attvalue>
           <attvalue for="myColor" value="#FADA5E"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="65.09907" y="74.72433" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-300.09363" y="154.79083" z="0.0"></viz:position>
         <viz:color r="250" g="218" b="94"></viz:color>
       </node>
       <node id="71" label="Gamboge">
@@ -730,8 +731,8 @@
           <attvalue for="1" value="#E49B0F"></attvalue>
           <attvalue for="myColor" value="#E49B0F"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="88.95873" y="-14.615587" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-317.39066" y="-115.23697" z="0.0"></viz:position>
         <viz:color r="228" g="155" b="15"></viz:color>
       </node>
       <node id="72" label="Indian yellow">
@@ -740,8 +741,8 @@
           <attvalue for="1" value="#E3A857"></attvalue>
           <attvalue for="myColor" value="#E3A857"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="57.206833" y="-123.41805" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-310.3287" y="-133.08829" z="0.0"></viz:position>
         <viz:color r="227" g="168" b="87"></viz:color>
       </node>
       <node id="74" label="Aquamarine (color)">
@@ -750,8 +751,8 @@
           <attvalue for="1" value="#7FFFD4"></attvalue>
           <attvalue for="myColor" value="#7FFFD4"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-176.37633" y="99.36923" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="272.32632" y="-199.63658" z="0.0"></viz:position>
         <viz:color r="127" g="255" b="212"></viz:color>
       </node>
       <node id="75" label="Seal brown">
@@ -760,8 +761,8 @@
           <attvalue for="1" value="#59260B"></attvalue>
           <attvalue for="myColor" value="#59260B"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="132.63828" y="-134.96768" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="335.74588" y="35.93184" z="0.0"></viz:position>
         <viz:color r="89" g="38" b="11"></viz:color>
       </node>
       <node id="76" label="Carmine (color)">
@@ -770,8 +771,8 @@
           <attvalue for="1" value="#960018"></attvalue>
           <attvalue for="myColor" value="#960018"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-144.1653" y="-30.068617" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="112.97817" y="-318.2017" z="0.0"></viz:position>
         <viz:color r="150" g="0" b="24"></viz:color>
       </node>
       <node id="77" label="Catawba (grape)">
@@ -780,8 +781,8 @@
           <attvalue for="1" value="#703642"></attvalue>
           <attvalue for="myColor" value="#703642"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="59.843204" y="204.49568" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="323.4267" y="-97.013176" z="0.0"></viz:position>
         <viz:color r="112" g="54" b="66"></viz:color>
       </node>
       <node id="78" label="Baby blue">
@@ -790,8 +791,8 @@
           <attvalue for="1" value="#89CFF0"></attvalue>
           <attvalue for="myColor" value="#89CFF0"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-127.16045" y="99.10029" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="173.65787" y="-289.58475" z="0.0"></viz:position>
         <viz:color r="137" g="207" b="240"></viz:color>
       </node>
       <node id="79" label="Champagne (color)">
@@ -800,8 +801,8 @@
           <attvalue for="1" value="#F7E7CE"></attvalue>
           <attvalue for="myColor" value="#F7E7CE"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-3.774444" y="-226.44165" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-322.01498" y="101.60084" z="0.0"></viz:position>
         <viz:color r="247" g="231" b="206"></viz:color>
       </node>
       <node id="80" label="Old gold">
@@ -810,8 +811,8 @@
           <attvalue for="1" value="#CFB53B"></attvalue>
           <attvalue for="myColor" value="#CFB53B"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="136.64207" y="-171.7556" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-227.48218" y="-249.53606" z="0.0"></viz:position>
         <viz:color r="207" g="181" b="59"></viz:color>
       </node>
       <node id="81" label="Burgundy (color)">
@@ -820,8 +821,8 @@
           <attvalue for="1" value="#900020"></attvalue>
           <attvalue for="myColor" value="#900020"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-70.44235" y="-96.53373" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="148.35724" y="-303.32578" z="0.0"></viz:position>
         <viz:color r="144" g="0" b="32"></viz:color>
       </node>
       <node id="82" label="Eggplant (color)">
@@ -830,8 +831,8 @@
           <attvalue for="1" value="#614051"></attvalue>
           <attvalue for="myColor" value="#614051"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-179.73938" y="-24.337292" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="337.58636" y="7.1994543" z="0.0"></viz:position>
         <viz:color r="97" g="64" b="81"></viz:color>
       </node>
       <node id="83" label="Wheat (color)">
@@ -840,8 +841,8 @@
           <attvalue for="1" value="#F5DEB3"></attvalue>
           <attvalue for="myColor" value="#F5DEB3"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="51.33321" y="-201.19362" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-327.26862" y="83.13628" z="0.0"></viz:position>
         <viz:color r="245" g="222" b="179"></viz:color>
       </node>
       <node id="84" label="Goldenrod (color)">
@@ -850,8 +851,8 @@
           <attvalue for="1" value="#DAA520"></attvalue>
           <attvalue for="myColor" value="#DAA520"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="118.765884" y="-83.257675" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-247.9129" y="-229.25005" z="0.0"></viz:position>
         <viz:color r="218" g="165" b="32"></viz:color>
       </node>
       <node id="85" label="Lemon chiffon">
@@ -860,8 +861,8 @@
           <attvalue for="1" value="#FFFACD"></attvalue>
           <attvalue for="myColor" value="#FFFACD"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="209.3549" y="-49.718628" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-71.455635" y="330.01587" z="0.0"></viz:position>
         <viz:color r="255" g="250" b="205"></viz:color>
       </node>
       <node id="86" label="Seashell (color)">
@@ -870,8 +871,8 @@
           <attvalue for="1" value="#FFF5EE"></attvalue>
           <attvalue for="myColor" value="#FFF5EE"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="194.43677" y="-30.873415" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-90.09521" y="325.42163" z="0.0"></viz:position>
         <viz:color r="255" g="245" b="238"></viz:color>
       </node>
       <node id="87" label="Robin egg blue">
@@ -880,8 +881,8 @@
           <attvalue for="1" value="#00CCCC"></attvalue>
           <attvalue for="myColor" value="#00CCCC"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-145.09563" y="159.95247" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="169.52391" y="292.02402" z="0.0"></viz:position>
         <viz:color r="0" g="204" b="204"></viz:color>
       </node>
       <node id="88" label="Midnight blue">
@@ -890,8 +891,8 @@
           <attvalue for="1" value="#191970"></attvalue>
           <attvalue for="myColor" value="#191970"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="33.990448" y="1.559012" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="275.1366" y="195.74533" z="0.0"></viz:position>
         <viz:color r="25" g="25" b="112"></viz:color>
       </node>
       <node id="89" label="Spring green">
@@ -900,8 +901,8 @@
           <attvalue for="1" value="#00FF7F"></attvalue>
           <attvalue for="myColor" value="#00FF7F"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-7.114548" y="-187.89754" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="201.56712" y="270.90048" z="0.0"></viz:position>
         <viz:color r="0" g="255" b="127"></viz:color>
       </node>
       <node id="90" label="Chocolate (color)">
@@ -910,8 +911,8 @@
           <attvalue for="1" value="#7B3F00"></attvalue>
           <attvalue for="myColor" value="#7B3F00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="70.989006" y="-170.46371" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="297.86298" y="-159.04099" z="0.0"></viz:position>
         <viz:color r="123" g="63" b="0"></viz:color>
       </node>
       <node id="91" label="Cornflower blue">
@@ -920,8 +921,8 @@
           <attvalue for="1" value="#6495ED"></attvalue>
           <attvalue for="myColor" value="#6495ED"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-168.26106" y="67.112" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="336.9725" y="-21.585272" z="0.0"></viz:position>
         <viz:color r="100" g="149" b="237"></viz:color>
       </node>
       <node id="92" label="Steel blue">
@@ -930,8 +931,8 @@
           <attvalue for="1" value="#4682b4"></attvalue>
           <attvalue for="myColor" value="#4682b4"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-188.12396" y="49.788143" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="322.01498" y="101.60084" z="0.0"></viz:position>
         <viz:color r="70" g="130" b="180"></viz:color>
       </node>
       <node id="93" label="Chestnut (color)">
@@ -940,8 +941,8 @@
           <attvalue for="1" value="#954535"></attvalue>
           <attvalue for="myColor" value="#954535"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-37.07565" y="-188.8548" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="121.97799" y="-314.86148" z="0.0"></viz:position>
         <viz:color r="149" g="69" b="53"></viz:color>
       </node>
       <node id="94" label="Slate gray">
@@ -950,8 +951,8 @@
           <attvalue for="1" value="#708090"></attvalue>
           <attvalue for="myColor" value="#708090"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="159.39734" y="83.55217" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="317.39066" y="-115.23697" z="0.0"></viz:position>
         <viz:color r="112" g="128" b="144"></viz:color>
       </node>
       <node id="95" label="Royal blue">
@@ -960,8 +961,8 @@
           <attvalue for="1" value="#002366"></attvalue>
           <attvalue for="myColor" value="#002366"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-150.48676" y="82.9523" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="90.09521" y="325.42163" z="0.0"></viz:position>
         <viz:color r="0" g="35" b="102"></viz:color>
       </node>
       <node id="96" label="Buff (colour)">
@@ -970,8 +971,8 @@
           <attvalue for="1" value="#F0DC82"></attvalue>
           <attvalue for="myColor" value="#F0DC82"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="97.34421" y="-56.697887" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-337.6546" y="-2.3999798" z="0.0"></viz:position>
         <viz:color r="240" g="220" b="130"></viz:color>
       </node>
       <node id="97" label="Flax (color)">
@@ -980,8 +981,8 @@
           <attvalue for="1" value="#EEDC82"></attvalue>
           <attvalue for="myColor" value="#EEDC82"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="159.86092" y="-26.38066" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-337.44992" y="-11.997475" z="0.0"></viz:position>
         <viz:color r="238" g="220" b="130"></viz:color>
       </node>
       <node id="98" label="Mustard (color)">
@@ -990,8 +991,8 @@
           <attvalue for="1" value="#FFDB58"></attvalue>
           <attvalue for="myColor" value="#FFDB58"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="152.36722" y="-48.14037" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-117.48995" y="316.56357" z="0.0"></viz:position>
         <viz:color r="255" g="219" b="88"></viz:color>
       </node>
       <node id="99" label="Payne's grey">
@@ -1000,8 +1001,8 @@
           <attvalue for="1" value="#536878"></attvalue>
           <attvalue for="myColor" value="#536878"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="120.11457" y="67.185684" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="331.4644" y="64.402985" z="0.0"></viz:position>
         <viz:color r="83" g="104" b="120"></viz:color>
       </node>
       <node id="100" label="Blue-green">
@@ -1010,8 +1011,8 @@
           <attvalue for="1" value="#0D98BA"></attvalue>
           <attvalue for="myColor" value="#0D98BA"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-8.987199" y="121.598656" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="237.91385" y="239.6109" z="0.0"></viz:position>
         <viz:color r="13" g="152" b="186"></viz:color>
       </node>
       <node id="101" label="Navajo white">
@@ -1020,8 +1021,8 @@
           <attvalue for="1" value="#FFDEAD"></attvalue>
           <attvalue for="myColor" value="#FFDEAD"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-20.94148" y="-159.55415" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-108.44356" y="319.7755" z="0.0"></viz:position>
         <viz:color r="255" g="222" b="173"></viz:color>
       </node>
       <node id="102" label="Columbia blue">
@@ -1030,8 +1031,8 @@
           <attvalue for="1" value="#C4D8E2"></attvalue>
           <attvalue for="myColor" value="#C4D8E2"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-111.86004" y="140.34648" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-130.87923" y="-311.26678" z="0.0"></viz:position>
         <viz:color r="196" g="216" b="226"></viz:color>
       </node>
       <node id="103" label="Taupe">
@@ -1040,8 +1041,8 @@
           <attvalue for="1" value="#483C32"></attvalue>
           <attvalue for="myColor" value="#483C32"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="16.490461" y="-132.89207" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="327.26862" y="83.13628" z="0.0"></viz:position>
         <viz:color r="72" g="60" b="50"></viz:color>
       </node>
       <node id="104" label="Auburn hair">
@@ -1050,8 +1051,8 @@
           <attvalue for="1" value="#A52A2A"></attvalue>
           <attvalue for="myColor" value="#A52A2A"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-94.25644" y="-155.34659" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="28.765095" y="-336.43567" z="0.0"></viz:position>
         <viz:color r="165" g="42" b="42"></viz:color>
       </node>
       <node id="105" label="Non-photo blue">
@@ -1060,8 +1061,8 @@
           <attvalue for="1" value="#A4DDED"></attvalue>
           <attvalue for="myColor" value="#A4DDED"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-153.43947" y="114.48414" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="38.317284" y="-335.482" z="0.0"></viz:position>
         <viz:color r="164" g="221" b="237"></viz:color>
       </node>
       <node id="106" label="Fire engine red">
@@ -1070,8 +1071,8 @@
           <attvalue for="1" value="#CE2029"></attvalue>
           <attvalue for="myColor" value="#CE2029"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-129.70473" y="-108.07567" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-220.29672" y="-255.90182" z="0.0"></viz:position>
         <viz:color r="206" g="32" b="41"></viz:color>
       </node>
       <node id="107" label="Raspberry (color)">
@@ -1080,8 +1081,8 @@
           <attvalue for="1" value="#E30B5C"></attvalue>
           <attvalue for="myColor" value="#E30B5C"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-88.20376" y="48.25375" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-297.86298" y="-159.04099" z="0.0"></viz:position>
         <viz:color r="227" g="11" b="92"></viz:color>
       </node>
       <node id="108" label="Terra cotta (color)">
@@ -1090,8 +1091,8 @@
           <attvalue for="1" value="#E2725B"></attvalue>
           <attvalue for="myColor" value="#E2725B"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-154.2643" y="-139.59157" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-293.22156" y="-167.44403" z="0.0"></viz:position>
         <viz:color r="226" g="114" b="91"></viz:color>
       </node>
       <node id="109" label="Rose (color)">
@@ -1100,8 +1101,8 @@
           <attvalue for="1" value="#FF007F"></attvalue>
           <attvalue for="myColor" value="#FF007F"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-73.76609" y="-21.373789" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-269.461" y="203.4875" z="0.0"></viz:position>
         <viz:color r="255" g="0" b="127"></viz:color>
       </node>
       <node id="110" label="Aqua (color)">
@@ -1110,8 +1111,8 @@
           <attvalue for="1" value="#00FFFF"></attvalue>
           <attvalue for="myColor" value="#00FFFF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="75.08862" y="96.67148" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="216.63684" y="259.00745" z="0.0"></viz:position>
         <viz:color r="0" g="255" b="255"></viz:color>
       </node>
       <node id="111" label="Paris Green">
@@ -1120,8 +1121,8 @@
           <attvalue for="1" value="#50C878"></attvalue>
           <attvalue for="myColor" value="#50C878"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="78.4913" y="184.56618" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="329.49966" y="73.79945" z="0.0"></viz:position>
         <viz:color r="80" g="200" b="120"></viz:color>
       </node>
       <node id="112" label="Sapphire (color)">
@@ -1130,8 +1131,8 @@
           <attvalue for="1" value="#0F52BA"></attvalue>
           <attvalue for="myColor" value="#0F52BA"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="142.13326" y="112.68543" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="251.14662" y="225.70282" z="0.0"></viz:position>
         <viz:color r="15" g="82" b="186"></viz:color>
       </node>
       <node id="113" label="Magnolia (color)">
@@ -1140,8 +1141,8 @@
           <attvalue for="1" value="#F8F4FF"></attvalue>
           <attvalue for="myColor" value="#F8F4FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="132.52322" y="-27.754585" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-315.72052" y="119.73699" z="0.0"></viz:position>
         <viz:color r="248" g="244" b="255"></viz:color>
       </node>
       <node id="114" label="Selective yellow">
@@ -1150,8 +1151,8 @@
           <attvalue for="1" value="#FFBA00"></attvalue>
           <attvalue for="myColor" value="#FFBA00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-118.10614" y="-81.13114" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-177.75673" y="287.08698" z="0.0"></viz:position>
         <viz:color r="255" g="186" b="0"></viz:color>
       </node>
       <node id="115" label="New Hampshire Wildcats">
@@ -1160,8 +1161,8 @@
           <attvalue for="1" value="#002f87"></attvalue>
           <attvalue for="myColor" value="#002f87"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="204.29315" y="37.507927" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="99.30952" y="322.729" z="0.0"></viz:position>
         <viz:color r="0" g="47" b="135"></viz:color>
       </node>
       <node id="116" label="Saffron (color)">
@@ -1170,8 +1171,8 @@
           <attvalue for="1" value="#F4C430"></attvalue>
           <attvalue for="myColor" value="#F4C430"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="32.24784" y="-163.16843" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-333.16122" y="54.954464" z="0.0"></viz:position>
         <viz:color r="244" g="196" b="48"></viz:color>
       </node>
       <node id="117" label="Sinopia">
@@ -1180,8 +1181,8 @@
           <attvalue for="1" value="#CB410B"></attvalue>
           <attvalue for="myColor" value="#CB410B"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-97.41258" y="-108.6536" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-165.3557" y="-294.40427" z="0.0"></viz:position>
         <viz:color r="203" g="65" b="11"></viz:color>
       </node>
       <node id="118" label="Phthalocyanine Green G">
@@ -1190,8 +1191,8 @@
           <attvalue for="1" value="#123524"></attvalue>
           <attvalue for="myColor" value="#123524"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="115.52692" y="18.143879" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="263.5676" y="211.0652" z="0.0"></viz:position>
         <viz:color r="18" g="53" b="36"></viz:color>
       </node>
       <node id="119" label="Rust (color)">
@@ -1200,8 +1201,8 @@
           <attvalue for="1" value="#B7410E"></attvalue>
           <attvalue for="myColor" value="#B7410E"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="16.725973" y="-181.248" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-38.317284" y="-335.482" z="0.0"></viz:position>
         <viz:color r="183" g="65" b="14"></viz:color>
       </node>
       <node id="120" label="Russet (color)">
@@ -1210,8 +1211,8 @@
           <attvalue for="1" value="#80461B"></attvalue>
           <attvalue for="myColor" value="#80461B"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="107.67435" y="-139.94856" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="241.29585" y="-236.20479" z="0.0"></viz:position>
         <viz:color r="128" g="70" b="27"></viz:color>
       </node>
       <node id="121" label="Heliotrope (color)">
@@ -1220,8 +1221,8 @@
           <attvalue for="1" value="#DF73FF"></attvalue>
           <attvalue for="myColor" value="#DF73FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-159.55518" y="-42.503258" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-277.8913" y="-191.81451" z="0.0"></viz:position>
         <viz:color r="223" g="115" b="255"></viz:color>
       </node>
       <node id="122" label="Rosso corsa">
@@ -1230,8 +1231,8 @@
           <attvalue for="1" value="#CC0000"></attvalue>
           <attvalue for="myColor" value="#CC0000"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-38.32445" y="196.48875" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-173.65787" y="-289.58475" z="0.0"></viz:position>
         <viz:color r="204" g="0" b="0"></viz:color>
       </node>
       <node id="123" label="Tiffany Blue">
@@ -1240,8 +1241,8 @@
           <attvalue for="1" value="#81D8D0"></attvalue>
           <attvalue for="myColor" value="#81D8D0"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-114.67289" y="91.40271" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="205.39758" y="-268.00787" z="0.0"></viz:position>
         <viz:color r="129" g="216" b="208"></viz:color>
       </node>
       <node id="124" label="Coquelicot">
@@ -1250,8 +1251,8 @@
           <attvalue for="1" value="#FF3800"></attvalue>
           <attvalue for="myColor" value="#FF3800"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-203.02345" y="-38.77886" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-231.00632" y="246.27722" z="0.0"></viz:position>
         <viz:color r="255" g="56" b="0"></viz:color>
       </node>
       <node id="125" label="Oxblood">
@@ -1260,8 +1261,8 @@
           <attvalue for="1" value="#800020"></attvalue>
           <attvalue for="myColor" value="#800020"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-105.763954" y="161.74974" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="260.54068" y="-214.79045" z="0.0"></viz:position>
         <viz:color r="128" g="0" b="32"></viz:color>
       </node>
       <node id="126" label="Egyptian blue">
@@ -1270,8 +1271,8 @@
           <attvalue for="1" value="#1034A6"></attvalue>
           <attvalue for="myColor" value="#1034A6"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="66.477615" y="121.34206" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="257.46115" y="218.4723" z="0.0"></viz:position>
         <viz:color r="16" g="52" b="166"></viz:color>
       </node>
       <node id="127" label="Ecru">
@@ -1280,8 +1281,8 @@
           <attvalue for="1" value="#C2B280"></attvalue>
           <attvalue for="myColor" value="#C2B280"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="168.65332" y="-140.33838" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-112.97817" y="-318.2017" z="0.0"></viz:position>
         <viz:color r="194" g="178" b="128"></viz:color>
       </node>
       <node id="128" label="International orange">
@@ -1290,8 +1291,8 @@
           <attvalue for="1" value="#FF4F00"></attvalue>
           <attvalue for="myColor" value="#FF4F00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-115.10574" y="-134.89772" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-223.91206" y="252.74448" z="0.0"></viz:position>
         <viz:color r="255" g="79" b="0"></viz:color>
       </node>
       <node id="129" label="Maize (color)">
@@ -1300,8 +1301,8 @@
           <attvalue for="1" value="#FBEC5D"></attvalue>
           <attvalue for="myColor" value="#FBEC5D"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="81.18753" y="-200.68446" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-290.81174" y="171.59521" z="0.0"></viz:position>
         <viz:color r="251" g="236" b="93"></viz:color>
       </node>
       <node id="130" label="Eggshell (color)">
@@ -1310,8 +1311,8 @@
           <attvalue for="1" value="#F0EAD6"></attvalue>
           <attvalue for="myColor" value="#F0EAD6"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-52.377556" y="-167.36324" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-337.24527" y="16.79307" z="0.0"></viz:position>
         <viz:color r="240" g="234" b="214"></viz:color>
       </node>
       <node id="131" label="Ivory (color)">
@@ -1320,8 +1321,8 @@
           <attvalue for="1" value="#FFFFF0"></attvalue>
           <attvalue for="myColor" value="#FFFFF0"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="216.07445" y="-20.056547" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-23.979797" y="336.81058" z="0.0"></viz:position>
         <viz:color r="255" g="255" b="240"></viz:color>
       </node>
       <node id="132" label="Zaffre">
@@ -1330,8 +1331,8 @@
           <attvalue for="1" value="#0014A8"></attvalue>
           <attvalue for="myColor" value="#0014A8"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="85.13131" y="145.10873" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="62.045437" y="331.91376" z="0.0"></viz:position>
         <viz:color r="0" g="20" b="168"></viz:color>
       </node>
       <node id="133" label="Aureolin">
@@ -1340,8 +1341,8 @@
           <attvalue for="1" value="#FDEE00"></attvalue>
           <attvalue for="myColor" value="#FDEE00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="127.24022" y="88.974594" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-285.81628" y="179.79274" z="0.0"></viz:position>
         <viz:color r="253" g="238" b="0"></viz:color>
       </node>
       <node id="134" label="Amaranth (color)">
@@ -1350,8 +1351,8 @@
           <attvalue for="1" value="#F19CBB"></attvalue>
           <attvalue for="myColor" value="#F19CBB"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-121.11213" y="-29.66607" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-335.74588" y="35.93184" z="0.0"></viz:position>
         <viz:color r="241" g="156" b="187"></viz:color>
       </node>
       <node id="135" label="Apricot (color)">
@@ -1360,8 +1361,8 @@
           <attvalue for="1" value="#FBCEB1"></attvalue>
           <attvalue for="myColor" value="#FBCEB1"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="9.7862" y="-205.26036" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-295.57214" y="163.259" z="0.0"></viz:position>
         <viz:color r="251" g="206" b="177"></viz:color>
       </node>
       <node id="136" label="Arylide yellow">
@@ -1370,8 +1371,8 @@
           <attvalue for="1" value="#E9D66B"></attvalue>
           <attvalue for="myColor" value="#E9D66B"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="180.71571" y="70.7595" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-335.20117" y="-40.700794" z="0.0"></viz:position>
         <viz:color r="233" g="214" b="107"></viz:color>
       </node>
       <node id="137" label="Fallow (color)">
@@ -1380,19 +1381,19 @@
           <attvalue for="1" value="#C19A6B"></attvalue>
           <attvalue for="myColor" value="#C19A6B"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-68.57381" y="-196.24377" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-103.88703" y="-321.28473" z="0.0"></viz:position>
         <viz:color r="193" g="154" b="107"></viz:color>
       </node>
-      <node id="138" label="Forest green">
+      <node id="138" label="Rich black">
         <attvalues>
           <attvalue for="0" value="Infobox color"></attvalue>
-          <attvalue for="1" value="#228B22"></attvalue>
+          <attvalue for="1" value="none"></attvalue>
           <attvalue for="myColor" value="#228B22"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="126.81792" y="157.65527" z="0.0"></viz:position>
-        <viz:color r="34" g="139" b="34"></viz:color>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="290.81174" y="171.59521" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
       </node>
       <node id="139" label="Shades of orange">
         <attvalues>
@@ -1400,8 +1401,8 @@
           <attvalue for="1" value="#FF7F00"></attvalue>
           <attvalue for="myColor" value="#FF7F00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="124.227776" y="-48.18134" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-209.18652" y="265.0611" z="0.0"></viz:position>
         <viz:color r="255" g="127" b="0"></viz:color>
       </node>
       <node id="140" label="Bole (color)">
@@ -1410,8 +1411,8 @@
           <attvalue for="1" value="#79443B"></attvalue>
           <attvalue for="myColor" value="#79443B"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-135.67879" y="-151.05573" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="302.26364" y="-150.50941" z="0.0"></viz:position>
         <viz:color r="121" g="68" b="59"></viz:color>
       </node>
       <node id="141" label="Yale Blue">
@@ -1420,8 +1421,8 @@
           <attvalue for="1" value="#0F4D92"></attvalue>
           <attvalue for="myColor" value="#0F4D92"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-28.271244" y="169.68736" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="244.62909" y="232.75093" z="0.0"></viz:position>
         <viz:color r="15" g="77" b="146"></viz:color>
       </node>
       <node id="142" label="Fawn (colour)">
@@ -1430,8 +1431,8 @@
           <attvalue for="1" value="#E5AA70"></attvalue>
           <attvalue for="myColor" value="#E5AA70"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="84.771324" y="-150.78354" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-326.05377" y="-87.77996" z="0.0"></viz:position>
         <viz:color r="229" g="170" b="112"></viz:color>
       </node>
       <node id="143" label="Maya Blue">
@@ -1440,8 +1441,8 @@
           <attvalue for="1" value="#73C2FB"></attvalue>
           <attvalue for="myColor" value="#73C2FB"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-14.425175" y="138.78778" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="306.41998" y="-141.85617" z="0.0"></viz:position>
         <viz:color r="115" g="194" b="251"></viz:color>
       </node>
       <node id="144" label="Millettia laurentii">
@@ -1450,8 +1451,8 @@
           <attvalue for="1" value="#645452"></attvalue>
           <attvalue for="myColor" value="#645452"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="189.79785" y="129.01193" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="337.44992" y="-11.997475" z="0.0"></viz:position>
         <viz:color r="100" g="84" b="82"></viz:color>
       </node>
       <node id="145" label="NIVO">
@@ -1460,8 +1461,8 @@
           <attvalue for="1" value="#414C41"></attvalue>
           <attvalue for="myColor" value="#414C41"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="166.91457" y="126.73236" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="315.72052" y="119.73699" z="0.0"></viz:position>
         <viz:color r="65" g="76" b="65"></viz:color>
       </node>
       <node id="146" label="Spring bud">
@@ -1470,8 +1471,8 @@
           <attvalue for="1" value="#A7FC00"></attvalue>
           <attvalue for="myColor" value="#A7FC00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="94.95894" y="170.72734" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="19.189655" y="-337.1174" z="0.0"></viz:position>
         <viz:color r="167" g="252" b="0"></viz:color>
       </node>
       <node id="147" label="Jungle green">
@@ -1480,8 +1481,8 @@
           <attvalue for="1" value="#29AB87"></attvalue>
           <attvalue for="myColor" value="#29AB87"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="137.4566" y="134.49742" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="295.57214" y="163.259" z="0.0"></viz:position>
         <viz:color r="41" g="171" b="135"></viz:color>
       </node>
       <node id="148" label="Air Force blue">
@@ -1490,8 +1491,8 @@
           <attvalue for="1" value="#5D8AA8"></attvalue>
           <attvalue for="myColor" value="#5D8AA8"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-112.6345" y="21.520922" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="336.63162" y="26.373112" z="0.0"></viz:position>
         <viz:color r="93" g="138" b="168"></viz:color>
       </node>
       <node id="149" label="Electric blue (color)">
@@ -1500,8 +1501,8 @@
           <attvalue for="1" value="#7DF9FF"></attvalue>
           <attvalue for="myColor" value="#7DF9FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-187.73213" y="80.786705" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="288.34314" y="-175.71173" z="0.0"></viz:position>
         <viz:color r="125" g="249" b="255"></viz:color>
       </node>
       <node id="150" label="Carolina blue">
@@ -1510,8 +1511,8 @@
           <attvalue for="1" value="#56A0D3"></attvalue>
           <attvalue for="myColor" value="#56A0D3"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="27.32981" y="164.86098" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="334.58875" y="45.46152" z="0.0"></viz:position>
         <viz:color r="86" g="160" b="211"></viz:color>
       </node>
       <node id="151" label="Glaucous">
@@ -1520,8 +1521,8 @@
           <attvalue for="1" value="#6082B6"></attvalue>
           <attvalue for="myColor" value="#6082B6"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="110.31288" y="137.44527" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="337.24527" y="16.79307" z="0.0"></viz:position>
         <viz:color r="96" g="130" b="182"></viz:color>
       </node>
       <node id="152" label="Eton blue">
@@ -1530,8 +1531,8 @@
           <attvalue for="1" value="#96C8A2"></attvalue>
           <attvalue for="myColor" value="#96C8A2"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-54.185566" y="177.07375" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="85.46027" y="-326.66946" z="0.0"></viz:position>
         <viz:color r="150" g="200" b="162"></viz:color>
       </node>
       <node id="153" label="Cambridge Blue (colour)">
@@ -1540,8 +1541,8 @@
           <attvalue for="1" value="#A3C1AD"></attvalue>
           <attvalue for="myColor" value="#A3C1AD"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-88.74082" y="143.36415" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="57.321056" y="-332.7622" z="0.0"></viz:position>
         <viz:color r="163" g="193" b="173"></viz:color>
       </node>
       <node id="154" label="Electric green">
@@ -1550,8 +1551,8 @@
           <attvalue for="1" value="#00FF00"></attvalue>
           <attvalue for="myColor" value="#00FF00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="176.55495" y="35.42384" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="185.84589" y="281.91788" z="0.0"></viz:position>
         <viz:color r="0" g="255" b="0"></viz:color>
       </node>
       <node id="155" label="Green in Islam">
@@ -1560,8 +1561,8 @@
           <attvalue for="1" value="#009900"></attvalue>
           <attvalue for="myColor" value="#009900"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="114.867424" y="114.95811" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="161.15407" y="296.72504" z="0.0"></viz:position>
         <viz:color r="0" g="153" b="0"></viz:color>
       </node>
       <node id="156" label="Shades of green">
@@ -1570,8 +1571,8 @@
           <attvalue for="1" value="#00FF00"></attvalue>
           <attvalue for="myColor" value="#00FF00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="52.374016" y="97.55429" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="177.75673" y="287.08698" z="0.0"></viz:position>
         <viz:color r="0" g="255" b="0"></viz:color>
       </node>
       <node id="157" label="Lava (color)">
@@ -1580,8 +1581,8 @@
           <attvalue for="1" value="#483C32"></attvalue>
           <attvalue for="myColor" value="#483C32"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-170.50723" y="-102.54277" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="324.77304" y="92.4059" z="0.0"></viz:position>
         <viz:color r="72" g="60" b="50"></viz:color>
       </node>
       <node id="158" label="Ruby (color)">
@@ -1590,8 +1591,8 @@
           <attvalue for="1" value="#E0115F"></attvalue>
           <attvalue for="myColor" value="#E0115F"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-115.96206" y="-2.5186605" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-283.2317" y="-183.83742" z="0.0"></viz:position>
         <viz:color r="224" g="17" b="95"></viz:color>
       </node>
       <node id="159" label="Shades of red">
@@ -1600,8 +1601,8 @@
           <attvalue for="1" value="#FF0000"></attvalue>
           <attvalue for="myColor" value="#FF0000"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-71.919106" y="105.113884" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-280.58984" y="187.84496" z="0.0"></viz:position>
         <viz:color r="255" g="0" b="0"></viz:color>
       </node>
       <node id="160" label="Candy apple red (color)">
@@ -1610,8 +1611,8 @@
           <attvalue for="1" value="#FF0800"></attvalue>
           <attvalue for="myColor" value="#FF0800"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-194.53209" y="-91.833496" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-244.62909" y="232.75093" z="0.0"></viz:position>
         <viz:color r="255" g="8" b="0"></viz:color>
       </node>
       <node id="161" label="Cordovan (color)">
@@ -1620,8 +1621,8 @@
           <attvalue for="1" value="#893F45"></attvalue>
           <attvalue for="myColor" value="#893F45"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-89.69282" y="-133.2584" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="181.81967" y="-284.5312" z="0.0"></viz:position>
         <viz:color r="137" g="63" b="69"></viz:color>
       </node>
       <node id="162" label="Fulvous">
@@ -1630,8 +1631,8 @@
           <attvalue for="1" value="#E48400"></attvalue>
           <attvalue for="myColor" value="#E48400"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="2.3658288" y="-162.41606" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-313.98657" y="-124.21282" z="0.0"></viz:position>
         <viz:color r="228" g="132" b="0"></viz:color>
       </node>
       <node id="163" label="Cinereous">
@@ -1640,8 +1641,8 @@
           <attvalue for="1" value="#98817B"></attvalue>
           <attvalue for="myColor" value="#98817B"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="178.8617" y="-83.777855" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="76.13955" y="-328.9668" z="0.0"></viz:position>
         <viz:color r="152" g="129" b="123"></viz:color>
       </node>
       <node id="164" label="Wine (color)">
@@ -1650,8 +1651,8 @@
           <attvalue for="1" value="#722F37"></attvalue>
           <attvalue for="myColor" value="#722F37"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-193.21658" y="-58.43162" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="313.98657" y="-124.21282" z="0.0"></viz:position>
         <viz:color r="114" g="47" b="55"></viz:color>
       </node>
       <node id="165" label="White">
@@ -1660,8 +1661,8 @@
           <attvalue for="1" value="#FFFFFF"></attvalue>
           <attvalue for="myColor" value="#FFFFFF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="147.87811" y="26.20096" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-4.7998385" y="337.629" z="0.0"></viz:position>
         <viz:color r="255" g="255" b="255"></viz:color>
       </node>
       <node id="166" label="Duke blue">
@@ -1670,8 +1671,8 @@
           <attvalue for="1" value="#001A57"></attvalue>
           <attvalue for="myColor" value="#001A57"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="36.131824" y="187.55121" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="71.455635" y="330.01587" z="0.0"></viz:position>
         <viz:color r="0" g="26" b="87"></viz:color>
       </node>
       <node id="167" label="Mikado yellow">
@@ -1680,8 +1681,8 @@
           <attvalue for="1" value="#FFC40C"></attvalue>
           <attvalue for="myColor" value="#FFC40C"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="195.95981" y="-8.490306" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-152.65398" y="301.18625" z="0.0"></viz:position>
         <viz:color r="255" g="196" b="12"></viz:color>
       </node>
       <node id="168" label="Carnelian (color)">
@@ -1690,8 +1691,8 @@
           <attvalue for="1" value="#B31B1B"></attvalue>
           <attvalue for="myColor" value="#B31B1B"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-170.51926" y="-69.71722" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-28.765095" y="-336.43567" z="0.0"></viz:position>
         <viz:color r="179" g="27" b="27"></viz:color>
       </node>
       <node id="169" label="Shades of pink">
@@ -1700,8 +1701,8 @@
           <attvalue for="1" value="#FFC0CB"></attvalue>
           <attvalue for="myColor" value="#FFC0CB"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-153.34409" y="-115.54487" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-161.15407" y="296.72504" z="0.0"></viz:position>
         <viz:color r="255" g="192" b="203"></viz:color>
       </node>
       <node id="170" label="Turkey red">
@@ -1710,8 +1711,8 @@
           <attvalue for="1" value="#A91101"></attvalue>
           <attvalue for="myColor" value="#A91101"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-161.64027" y="50.900787" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="1.7374029E-12" y="-337.66312" z="0.0"></viz:position>
         <viz:color r="169" g="17" b="1"></viz:color>
       </node>
       <node id="171" label="Portland Orange">
@@ -1720,8 +1721,8 @@
           <attvalue for="1" value="#FF5A36"></attvalue>
           <attvalue for="myColor" value="#FF5A36"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="112.32594" y="-165.74657" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-216.63684" y="259.00745" z="0.0"></viz:position>
         <viz:color r="255" g="90" b="54"></viz:color>
       </node>
       <node id="172" label="Bronze (color)">
@@ -1730,8 +1731,8 @@
           <attvalue for="1" value="#CD7F32"></attvalue>
           <attvalue for="myColor" value="#CD7F32"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-78.365105" y="-176.30734" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-212.9332" y="-262.06076" z="0.0"></viz:position>
         <viz:color r="205" g="127" b="50"></viz:color>
       </node>
       <node id="173" label="Shades of magenta">
@@ -1740,8 +1741,8 @@
           <attvalue for="1" value="#FF00FF"></attvalue>
           <attvalue for="myColor" value="#FF00FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-39.696487" y="114.68668" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-263.5676" y="211.0652" z="0.0"></viz:position>
         <viz:color r="255" g="0" b="255"></viz:color>
       </node>
       <node id="174" label="Plum (color)">
@@ -1750,8 +1751,8 @@
           <attvalue for="1" value="#8E4585"></attvalue>
           <attvalue for="myColor" value="#8E4585"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-201.60326" y="-14.177663" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="165.3557" y="-294.40427" z="0.0"></viz:position>
         <viz:color r="142" g="69" b="133"></viz:color>
       </node>
       <node id="175" label="Tuscan red">
@@ -1760,8 +1761,8 @@
           <attvalue for="1" value="#7C3030"></attvalue>
           <attvalue for="myColor" value="#7C3030"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-174.92014" y="-126.22493" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="293.22156" y="-167.44403" z="0.0"></viz:position>
         <viz:color r="124" g="48" b="48"></viz:color>
       </node>
       <node id="176" label="Desert sand (color)">
@@ -1770,8 +1771,8 @@
           <attvalue for="1" value="#EDC9AF"></attvalue>
           <attvalue for="myColor" value="#EDC9AF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="97.32374" y="-104.91689" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-336.9725" y="-21.585272" z="0.0"></viz:position>
         <viz:color r="237" g="201" b="175"></viz:color>
       </node>
       <node id="177" label="Camel (color)">
@@ -1780,8 +1781,8 @@
           <attvalue for="1" value="#C19A6B"></attvalue>
           <attvalue for="myColor" value="#C19A6B"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-30.173931" y="-216.07767" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-94.71193" y="-324.10806" z="0.0"></viz:position>
         <viz:color r="193" g="154" b="107"></viz:color>
       </node>
       <node id="178" label="Byzantium (color)">
@@ -1790,8 +1791,8 @@
           <attvalue for="1" value="#702963"></attvalue>
           <attvalue for="myColor" value="#702963"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-127.4675" y="65.3487" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="326.05377" y="-87.77996" z="0.0"></viz:position>
         <viz:color r="112" g="41" b="99"></viz:color>
       </node>
       <node id="179" label="Midnight green">
@@ -1800,8 +1801,8 @@
           <attvalue for="1" value="#004953"></attvalue>
           <attvalue for="myColor" value="#004953"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="58.92505" y="171.59453" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="117.48995" y="316.56357" z="0.0"></viz:position>
         <viz:color r="0" g="73" b="83"></viz:color>
       </node>
       <node id="180" label="Blue-gray">
@@ -1810,8 +1811,8 @@
           <attvalue for="1" value="#6699CC"></attvalue>
           <attvalue for="myColor" value="#6699CC"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="84.458374" y="36.691143" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="335.20117" y="-40.700794" z="0.0"></viz:position>
         <viz:color r="102" g="153" b="204"></viz:color>
       </node>
       <node id="181" label="Straw (colour)">
@@ -1820,8 +1821,8 @@
           <attvalue for="1" value="#E4D96F"></attvalue>
           <attvalue for="myColor" value="#E4D96F"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="172.4681" y="-115.59614" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-323.4267" y="-97.013176" z="0.0"></viz:position>
         <viz:color r="228" g="217" b="111"></viz:color>
       </node>
       <node id="182" label="Citrine (colour)">
@@ -1830,8 +1831,8 @@
           <attvalue for="1" value="#E4D00A"></attvalue>
           <attvalue for="myColor" value="#E4D00A"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-19.607279" y="-118.721405" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-320.5382" y="-106.16798" z="0.0"></viz:position>
         <viz:color r="228" g="208" b="10"></viz:color>
       </node>
       <node id="183" label="Platinum (color)">
@@ -1840,8 +1841,8 @@
           <attvalue for="1" value="#E5E4E2"></attvalue>
           <attvalue for="myColor" value="#E5E4E2"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-6.603503" y="-139.87029" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-328.41733" y="-78.47579" z="0.0"></viz:position>
         <viz:color r="229" g="228" b="226"></viz:color>
       </node>
       <node id="184" label="Sunset (color)">
@@ -1850,8 +1851,8 @@
           <attvalue for="1" value="#FAD6A5"></attvalue>
           <attvalue for="myColor" value="#FAD6A5"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="35.89171" y="-209.32721" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-308.40552" y="137.48611" z="0.0"></viz:position>
         <viz:color r="250" g="214" b="165"></viz:color>
       </node>
       <node id="185" label="Isabelline (colour)">
@@ -1860,8 +1861,8 @@
           <attvalue for="1" value="#F4F0EC"></attvalue>
           <attvalue for="myColor" value="#F4F0EC"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="128.5026" y="-109.21631" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-329.49966" y="73.79945" z="0.0"></viz:position>
         <viz:color r="244" g="240" b="236"></viz:color>
       </node>
       <node id="186" label="Shades of yellow">
@@ -1870,8 +1871,8 @@
           <attvalue for="1" value="#FFFF00"></attvalue>
           <attvalue for="myColor" value="#FFFF00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="153.5145" y="47.20626" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-43.082245" y="334.90344" z="0.0"></viz:position>
         <viz:color r="255" g="255" b="0"></viz:color>
       </node>
       <node id="187" label="Tawny (color)">
@@ -1880,8 +1881,8 @@
           <attvalue for="1" value="#CD5700"></attvalue>
           <attvalue for="myColor" value="#CD5700"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-37.405678" y="-143.73553" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-197.69595" y="-273.73837" z="0.0"></viz:position>
         <viz:color r="205" g="87" b="0"></viz:color>
       </node>
       <node id="188" label="Alizarin crimson (color)">
@@ -1890,8 +1891,8 @@
           <attvalue for="1" value="#E32636"></attvalue>
           <attvalue for="myColor" value="#E32636"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-143.9435" y="-85.46531" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-302.26364" y="-150.50941" z="0.0"></viz:position>
         <viz:color r="227" g="38" b="54"></viz:color>
       </node>
       <node id="189" label="Bleu de France (colour)">
@@ -1900,8 +1901,8 @@
           <attvalue for="1" value="#318CE7"></attvalue>
           <attvalue for="myColor" value="#318CE7"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-90.64781" y="188.88344" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="300.09363" y="154.79083" z="0.0"></viz:position>
         <viz:color r="49" g="140" b="231"></viz:color>
       </node>
       <node id="190" label="Stil de grain yellow">
@@ -1910,8 +1911,8 @@
           <attvalue for="1" value="#FADA5E"></attvalue>
           <attvalue for="myColor" value="#FADA5E"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-128.12958" y="47.39597" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-304.37256" y="146.19756" z="0.0"></viz:position>
         <viz:color r="250" g="218" b="94"></viz:color>
       </node>
       <node id="191" label="Cadet grey">
@@ -1920,8 +1921,8 @@
           <attvalue for="1" value="#91A3B0"></attvalue>
           <attvalue for="myColor" value="#91A3B0"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="188.10977" y="104.23432" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="139.67467" y="-307.4205" z="0.0"></viz:position>
         <viz:color r="145" g="163" b="176"></viz:color>
       </node>
       <node id="192" label="Tufts Blue">
@@ -1930,8 +1931,8 @@
           <attvalue for="1" value="#417DC1"></attvalue>
           <attvalue for="myColor" value="#417DC1"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-62.066525" y="132.9607" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="318.99667" y="110.71366" z="0.0"></viz:position>
         <viz:color r="65" g="125" b="193"></viz:color>
       </node>
       <node id="193" label="UCLA Blue">
@@ -1940,8 +1941,8 @@
           <attvalue for="1" value="#536895"></attvalue>
           <attvalue for="myColor" value="#536895"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-79.564575" y="167.61511" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="333.16122" y="54.954464" z="0.0"></viz:position>
         <viz:color r="83" g="104" b="149"></viz:color>
       </node>
       <node id="194" label="Vanilla (color)">
@@ -1950,8 +1951,8 @@
           <attvalue for="1" value="#F3E5AB"></attvalue>
           <attvalue for="myColor" value="#F3E5AB"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="153.31924" y="-98.44985" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-334.58875" y="45.46152" z="0.0"></viz:position>
         <viz:color r="243" g="229" b="171"></viz:color>
       </node>
       <node id="195" label="Shades of blue">
@@ -1960,8 +1961,8 @@
           <attvalue for="1" value="#0000FF"></attvalue>
           <attvalue for="myColor" value="#0000FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-4.0711923" y="158.20131" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="33.54458" y="335.99277" z="0.0"></viz:position>
         <viz:color r="0" g="0" b="255"></viz:color>
       </node>
       <node id="196" label="True Blue (color)">
@@ -1970,8 +1971,8 @@
           <attvalue for="1" value="#0073CF"></attvalue>
           <attvalue for="myColor" value="#0073CF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-98.201035" y="117.16905" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="126.44138" y="313.09576" z="0.0"></viz:position>
         <viz:color r="0" g="115" b="207"></viz:color>
       </node>
       <node id="197" label="Shades of white">
@@ -1980,8 +1981,8 @@
           <attvalue for="1" value="#FFFFFF"></attvalue>
           <attvalue for="myColor" value="#FFFFFF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="77.70735" y="-42.6949" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-14.395636" y="337.3561" z="0.0"></viz:position>
         <viz:color r="255" g="255" b="255"></viz:color>
       </node>
       <node id="198" label="Jasmine (color)">
@@ -1990,8 +1991,8 @@
           <attvalue for="1" value="#F8DE7E"></attvalue>
           <attvalue for="myColor" value="#F8DE7E"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="150.45993" y="-155.53122" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-318.99667" y="110.71366" z="0.0"></viz:position>
         <viz:color r="248" g="222" b="126"></viz:color>
       </node>
       <node id="199" label="Alice blue">
@@ -2000,8 +2001,8 @@
           <attvalue for="1" value="#F0F8FF"></attvalue>
           <attvalue for="myColor" value="#F0F8FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-165.85756" y="27.842398" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-336.63162" y="26.373112" z="0.0"></viz:position>
         <viz:color r="240" g="248" b="255"></viz:color>
       </node>
       <node id="200" label="Shades of gray">
@@ -2010,8 +2011,8 @@
           <attvalue for="1" value="#808080"></attvalue>
           <attvalue for="myColor" value="#808080"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="142.79187" y="-8.2354355" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="227.48218" y="-249.53606" z="0.0"></viz:position>
         <viz:color r="128" g="128" b="128"></viz:color>
       </node>
       <node id="201" label="Coffee (color)">
@@ -2020,8 +2021,8 @@
           <attvalue for="1" value="#6F4E37"></attvalue>
           <attvalue for="myColor" value="#6F4E37"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="110.351944" y="-195.05453" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="328.41733" y="-78.47579" z="0.0"></viz:position>
         <viz:color r="111" g="78" b="55"></viz:color>
       </node>
       <node id="202" label="Lion (color)">
@@ -2030,8 +2031,8 @@
           <attvalue for="1" value="#C19A6B"></attvalue>
           <attvalue for="myColor" value="#C19A6B"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-76.47314" y="-151.26402" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-85.46027" y="-326.66946" z="0.0"></viz:position>
         <viz:color r="193" g="154" b="107"></viz:color>
       </node>
       <node id="203" label="Shades of cyan">
@@ -2040,8 +2041,8 @@
           <attvalue for="1" value="#00FFFF"></attvalue>
           <attvalue for="myColor" value="#00FFFF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-142.47733" y="136.06946" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="209.18652" y="265.0611" z="0.0"></viz:position>
         <viz:color r="0" g="255" b="255"></viz:color>
       </node>
       <node id="204" label="Shades of violet">
@@ -2050,8 +2051,8 @@
           <attvalue for="1" value="#8F00FF"></attvalue>
           <attvalue for="myColor" value="#8F00FF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="14.1018" y="71.672935" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="156.91988" y="-298.98584" z="0.0"></viz:position>
         <viz:color r="143" g="0" b="255"></viz:color>
       </node>
       <node id="205" label="Shades of purple">
@@ -2060,8 +2061,8 @@
           <attvalue for="1" value="#800080"></attvalue>
           <attvalue for="myColor" value="#800080"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-86.20943" y="86.29725" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="254.32957" y="-222.11" z="0.0"></viz:position>
         <viz:color r="128" g="0" b="128"></viz:color>
       </node>
       <node id="206" label="Sky blue">
@@ -2070,8 +2071,8 @@
           <attvalue for="1" value="#87CEEB"></attvalue>
           <attvalue for="myColor" value="#87CEEB"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-101.67896" y="58.868473" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="197.69595" y="-273.73837" z="0.0"></viz:position>
         <viz:color r="135" g="206" b="235"></viz:color>
       </node>
       <node id="207" label="Shades of brown">
@@ -2080,8 +2081,8 @@
           <attvalue for="1" value="#964B00"></attvalue>
           <attvalue for="myColor" value="#964B00"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="153.2485" y="-126.28187" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="103.88703" y="-321.28473" z="0.0"></viz:position>
         <viz:color r="150" g="75" b="0"></viz:color>
       </node>
       <node id="208" label="Harvest gold (color)">
@@ -2090,8 +2091,8 @@
           <attvalue for="1" value="#E6A817"></attvalue>
           <attvalue for="myColor" value="#E6A817"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="90.53116" y="-181.37598" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-330.5154" y="-69.1082" z="0.0"></viz:position>
         <viz:color r="230" g="168" b="23"></viz:color>
       </node>
       <node id="209" label="Oxford Blue (colour)">
@@ -2100,8 +2101,8 @@
           <attvalue for="1" value="#002147"></attvalue>
           <attvalue for="myColor" value="#002147"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-36.733097" y="148.54665" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="80.808075" y="327.85126" z="0.0"></viz:position>
         <viz:color r="0" g="33" b="71"></viz:color>
       </node>
       <node id="210" label="Shades of black">
@@ -2110,8 +2111,9 @@
           <attvalue for="1" value="#000000"></attvalue>
           <attvalue for="myColor" value="#000000"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="144.18123" y="68.000694" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="4.7998385" y="337.629" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
       </node>
       <node id="211" label="Baker-Miller Pink">
         <attvalues>
@@ -2119,8 +2121,8 @@
           <attvalue for="1" value="#FF91AF"></attvalue>
           <attvalue for="myColor" value="#FF91AF"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-218.05518" y="5.665301" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-185.84589" y="281.91788" z="0.0"></viz:position>
         <viz:color r="255" g="145" b="175"></viz:color>
       </node>
       <node id="212" label="Indian red (color)">
@@ -2129,8 +2131,8 @@
           <attvalue for="1" value="#CD5C5C"></attvalue>
           <attvalue for="myColor" value="#CD5C5C"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-70.793846" y="-121.149025" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-205.39758" y="-268.00787" z="0.0"></viz:position>
         <viz:color r="205" g="92" b="92"></viz:color>
       </node>
       <node id="213" label="Citron (color)">
@@ -2139,8 +2141,8 @@
           <attvalue for="1" value="#9FA91F"></attvalue>
           <attvalue for="myColor" value="#9FA91F"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="171.74854" y="-59.59415" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="66.75728" y="-330.99826" z="0.0"></viz:position>
         <viz:color r="159" g="169" b="31"></viz:color>
       </node>
       <node id="214" label="List of national symbols of Nepal">
@@ -2149,8 +2151,8 @@
           <attvalue for="1" value="#DC143C"></attvalue>
           <attvalue for="myColor" value="#DC143C"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-114.61812" y="-163.77092" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-254.32957" y="-222.11" z="0.0"></viz:position>
         <viz:color r="220" g="20" b="60"></viz:color>
       </node>
       <node id="215" label="Coyote brown">
@@ -2159,8 +2161,8 @@
           <attvalue for="1" value="#81613E"></attvalue>
           <attvalue for="myColor" value="#81613E"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="201.88527" y="-86.57308" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="212.9332" y="-262.06076" z="0.0"></viz:position>
         <viz:color r="129" g="97" b="62"></viz:color>
       </node>
       <node id="216" label="Mulberry (color)">
@@ -2169,8 +2171,8 @@
           <attvalue for="1" value="#C54B8C"></attvalue>
           <attvalue for="myColor" value="#C54B8C"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-162.47586" y="4.2321773" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-139.67467" y="-307.4205" z="0.0"></viz:position>
         <viz:color r="197" g="75" b="140"></viz:color>
       </node>
       <node id="217" label="BISU Visual Identity">
@@ -2179,8 +2181,8 @@
           <attvalue for="1" value="#A8392A"></attvalue>
           <attvalue for="myColor" value="#A8392A"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="29.083273" y="210.95837" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="9.598707" y="-337.52667" z="0.0"></viz:position>
         <viz:color r="168" g="57" b="42"></viz:color>
       </node>
       <node id="218" label="Acid green">
@@ -2189,8 +2191,8 @@
           <attvalue for="1" value="#B0BF1A"></attvalue>
           <attvalue for="myColor" value="#B0BF1A"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="196.15985" y="58.117435" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="-9.598707" y="-337.52667" z="0.0"></viz:position>
         <viz:color r="176" g="191" b="26"></viz:color>
       </node>
       <node id="219" label="Android green">
@@ -2199,8 +2201,8 @@
           <attvalue for="1" value="#A4C639"></attvalue>
           <attvalue for="myColor" value="#A4C639"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="199.80478" y="80.92846" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="47.8385" y="-334.25717" z="0.0"></viz:position>
         <viz:color r="164" g="198" b="57"></viz:color>
       </node>
       <node id="220" label="Kobicha">
@@ -2209,8 +2211,8 @@
           <attvalue for="1" value="#6B4423"></attvalue>
           <attvalue for="myColor" value="#6B4423"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="197.5983" y="-60.95275" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="332.34637" y="-59.684753" z="0.0"></viz:position>
         <viz:color r="107" g="68" b="35"></viz:color>
       </node>
       <node id="221" label="Federal Standard 595 camouflage colours">
@@ -2219,18 +2221,9 @@
           <attvalue for="1" value="#92989F"></attvalue>
           <attvalue for="myColor" value="#92989F"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="214.67363" y="15.417191" z="0.0"></viz:position>
+        <viz:size value="4.0"></viz:size>
+        <viz:position x="130.87923" y="-311.26678" z="0.0"></viz:position>
         <viz:color r="146" g="152" b="159"></viz:color>
-      </node>
-      <node id="138" label="Rich black">
-        <attvalues>
-          <attvalue for="0" value="Infobox color"></attvalue>
-          <attvalue for="1" value="none"></attvalue>
-        </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-0.41359723" y="187.12103" z="0.0"></viz:position>
-        <viz:color r="153" g="153" b="153"></viz:color>
       </node>
     </nodes>
     <edges>
@@ -2249,13 +2242,7 @@
       <edge id="0" source="0" target="5">
         <attvalues></attvalues>
       </edge>
-      <edge id="0" source="0" target="210">
-        <attvalues></attvalues>
-      </edge>
       <edge id="6" source="0" target="138">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="4" source="1" target="0">
         <attvalues></attvalues>
       </edge>
       <edge id="9" source="1" target="2">
@@ -2264,22 +2251,10 @@
       <edge id="10" source="1" target="8">
         <attvalues></attvalues>
       </edge>
-      <edge id="2" source="1" target="33">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="3" source="1" target="45">
-        <attvalues></attvalues>
-      </edge>
       <edge id="5" source="1" target="56">
         <attvalues></attvalues>
       </edge>
       <edge id="8" source="1" target="57">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="6" source="1" target="96">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="1" source="1" target="105">
         <attvalues></attvalues>
       </edge>
       <edge id="7" source="1" target="126">
@@ -2309,9 +2284,6 @@
       <edge id="21" source="4" target="3">
         <attvalues></attvalues>
       </edge>
-      <edge id="7" source="4" target="4">
-        <attvalues></attvalues>
-      </edge>
       <edge id="24" source="4" target="5">
         <attvalues></attvalues>
       </edge>
@@ -2328,9 +2300,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="18" source="4" target="159">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="8" source="4" target="197">
         <attvalues></attvalues>
       </edge>
       <edge id="17" source="4" target="204">
@@ -2375,54 +2344,6 @@
       <edge id="34" source="5" target="188">
         <attvalues></attvalues>
       </edge>
-      <edge id="21" source="6" target="0">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="14" source="6" target="1">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="10" source="6" target="5">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="13" source="6" target="7">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="12" source="6" target="8">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="11" source="6" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="26" source="6" target="10">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="27" source="6" target="24">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="17" source="6" target="33">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="20" source="6" target="45">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="19" source="6" target="48">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="22" source="6" target="56">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="25" source="6" target="57">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="23" source="6" target="96">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="15" source="6" target="105">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="24" source="6" target="126">
-        <attvalues></attvalues>
-      </edge>
       <edge id="44" source="7" target="12">
         <attvalues></attvalues>
       </edge>
@@ -2456,16 +2377,7 @@
       <edge id="58" source="9" target="4">
         <attvalues></attvalues>
       </edge>
-      <edge id="34" source="9" target="5">
-        <attvalues></attvalues>
-      </edge>
       <edge id="62" source="9" target="8">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="28" source="9" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="33" source="9" target="10">
         <attvalues></attvalues>
       </edge>
       <edge id="56" source="9" target="11">
@@ -2474,13 +2386,7 @@
       <edge id="65" source="9" target="15">
         <attvalues></attvalues>
       </edge>
-      <edge id="29" source="9" target="24">
-        <attvalues></attvalues>
-      </edge>
       <edge id="55" source="9" target="30">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="35" source="9" target="33">
         <attvalues></attvalues>
       </edge>
       <edge id="63" source="9" target="37">
@@ -2504,9 +2410,6 @@
       <edge id="52" source="9" target="109">
         <attvalues></attvalues>
       </edge>
-      <edge id="30" source="9" target="153">
-        <attvalues></attvalues>
-      </edge>
       <edge id="51" source="9" target="158">
         <attvalues></attvalues>
       </edge>
@@ -2522,46 +2425,13 @@
       <edge id="64" source="9" target="205">
         <attvalues></attvalues>
       </edge>
-      <edge id="31" source="9" target="209">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="39" source="10" target="7">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="38" source="10" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="37" source="10" target="11">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="36" source="10" target="12">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="40" source="10" target="30">
-        <attvalues></attvalues>
-      </edge>
       <edge id="67" source="10" target="31">
         <attvalues></attvalues>
       </edge>
       <edge id="66" source="10" target="48">
         <attvalues></attvalues>
       </edge>
-      <edge id="45" source="11" target="5">
-        <attvalues></attvalues>
-      </edge>
       <edge id="70" source="11" target="8">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="42" source="11" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="46" source="11" target="10">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="43" source="11" target="11">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="41" source="11" target="12">
         <attvalues></attvalues>
       </edge>
       <edge id="68" source="11" target="37">
@@ -2573,61 +2443,13 @@
       <edge id="71" source="11" target="109">
         <attvalues></attvalues>
       </edge>
-      <edge id="44" source="11" target="148">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="50" source="12" target="10">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="47" source="12" target="12">
-        <attvalues></attvalues>
-      </edge>
       <edge id="74" source="12" target="23">
         <attvalues></attvalues>
       </edge>
       <edge id="72" source="12" target="50">
         <attvalues></attvalues>
       </edge>
-      <edge id="49" source="12" target="62">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="48" source="12" target="63">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="52" source="12" target="71">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="51" source="12" target="118">
-        <attvalues></attvalues>
-      </edge>
       <edge id="73" source="12" target="139">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="58" source="13" target="1">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="54" source="13" target="5">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="57" source="13" target="7">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="56" source="13" target="8">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="55" source="13" target="12">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="66" source="13" target="35">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="64" source="13" target="54">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="60" source="13" target="63">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="63" source="13" target="126">
         <attvalues></attvalues>
       </edge>
       <edge id="81" source="14" target="5">
@@ -2636,25 +2458,10 @@
       <edge id="75" source="14" target="6">
         <attvalues></attvalues>
       </edge>
-      <edge id="70" source="14" target="7">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="69" source="14" target="8">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="68" source="14" target="9">
-        <attvalues></attvalues>
-      </edge>
       <edge id="76" source="14" target="13">
         <attvalues></attvalues>
       </edge>
-      <edge id="67" source="14" target="15">
-        <attvalues></attvalues>
-      </edge>
       <edge id="79" source="14" target="16">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="73" source="14" target="18">
         <attvalues></attvalues>
       </edge>
       <edge id="77" source="14" target="22">
@@ -2666,16 +2473,10 @@
       <edge id="78" source="14" target="30">
         <attvalues></attvalues>
       </edge>
-      <edge id="74" source="14" target="109">
-        <attvalues></attvalues>
-      </edge>
       <edge id="97" source="15" target="5">
         <attvalues></attvalues>
       </edge>
       <edge id="82" source="15" target="7">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="75" source="15" target="9">
         <attvalues></attvalues>
       </edge>
       <edge id="94" source="15" target="14">
@@ -2777,12 +2578,6 @@
       <edge id="114" source="16" target="188">
         <attvalues></attvalues>
       </edge>
-      <edge id="79" source="17" target="1">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="78" source="17" target="4">
-        <attvalues></attvalues>
-      </edge>
       <edge id="123" source="17" target="5">
         <attvalues></attvalues>
       </edge>
@@ -2792,19 +2587,7 @@
       <edge id="120" source="17" target="17">
         <attvalues></attvalues>
       </edge>
-      <edge id="76" source="17" target="37">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="80" source="17" target="42">
-        <attvalues></attvalues>
-      </edge>
       <edge id="121" source="17" target="45">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="81" source="17" target="109">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="77" source="17" target="116">
         <attvalues></attvalues>
       </edge>
       <edge id="129" source="18" target="5">
@@ -2819,22 +2602,7 @@
       <edge id="124" source="18" target="18">
         <attvalues></attvalues>
       </edge>
-      <edge id="83" source="18" target="51">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="86" source="18" target="60">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="85" source="18" target="134">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="84" source="18" target="158">
-        <attvalues></attvalues>
-      </edge>
       <edge id="126" source="18" target="168">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="82" source="18" target="214">
         <attvalues></attvalues>
       </edge>
       <edge id="131" source="19" target="20">
@@ -2843,31 +2611,7 @@
       <edge id="130" source="19" target="21">
         <attvalues></attvalues>
       </edge>
-      <edge id="90" source="19" target="50">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="87" source="19" target="59">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="89" source="19" target="62">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="88" source="19" target="81">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="92" source="20" target="6">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="91" source="20" target="24">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="93" source="21" target="5">
-        <attvalues></attvalues>
-      </edge>
       <edge id="132" source="21" target="21">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="94" source="21" target="23">
         <attvalues></attvalues>
       </edge>
       <edge id="134" source="22" target="5">
@@ -2877,9 +2621,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="136" source="22" target="8">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="95" source="22" target="12">
         <attvalues></attvalues>
       </edge>
       <edge id="135" source="22" target="23">
@@ -2915,25 +2656,16 @@
       <edge id="145" source="23" target="50">
         <attvalues></attvalues>
       </edge>
-      <edge id="96" source="24" target="6">
-        <attvalues></attvalues>
-      </edge>
       <edge id="151" source="24" target="7">
         <attvalues></attvalues>
       </edge>
       <edge id="150" source="24" target="8">
         <attvalues></attvalues>
       </edge>
-      <edge id="98" source="24" target="10">
-        <attvalues></attvalues>
-      </edge>
       <edge id="153" source="24" target="14">
         <attvalues></attvalues>
       </edge>
       <edge id="149" source="24" target="15">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="97" source="24" target="20">
         <attvalues></attvalues>
       </edge>
       <edge id="155" source="24" target="37">
@@ -2978,16 +2710,10 @@
       <edge id="169" source="25" target="76">
         <attvalues></attvalues>
       </edge>
-      <edge id="100" source="25" target="88">
-        <attvalues></attvalues>
-      </edge>
       <edge id="162" source="25" target="107">
         <attvalues></attvalues>
       </edge>
       <edge id="161" source="25" target="109">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="99" source="25" target="148">
         <attvalues></attvalues>
       </edge>
       <edge id="160" source="25" target="158">
@@ -3029,31 +2755,16 @@
       <edge id="183" source="27" target="59">
         <attvalues></attvalues>
       </edge>
-      <edge id="101" source="27" target="118">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="103" source="28" target="0">
-        <attvalues></attvalues>
-      </edge>
       <edge id="192" source="28" target="1">
         <attvalues></attvalues>
       </edge>
-      <edge id="106" source="28" target="3">
-        <attvalues></attvalues>
-      </edge>
       <edge id="185" source="28" target="5">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="104" source="28" target="6">
         <attvalues></attvalues>
       </edge>
       <edge id="108" source="28" target="7">
         <attvalues></attvalues>
       </edge>
       <edge id="190" source="28" target="8">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="107" source="28" target="12">
         <attvalues></attvalues>
       </edge>
       <edge id="186" source="28" target="15">
@@ -3083,9 +2794,6 @@
       <edge id="196" source="28" target="109">
         <attvalues></attvalues>
       </edge>
-      <edge id="102" source="28" target="165">
-        <attvalues></attvalues>
-      </edge>
       <edge id="207" source="29" target="5">
         <attvalues></attvalues>
       </edge>
@@ -3113,22 +2821,13 @@
       <edge id="201" source="29" target="37">
         <attvalues></attvalues>
       </edge>
-      <edge id="109" source="29" target="96">
-        <attvalues></attvalues>
-      </edge>
       <edge id="203" source="29" target="109">
         <attvalues></attvalues>
       </edge>
       <edge id="204" source="29" target="134">
         <attvalues></attvalues>
       </edge>
-      <edge id="110" source="29" target="187">
-        <attvalues></attvalues>
-      </edge>
       <edge id="210" source="30" target="7">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="111" source="30" target="8">
         <attvalues></attvalues>
       </edge>
       <edge id="325" source="30" target="15">
@@ -3191,12 +2890,6 @@
       <edge id="342" source="33" target="11">
         <attvalues></attvalues>
       </edge>
-      <edge id="112" source="33" target="28">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="113" source="33" target="33">
-        <attvalues></attvalues>
-      </edge>
       <edge id="345" source="33" target="70">
         <attvalues></attvalues>
       </edge>
@@ -3212,9 +2905,6 @@
       <edge id="352" source="34" target="12">
         <attvalues></attvalues>
       </edge>
-      <edge id="114" source="34" target="22">
-        <attvalues></attvalues>
-      </edge>
       <edge id="355" source="34" target="58">
         <attvalues></attvalues>
       </edge>
@@ -3222,9 +2912,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="356" source="35" target="5">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="115" source="35" target="10">
         <attvalues></attvalues>
       </edge>
       <edge id="358" source="35" target="12">
@@ -3239,9 +2926,6 @@
       <edge id="218" source="35" target="36">
         <attvalues></attvalues>
       </edge>
-      <edge id="116" source="36" target="12">
-        <attvalues></attvalues>
-      </edge>
       <edge id="362" source="36" target="17">
         <attvalues></attvalues>
       </edge>
@@ -3252,12 +2936,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="365" source="37" target="5">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="118" source="37" target="8">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="117" source="37" target="11">
         <attvalues></attvalues>
       </edge>
       <edge id="219" source="37" target="15">
@@ -3296,9 +2974,6 @@
       <edge id="221" source="37" target="42">
         <attvalues></attvalues>
       </edge>
-      <edge id="119" source="37" target="58">
-        <attvalues></attvalues>
-      </edge>
       <edge id="377" source="38" target="5">
         <attvalues></attvalues>
       </edge>
@@ -3308,16 +2983,7 @@
       <edge id="375" source="38" target="27">
         <attvalues></attvalues>
       </edge>
-      <edge id="120" source="38" target="134">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="121" source="38" target="135">
-        <attvalues></attvalues>
-      </edge>
       <edge id="379" source="39" target="5">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="123" source="39" target="21">
         <attvalues></attvalues>
       </edge>
       <edge id="122" source="39" target="33">
@@ -3332,9 +2998,6 @@
       <edge id="386" source="40" target="18">
         <attvalues></attvalues>
       </edge>
-      <edge id="126" source="41" target="8">
-        <attvalues></attvalues>
-      </edge>
       <edge id="388" source="41" target="15">
         <attvalues></attvalues>
       </edge>
@@ -3342,12 +3005,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="125" source="41" target="30">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="127" source="41" target="41">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="124" source="41" target="59">
         <attvalues></attvalues>
       </edge>
       <edge id="394" source="42" target="18">
@@ -3368,9 +3025,6 @@
       <edge id="229" source="43" target="44">
         <attvalues></attvalues>
       </edge>
-      <edge id="128" source="43" target="207">
-        <attvalues></attvalues>
-      </edge>
       <edge id="399" source="44" target="21">
         <attvalues></attvalues>
       </edge>
@@ -3387,9 +3041,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="231" source="45" target="17">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="129" source="45" target="33">
         <attvalues></attvalues>
       </edge>
       <edge id="232" source="45" target="37">
@@ -3431,9 +3082,6 @@
       <edge id="247" source="46" target="60">
         <attvalues></attvalues>
       </edge>
-      <edge id="130" source="46" target="62">
-        <attvalues></attvalues>
-      </edge>
       <edge id="246" source="46" target="134">
         <attvalues></attvalues>
       </edge>
@@ -3449,16 +3097,10 @@
       <edge id="408" source="47" target="15">
         <attvalues></attvalues>
       </edge>
-      <edge id="131" source="47" target="109">
-        <attvalues></attvalues>
-      </edge>
       <edge id="412" source="48" target="17">
         <attvalues></attvalues>
       </edge>
       <edge id="411" source="48" target="18">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="132" source="48" target="48">
         <attvalues></attvalues>
       </edge>
       <edge id="415" source="49" target="9">
@@ -3500,12 +3142,6 @@
       <edge id="424" source="51" target="5">
         <attvalues></attvalues>
       </edge>
-      <edge id="135" source="51" target="18">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="134" source="51" target="21">
-        <attvalues></attvalues>
-      </edge>
       <edge id="421" source="51" target="27">
         <attvalues></attvalues>
       </edge>
@@ -3531,9 +3167,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="427" source="52" target="49">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="136" source="52" target="52">
         <attvalues></attvalues>
       </edge>
       <edge id="428" source="52" target="55">
@@ -3629,18 +3262,6 @@
       <edge id="274" source="58" target="30">
         <attvalues></attvalues>
       </edge>
-      <edge id="138" source="58" target="37">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="140" source="58" target="62">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="137" source="58" target="109">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="139" source="58" target="110">
-        <attvalues></attvalues>
-      </edge>
       <edge id="142" source="59" target="8">
         <attvalues></attvalues>
       </edge>
@@ -3648,9 +3269,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="461" source="59" target="24">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="141" source="59" target="41">
         <attvalues></attvalues>
       </edge>
       <edge id="276" source="59" target="55">
@@ -3680,12 +3298,6 @@
       <edge id="466" source="61" target="21">
         <attvalues></attvalues>
       </edge>
-      <edge id="143" source="61" target="76">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="144" source="61" target="109">
-        <attvalues></attvalues>
-      </edge>
       <edge id="477" source="62" target="5">
         <attvalues></attvalues>
       </edge>
@@ -3693,9 +3305,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="472" source="62" target="12">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="147" source="62" target="19">
         <attvalues></attvalues>
       </edge>
       <edge id="282" source="62" target="20">
@@ -3710,9 +3319,6 @@
       <edge id="286" source="62" target="26">
         <attvalues></attvalues>
       </edge>
-      <edge id="148" source="62" target="35">
-        <attvalues></attvalues>
-      </edge>
       <edge id="475" source="62" target="50">
         <attvalues></attvalues>
       </edge>
@@ -3722,13 +3328,7 @@
       <edge id="283" source="62" target="63">
         <attvalues></attvalues>
       </edge>
-      <edge id="145" source="62" target="64">
-        <attvalues></attvalues>
-      </edge>
       <edge id="280" source="62" target="65">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="146" source="62" target="195">
         <attvalues></attvalues>
       </edge>
       <edge id="478" source="63" target="12">
@@ -3737,37 +3337,19 @@
       <edge id="480" source="64" target="5">
         <attvalues></attvalues>
       </edge>
-      <edge id="149" source="64" target="7">
-        <attvalues></attvalues>
-      </edge>
       <edge id="481" source="64" target="12">
         <attvalues></attvalues>
       </edge>
       <edge id="483" source="64" target="22">
         <attvalues></attvalues>
       </edge>
-      <edge id="150" source="64" target="62">
-        <attvalues></attvalues>
-      </edge>
       <edge id="492" source="65" target="5">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="153" source="65" target="8">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="151" source="65" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="155" source="65" target="11">
         <attvalues></attvalues>
       </edge>
       <edge id="485" source="65" target="15">
         <attvalues></attvalues>
       </edge>
       <edge id="486" source="65" target="18">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="152" source="65" target="19">
         <attvalues></attvalues>
       </edge>
       <edge id="489" source="65" target="24">
@@ -3794,28 +3376,16 @@
       <edge id="494" source="66" target="23">
         <attvalues></attvalues>
       </edge>
-      <edge id="156" source="66" target="67">
-        <attvalues></attvalues>
-      </edge>
       <edge id="290" source="66" target="88">
         <attvalues></attvalues>
       </edge>
       <edge id="158" source="66" target="106">
         <attvalues></attvalues>
       </edge>
-      <edge id="157" source="66" target="128">
-        <attvalues></attvalues>
-      </edge>
       <edge id="289" source="66" target="148">
         <attvalues></attvalues>
       </edge>
-      <edge id="162" source="67" target="0">
-        <attvalues></attvalues>
-      </edge>
       <edge id="293" source="67" target="5">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="163" source="67" target="7">
         <attvalues></attvalues>
       </edge>
       <edge id="292" source="67" target="9">
@@ -3825,18 +3395,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="499" source="67" target="27">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="164" source="67" target="33">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="159" source="67" target="66">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="161" source="67" target="106">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="160" source="67" target="128">
         <attvalues></attvalues>
       </edge>
       <edge id="294" source="68" target="9">
@@ -3944,9 +3502,6 @@
       <edge id="317" source="71" target="109">
         <attvalues></attvalues>
       </edge>
-      <edge id="165" source="71" target="116">
-        <attvalues></attvalues>
-      </edge>
       <edge id="311" source="71" target="197">
         <attvalues></attvalues>
       </edge>
@@ -3983,12 +3538,6 @@
       <edge id="532" source="75" target="71">
         <attvalues></attvalues>
       </edge>
-      <edge id="166" source="75" target="120">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="167" source="76" target="9">
-        <attvalues></attvalues>
-      </edge>
       <edge id="537" source="76" target="17">
         <attvalues></attvalues>
       </edge>
@@ -4004,9 +3553,6 @@
       <edge id="544" source="78" target="11">
         <attvalues></attvalues>
       </edge>
-      <edge id="168" source="78" target="33">
-        <attvalues></attvalues>
-      </edge>
       <edge id="547" source="79" target="27">
         <attvalues></attvalues>
       </edge>
@@ -4016,19 +3562,10 @@
       <edge id="549" source="81" target="18">
         <attvalues></attvalues>
       </edge>
-      <edge id="170" source="81" target="19">
-        <attvalues></attvalues>
-      </edge>
       <edge id="550" source="81" target="21">
         <attvalues></attvalues>
       </edge>
       <edge id="552" source="81" target="50">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="169" source="81" target="164">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="171" source="82" target="8">
         <attvalues></attvalues>
       </edge>
       <edge id="553" source="82" target="15">
@@ -4079,9 +3616,6 @@
       <edge id="567" source="88" target="9">
         <attvalues></attvalues>
       </edge>
-      <edge id="172" source="88" target="25">
-        <attvalues></attvalues>
-      </edge>
       <edge id="570" source="88" target="66">
         <attvalues></attvalues>
       </edge>
@@ -4091,16 +3625,10 @@
       <edge id="571" source="89" target="12">
         <attvalues></attvalues>
       </edge>
-      <edge id="173" source="89" target="47">
-        <attvalues></attvalues>
-      </edge>
       <edge id="174" source="89" target="109">
         <attvalues></attvalues>
       </edge>
       <edge id="575" source="90" target="21">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="175" source="90" target="194">
         <attvalues></attvalues>
       </edge>
       <edge id="578" source="91" target="5">
@@ -4121,13 +3649,7 @@
       <edge id="582" source="93" target="21">
         <attvalues></attvalues>
       </edge>
-      <edge id="176" source="93" target="212">
-        <attvalues></attvalues>
-      </edge>
       <edge id="587" source="94" target="5">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="177" source="94" target="33">
         <attvalues></attvalues>
       </edge>
       <edge id="585" source="94" target="71">
@@ -4139,19 +3661,10 @@
       <edge id="588" source="95" target="9">
         <attvalues></attvalues>
       </edge>
-      <edge id="178" source="95" target="33">
-        <attvalues></attvalues>
-      </edge>
       <edge id="593" source="96" target="21">
         <attvalues></attvalues>
       </edge>
       <edge id="592" source="96" target="23">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="179" source="96" target="29">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="180" source="96" target="31">
         <attvalues></attvalues>
       </edge>
       <edge id="594" source="96" target="72">
@@ -4167,15 +3680,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="599" source="98" target="36">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="181" source="98" target="84">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="182" source="98" target="97">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="183" source="99" target="6">
         <attvalues></attvalues>
       </edge>
       <edge id="604" source="99" target="19">
@@ -4217,16 +3721,10 @@
       <edge id="617" source="103" target="21">
         <attvalues></attvalues>
       </edge>
-      <edge id="185" source="103" target="29">
-        <attvalues></attvalues>
-      </edge>
       <edge id="616" source="103" target="71">
         <attvalues></attvalues>
       </edge>
       <edge id="620" source="103" target="72">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="184" source="103" target="113">
         <attvalues></attvalues>
       </edge>
       <edge id="621" source="104" target="18">
@@ -4241,19 +3739,7 @@
       <edge id="629" source="106" target="18">
         <attvalues></attvalues>
       </edge>
-      <edge id="186" source="106" target="66">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="187" source="106" target="67">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="188" source="106" target="128">
-        <attvalues></attvalues>
-      </edge>
       <edge id="634" source="107" target="18">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="189" source="107" target="109">
         <attvalues></attvalues>
       </edge>
       <edge id="636" source="108" target="18">
@@ -4262,13 +3748,7 @@
       <edge id="646" source="109" target="5">
         <attvalues></attvalues>
       </edge>
-      <edge id="194" source="109" target="8">
-        <attvalues></attvalues>
-      </edge>
       <edge id="637" source="109" target="15">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="190" source="109" target="17">
         <attvalues></attvalues>
       </edge>
       <edge id="638" source="109" target="18">
@@ -4284,15 +3764,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="641" source="109" target="45">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="192" source="109" target="58">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="193" source="109" target="134">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="195" source="110" target="2">
         <attvalues></attvalues>
       </edge>
       <edge id="647" source="110" target="5">
@@ -4322,13 +3793,7 @@
       <edge id="662" source="113" target="36">
         <attvalues></attvalues>
       </edge>
-      <edge id="196" source="113" target="38">
-        <attvalues></attvalues>
-      </edge>
       <edge id="661" source="113" target="197">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="197" source="114" target="8">
         <attvalues></attvalues>
       </edge>
       <edge id="664" source="114" target="23">
@@ -4338,9 +3803,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="667" source="115" target="115">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="198" source="116" target="19">
         <attvalues></attvalues>
       </edge>
       <edge id="668" source="116" target="23">
@@ -4356,9 +3818,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="671" source="117" target="21">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="199" source="117" target="42">
         <attvalues></attvalues>
       </edge>
       <edge id="674" source="118" target="12">
@@ -4397,16 +3856,7 @@
       <edge id="685" source="121" target="15">
         <attvalues></attvalues>
       </edge>
-      <edge id="200" source="121" target="37">
-        <attvalues></attvalues>
-      </edge>
       <edge id="687" source="122" target="18">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="201" source="122" target="63">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="202" source="122" target="189">
         <attvalues></attvalues>
       </edge>
       <edge id="693" source="123" target="9">
@@ -4433,12 +3883,6 @@
       <edge id="700" source="126" target="55">
         <attvalues></attvalues>
       </edge>
-      <edge id="204" source="126" target="143">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="203" source="126" target="195">
-        <attvalues></attvalues>
-      </edge>
       <edge id="708" source="127" target="21">
         <attvalues></attvalues>
       </edge>
@@ -4451,19 +3895,7 @@
       <edge id="710" source="128" target="27">
         <attvalues></attvalues>
       </edge>
-      <edge id="205" source="128" target="66">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="206" source="128" target="67">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="207" source="128" target="106">
-        <attvalues></attvalues>
-      </edge>
       <edge id="716" source="129" target="23">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="208" source="130" target="10">
         <attvalues></attvalues>
       </edge>
       <edge id="718" source="130" target="26">
@@ -4508,12 +3940,6 @@
       <edge id="731" source="134" target="18">
         <attvalues></attvalues>
       </edge>
-      <edge id="210" source="134" target="58">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="211" source="134" target="109">
-        <attvalues></attvalues>
-      </edge>
       <edge id="209" source="134" target="158">
         <attvalues></attvalues>
       </edge>
@@ -4538,43 +3964,22 @@
       <edge id="744" source="137" target="21">
         <attvalues></attvalues>
       </edge>
+      <edge id="527" source="138" target="4">
+        <attvalues></attvalues>
+      </edge>
       <edge id="746" source="138" target="5">
         <attvalues></attvalues>
       </edge>
       <edge id="745" source="138" target="12">
         <attvalues></attvalues>
       </edge>
-      <edge id="214" source="139" target="12">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="215" source="139" target="23">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="216" source="139" target="33">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="213" source="139" target="50">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="217" source="139" target="139">
+      <edge id="526" source="138" target="71">
         <attvalues></attvalues>
       </edge>
       <edge id="747" source="140" target="21">
         <attvalues></attvalues>
       </edge>
-      <edge id="218" source="140" target="42">
-        <attvalues></attvalues>
-      </edge>
       <edge id="750" source="141" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="221" source="141" target="33">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="220" source="141" target="102">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="219" source="141" target="123">
         <attvalues></attvalues>
       </edge>
       <edge id="758" source="142" target="5">
@@ -4584,12 +3989,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="759" source="143" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="223" source="143" target="33">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="222" source="143" target="126">
         <attvalues></attvalues>
       </edge>
       <edge id="771" source="145" target="36">
@@ -4605,12 +4004,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="779" source="148" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="224" source="148" target="25">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="225" source="148" target="33">
         <attvalues></attvalues>
       </edge>
       <edge id="780" source="148" target="66">
@@ -4643,13 +4036,7 @@
       <edge id="798" source="152" target="36">
         <attvalues></attvalues>
       </edge>
-      <edge id="226" source="152" target="153">
-        <attvalues></attvalues>
-      </edge>
       <edge id="801" source="153" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="227" source="153" target="209">
         <attvalues></attvalues>
       </edge>
       <edge id="806" source="154" target="5">
@@ -4661,34 +4048,10 @@
       <edge id="805" source="154" target="36">
         <attvalues></attvalues>
       </edge>
-      <edge id="229" source="155" target="3">
-        <attvalues></attvalues>
-      </edge>
       <edge id="807" source="155" target="12">
         <attvalues></attvalues>
       </edge>
       <edge id="810" source="155" target="13">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="228" source="155" target="156">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="232" source="156" target="2">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="235" source="156" target="19">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="231" source="156" target="62">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="230" source="156" target="63">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="234" source="156" target="71">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="233" source="156" target="118">
         <attvalues></attvalues>
       </edge>
       <edge id="811" source="157" target="18">
@@ -4698,18 +4061,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="812" source="158" target="18">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="239" source="159" target="2">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="238" source="159" target="4">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="236" source="159" target="60">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="237" source="159" target="168">
         <attvalues></attvalues>
       </edge>
       <edge id="814" source="160" target="18">
@@ -4724,12 +4075,6 @@
       <edge id="816" source="161" target="36">
         <attvalues></attvalues>
       </edge>
-      <edge id="241" source="161" target="81">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="240" source="161" target="109">
-        <attvalues></attvalues>
-      </edge>
       <edge id="821" source="162" target="18">
         <attvalues></attvalues>
       </edge>
@@ -4737,12 +4082,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="820" source="162" target="23">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="242" source="162" target="187">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="243" source="163" target="44">
         <attvalues></attvalues>
       </edge>
       <edge id="825" source="163" target="71">
@@ -4781,12 +4120,6 @@
       <edge id="841" source="168" target="18">
         <attvalues></attvalues>
       </edge>
-      <edge id="244" source="169" target="17">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="245" source="169" target="109">
-        <attvalues></attvalues>
-      </edge>
       <edge id="843" source="170" target="18">
         <attvalues></attvalues>
       </edge>
@@ -4797,21 +4130,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="848" source="172" target="21">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="250" source="173" target="2">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="247" source="173" target="8">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="246" source="173" target="37">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="248" source="173" target="109">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="249" source="173" target="134">
         <attvalues></attvalues>
       </edge>
       <edge id="850" source="174" target="5">
@@ -4829,22 +4147,10 @@
       <edge id="852" source="176" target="21">
         <attvalues></attvalues>
       </edge>
-      <edge id="253" source="176" target="29">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="252" source="176" target="33">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="251" source="176" target="57">
-        <attvalues></attvalues>
-      </edge>
       <edge id="856" source="176" target="72">
         <attvalues></attvalues>
       </edge>
       <edge id="857" source="177" target="21">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="254" source="178" target="15">
         <attvalues></attvalues>
       </edge>
       <edge id="859" source="178" target="37">
@@ -4865,9 +4171,6 @@
       <edge id="864" source="180" target="9">
         <attvalues></attvalues>
       </edge>
-      <edge id="256" source="180" target="12">
-        <attvalues></attvalues>
-      </edge>
       <edge id="867" source="180" target="30">
         <attvalues></attvalues>
       </edge>
@@ -4883,9 +4186,6 @@
       <edge id="871" source="182" target="12">
         <attvalues></attvalues>
       </edge>
-      <edge id="257" source="182" target="19">
-        <attvalues></attvalues>
-      </edge>
       <edge id="872" source="182" target="21">
         <attvalues></attvalues>
       </edge>
@@ -4898,16 +4198,10 @@
       <edge id="260" source="183" target="19">
         <attvalues></attvalues>
       </edge>
-      <edge id="259" source="183" target="39">
-        <attvalues></attvalues>
-      </edge>
       <edge id="878" source="183" target="50">
         <attvalues></attvalues>
       </edge>
       <edge id="875" source="183" target="71">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="258" source="183" target="172">
         <attvalues></attvalues>
       </edge>
       <edge id="879" source="184" target="27">
@@ -4925,37 +4219,13 @@
       <edge id="881" source="185" target="197">
         <attvalues></attvalues>
       </edge>
-      <edge id="263" source="186" target="2">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="261" source="186" target="19">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="262" source="186" target="46">
-        <attvalues></attvalues>
-      </edge>
       <edge id="887" source="187" target="21">
         <attvalues></attvalues>
       </edge>
       <edge id="886" source="187" target="27">
         <attvalues></attvalues>
       </edge>
-      <edge id="267" source="187" target="29">
-        <attvalues></attvalues>
-      </edge>
       <edge id="891" source="187" target="72">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="264" source="187" target="137">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="266" source="187" target="162">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="265" source="187" target="177">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="268" source="187" target="202">
         <attvalues></attvalues>
       </edge>
       <edge id="893" source="188" target="18">
@@ -4965,12 +4235,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="895" source="189" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="270" source="190" target="1">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="269" source="190" target="4">
         <attvalues></attvalues>
       </edge>
       <edge id="901" source="190" target="6">
@@ -4988,37 +4252,16 @@
       <edge id="902" source="191" target="71">
         <attvalues></attvalues>
       </edge>
-      <edge id="271" source="191" target="180">
-        <attvalues></attvalues>
-      </edge>
       <edge id="905" source="192" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="274" source="192" target="33">
         <attvalues></attvalues>
       </edge>
       <edge id="907" source="192" target="36">
         <attvalues></attvalues>
       </edge>
-      <edge id="273" source="192" target="102">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="272" source="192" target="123">
-        <attvalues></attvalues>
-      </edge>
       <edge id="913" source="193" target="9">
         <attvalues></attvalues>
       </edge>
-      <edge id="276" source="193" target="33">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="275" source="193" target="196">
-        <attvalues></attvalues>
-      </edge>
       <edge id="918" source="194" target="23">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="277" source="194" target="90">
         <attvalues></attvalues>
       </edge>
       <edge id="919" source="194" target="197">
@@ -5027,25 +4270,10 @@
       <edge id="281" source="195" target="2">
         <attvalues></attvalues>
       </edge>
-      <edge id="278" source="195" target="8">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="282" source="195" target="33">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="279" source="195" target="153">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="280" source="195" target="209">
-        <attvalues></attvalues>
-      </edge>
       <edge id="924" source="196" target="5">
         <attvalues></attvalues>
       </edge>
       <edge id="921" source="196" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="283" source="196" target="33">
         <attvalues></attvalues>
       </edge>
       <edge id="284" source="196" target="193">
@@ -5057,19 +4285,7 @@
       <edge id="336" source="197" target="5">
         <attvalues></attvalues>
       </edge>
-      <edge id="286" source="197" target="31">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="288" source="197" target="101">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="287" source="197" target="165">
-        <attvalues></attvalues>
-      </edge>
       <edge id="332" source="197" target="197">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="285" source="197" target="210">
         <attvalues></attvalues>
       </edge>
       <edge id="926" source="198" target="23">
@@ -5082,33 +4298,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="928" source="199" target="11">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="289" source="199" target="33">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="298" source="200" target="8">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="293" source="200" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="297" source="200" target="33">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="294" source="200" target="44">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="295" source="200" target="50">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="292" source="200" target="99">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="296" source="200" target="109">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="290" source="200" target="197">
         <attvalues></attvalues>
       </edge>
       <edge id="291" source="200" target="210">
@@ -5126,66 +4315,6 @@
       <edge id="935" source="202" target="27">
         <attvalues></attvalues>
       </edge>
-      <edge id="300" source="203" target="2">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="299" source="203" target="148">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="311" source="204" target="4">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="314" source="204" target="8">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="306" source="204" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="309" source="204" target="11">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="308" source="204" target="30">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="310" source="204" target="41">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="307" source="204" target="49">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="312" source="204" target="58">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="304" source="204" target="65">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="313" source="204" target="76">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="305" source="204" target="107">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="303" source="204" target="109">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="302" source="204" target="158">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="301" source="204" target="205">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="317" source="205" target="4">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="319" source="205" target="8">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="321" source="205" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="318" source="205" target="11">
-        <attvalues></attvalues>
-      </edge>
       <edge id="940" source="205" target="14">
         <attvalues></attvalues>
       </edge>
@@ -5201,18 +4330,6 @@
       <edge id="942" source="205" target="28">
         <attvalues></attvalues>
       </edge>
-      <edge id="316" source="205" target="109">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="320" source="205" target="178">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="315" source="205" target="204">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="322" source="205" target="205">
-        <attvalues></attvalues>
-      </edge>
       <edge id="950" source="206" target="5">
         <attvalues></attvalues>
       </edge>
@@ -5222,28 +4339,10 @@
       <edge id="947" source="206" target="11">
         <attvalues></attvalues>
       </edge>
-      <edge id="325" source="206" target="33">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="324" source="206" target="123">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="323" source="206" target="195">
-        <attvalues></attvalues>
-      </edge>
       <edge id="953" source="208" target="23">
         <attvalues></attvalues>
       </edge>
       <edge id="955" source="209" target="9">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="327" source="209" target="33">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="326" source="209" target="153">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="328" source="210" target="197">
         <attvalues></attvalues>
       </edge>
       <edge id="959" source="211" target="17">
@@ -5261,15 +4360,6 @@
       <edge id="961" source="212" target="21">
         <attvalues></attvalues>
       </edge>
-      <edge id="330" source="212" target="42">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="329" source="212" target="93">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="331" source="212" target="212">
-        <attvalues></attvalues>
-      </edge>
       <edge id="967" source="213" target="23">
         <attvalues></attvalues>
       </edge>
@@ -5283,12 +4373,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="972" source="216" target="15">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="332" source="216" target="107">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="333" source="217" target="99">
         <attvalues></attvalues>
       </edge>
       <edge id="978" source="218" target="12">
@@ -5310,12 +4394,6 @@
         <attvalues></attvalues>
       </edge>
       <edge id="987" source="221" target="36">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="527" source="138" target="4">
-        <attvalues></attvalues>
-      </edge>
-      <edge id="526" source="138" target="71">
         <attvalues></attvalues>
       </edge>
     </edges>
