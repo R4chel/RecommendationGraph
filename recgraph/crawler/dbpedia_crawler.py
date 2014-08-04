@@ -192,10 +192,9 @@ def populateNeo4j(name, search_depth):
 
 
 if __name__ == "__main__":
-    # crawl_name = sys.argv[1]
-    crawl_name = "Autism"
+    crawl_name = sys.argv[1]
     print "PROCESSING: " + crawl_name
-    search_depth = 2
+    search_depth = 3
     populateNeo4j(crawl_name, search_depth)
     # make .gefx file
     filename = crawl_name + str(search_depth) + ".gexf"
