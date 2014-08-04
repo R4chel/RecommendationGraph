@@ -50,7 +50,7 @@ def hello():
 def testPage():
     return render_template('test.html', name="Johnson")
 
-@app.route('/blog/')
+@app.route('/')
 def blogPage():
     return render_template('graphsblog.html', name="Johnson")
 
