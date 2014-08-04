@@ -64,7 +64,7 @@ def sigmaVis(path):
         graphjs = "sf.js"
     else:
         graphjs = "sigmavis1.js"
-    gexf_path = "/static/output/" + path + ".gexf"
+    gexf_path = STATIC + "output/" + path + ".gexf"
     return render_template('sigmavis.html', graphjs=graphjs, gexf_path=gexf_path, static=STATIC)
 
 
