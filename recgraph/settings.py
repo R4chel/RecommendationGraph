@@ -22,3 +22,5 @@ else:
     NEO4J_URL = "http://localhost:7474/db/data/"
     GRAPHDB = neo4j.GraphDatabaseService(NEO4J_URL)
 
+# STATIC="/static/"
+STATIC="http://recgraph.s3-website-us-east-1.amazonaws.com/static/"

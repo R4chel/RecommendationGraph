@@ -27,31 +27,112 @@
         <h2>The Goal</h2>
 
         <p class="readable">
-            For Palantir Hack Week, we wanted to build a pipeline which would allow someone to easily visualize
-            portions of Wikipedia as a graph &mdash; we thought this would be cool for four reasons:
-        <ul>
+            For Palantir Hack Week, we wanted to build a fully automated system which would allow someone to easily visualize
+            portions of Wikipedia as a graph in their browser &mdash; we thought this would be cool for four reasons:
+        <ol>
             <li>As someone researched a topic on Wikipedia they could use
                 the graph visualization to help them choose what articles to read &mdash; a visual article recommender which would make research more efficient.</li>
             <li>So that we could write a browser extension that would overlay your browser history on top of these graphs so that you could see topically
                 what portions of Wikipedia you had read and compare your Wikipedia history with others.</li>
             <li>Because Wikipedia might be the best proxy to a representation of all of human knowledge and visualizing it is interesting.</li>
             <li>To learn more about current technologies for working with and analyzing graphs.</li>
-        </ul>
+        </ol>
         </p>
 
         <div>
-           <img src="http://drunksandlampposts.files.wordpress.com/2012/06/philprettyv4.png?w=750&h=750"/>
+            <img src="http://drunksandlampposts.files.wordpress.com/2012/06/philprettyv4.png?w=750&h=750"/>
         </div>
 
-        <h2>The Result</h2>
+        <p class="readable">
+            We didn't make the above graph &mdash; we ran across it on this <a href="http://drunks-and-lampposts.com/2012/06/13/graphing-the-history-of-philosophy/">website</a> and it inspired us.
+            The creator of the above graph used Gephi (open source graph visualization software) to layout and format the above graph of links of influence between
+            philosophers on Wikipedia. We wanted to build a fully automated system that would create similar results for arbitrary portions of Wikipedia and output the result
+            as an interactive graph in the browser which anyone could interact with.
+        </p>
+
+        <h2>The Results</h2>
+
 
         <p class="readable">
-            Most current visual graph technologies do not support
+            Below is a screenshot of a graph of the connections stemming from a Wikipedia article on music. Further down is a list of links
+            to some of the interactive graphs our system made.
+        </p>
+        <img src="http://www.mkbergman.com/wp-content/themes/ai3v2/images/2008Posts/080128_music_organic.jpg"/>
+        <p>
+        <ul>
+            <li><a href="../sigma/sf1">Bay Area tech companies</a></li>
+            <li><a href="../sigma/characters">Characters</a></li>
+            <li><a href="../sigma/colors">Colors</a></li>
+            <li><a href="../sigma/music">Music</a></li>
+            <li><a href="../sigma/shakespeare">Shakespearean characters</a></li>
+            <li><a href="../sigma/universities">Universities</a></li>
+        </ul>
+        </p>
 
+        <h2>How Does It Work</h2>
+
+
+        <p class="readable">
+            There are a lot of tools intended for use with graphs but there are not many tools built to handle the scale we needed. Wikipedia
+            has 4,572,379 articles in English &mdash; most graph visualization software breaks down with > 1000 nodes. Below is a list of
+            the tools which we used in our pipeline with the goal of being able to handle and visualize arbitrarily large subsets of
+            Wikipedia.
+        </p>
+        <p>
+        <ul>
+            <li><a href="">dbpedia</a> &mdash; a publicly available database of semantic data on Wikipedia</li>
+            <li><a href="">neo4j</a> &mdash; an awesome graph database</li>
+            <li><a href="">py2neo</a> &mdash; a python library which exposes neo4j rest api</li>
+            <li><a href="">Gephi</a> &mdash; opensource graph software, which we scripted the use of with a <a href="https://wiki.gephi.org/index.php/Scripting_Plugin">gephi scripting plugin</a></li>
+            <li><a href="">sigmajs</a> &mdash; a lightweight javascript framework for visualizing graphs</li>
+            <li><a href="">sigmajs.gefx</a> &mdash; a sigmajs plugin which can parse gephi files</li>
+            <li><a href="">flask</a> &mdash; a micro python web framework </li>
+        </ul>
+        </p>
+
+        <p class="readable">
+            Current browser based graph technologies do not support computing graph layouts with > 1000 nodes &mdash; neo4j has an awesome built in web UI which
+            visualizes graphs of the results of your queries out of the box but it completely freaks out with more than a couple hundred nodes. To improve
+            on this we created a backend pre-processing pipeline which ultimately outputs .gexf files which describe the links and the layouts
+            of a graph &mdash; layout having already been computed, extremely large graphs can be displayed in the browser with sigmajs.
+            <br><br><strong> The Pipeline </strong>
+        <ul>
+            <li>Python script takes in a set of
+                urls and scans dbpedia (a flat file of links) to gather the set of pages and links within a certain crawl distance of the starting set into memory.</li>
+            <li>Using py2neo we write the found links and nodes to a neo4j database</li>
+            <li>Python script which takes in a neo4j database and creates a .gexf file (still no layout computed)</li>
+            <li>Python script which scripts gephi to import the .gexf file, compute a layout for the graph using
+                its force atlas algorithm, and then output a new .gexf file with the layout included</li>
+            <li>The previous step outputs .gexf into a folder which our flask server reads and dynamically serves
+                by name to pages of the form /sigma/name/ where in the user's browser sigmajs parses the.gexf file
+                and renders it</li>
+        </ul>
+
+        <h2>Thoughts On Graphs</h2>
+
+        <p>
             We found that it was very difficult to make any graphs which would give real insight into the structure of Wikipedia &mdash; we had initially
             envisioned graphs of thousands of nodes visually displaying the relations between categories and their linked articles but as we dug deeper
-            into the problem it became clear that most visual graph technologies are not built to handle graphs with > 1000 nodes.
+            into the problem it became clear that issues at scale make it very hard work with large graphs with most current technologies.
         </p>
+
+        <p>
+            Additionally we found that even after building tools to help us deal with large graphs we were not so far able to make visualizations
+            which led to many deep insights. Graphs are beautiful and appear as fancy visuals, but it is very difficult
+            to build graphs which convey really useful information at scale (trying to visualize data
+            with many thousands of dimensions in 2 dimensions is difficult to do while preserving meaning).
+        </p>
+
+        <h2>To Do</h2>
+
+        <ul>
+            <li>Build more efficient tools for collecting Wikipedia data and munging it into useful formats</li>
+            <li>Write an algorithm to estimate relevancy between articles using more sophisticated heuristics
+            than just the number of links</li>
+            <li>Improve the sigmajs frontend to more beautifully render graphs and be more interactive</li>
+            <li>Build a simple browser extension to overlay your web history onto the graphs you are viewing</li>
+        </ul>
+
 
     </div>
 

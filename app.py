@@ -3,7 +3,7 @@ import os
 from flask import Flask, render_template
 from py2neo import cypher
 
-from recgraph.settings import GRAPHDB, STATIC_PATH
+from recgraph.settings import GRAPHDB, STATIC_PATH, STATIC
 
 # HELPERS
 ########################################################################################################################
@@ -54,10 +54,9 @@ def testPage():
 def blogPage():
     return render_template('graphsblog.html', name="Johnson")
 
-@app.route('/d3/')
-def d3Vis():
-    graphjs = "d3vis1.js"
-    return render_template('d3vis.html', graphjs=graphjs)
+@app.route('/sigmajs/<path:path>/')
+def sigmajsTemplate(path):
+    return render_template('sigmajstemplate.html', which=path, static=STATIC)
 
 @app.route('/sigma/<path:path>/')
 def sigmaVis(path):
@@ -66,7 +65,7 @@ def sigmaVis(path):
     else:
         graphjs = "sigmavis1.js"
     gexf_path = "/static/output/" + path + ".gexf"
-    return render_template('sigmavis.html', graphjs=graphjs, gexf_path=gexf_path)
+    return render_template('sigmavis.html', graphjs=graphjs, gexf_path=gexf_path, static=STATIC)
 
 
 # STATIC

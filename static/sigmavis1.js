@@ -11,11 +11,18 @@ function renderGraph() {
         return neighbors;
     });
 
+    var s1 = new sigma(
+        {
+            container: 'container',
+            settings: {
+                defaultNodeColor: '#66FF33'
+            }
+        }
+    );
+
     sigma.parsers.gexf(
         path_to_file,
-        {
-            container: 'container'
-        },
+        s1,
         function(s) {
             // We first need to save the original colors of our
             // nodes and edges, like this:
@@ -64,6 +71,7 @@ function renderGraph() {
             s.bind('clickStage', function (e) {
                 s.graph.nodes().forEach(function (n) {
                     n.color = n.originalColor;
+
                 });
 
                 s.graph.edges().forEach(function (e) {
@@ -73,6 +81,17 @@ function renderGraph() {
                 // Same as in the previous event:
                 s.refresh();
             });
+
+            var settings = s.settings;
+            settings.defaultNodeColor = '#66FF33';
+            s.settings = settings;
+
+            var renderers = s.renderers;
+            var renderer = renderers[0];
+            var rsettings = renderer.settings;
+
+
+            s.refresh();
         });
 }
 

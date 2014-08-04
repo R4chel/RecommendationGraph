@@ -3,7 +3,7 @@
 import os
 
 from py2neo import cypher
-import gexf
+import gexf, datetime
 
 from recgraph.settings import GRAPHDB, PROJECT_PATH
 
@@ -40,9 +40,10 @@ def neo4jToGexf(output_file):
     total = result[0][0]
     print "total: " + str(total)
     skip = 0
-    limit = 100
+    limit = 50000
     found_edges = set([])
     edge_number = 0
+    start_time = datetime.datetime.now()
     while skip < total:
         rows, metadata = cypher.execute(GRAPHDB, "MATCH (a)-[r]->(b) RETURN a,r,b  ORDER BY r.id SKIP %s LIMIT %s" % (skip,limit))
         for nodeA, rel, nodeB in rows:
@@ -55,8 +56,21 @@ def neo4jToGexf(output_file):
             skip += 1
             #e.setColor("255","0","0");
 		    #e.addAttribute("blah","true")
-        if not skip % 500:
-            print "s: " + str(skip)
+            if not skip % 100:
+                print "s: " + str(skip)
+                now = datetime.datetime.now()
+                time_delta = (now - start_time).total_seconds()
+                percent_complete = float(skip) / float(total)
+                if percent_complete:
+                    percent_remaining = 1 - percent_complete
+                    total_seconds_eta = time_delta * (1/percent_complete)
+                    eta_seconds_remaining = total_seconds_eta * percent_remaining
+                    print "---------"
+                    print "percent complete: " + str(percent_complete)
+                    print "elapsed: " + str(time_delta)
+                    print "remaining: " + str(eta_seconds_remaining)
+                else:
+                    print "..."
 
     # unpaginated
     # rows, metadata = cypher.execute(GRAPHDB, "MATCH (a)-[r]->(b) RETURN a,r,b")
