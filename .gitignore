@@ -7,3 +7,4 @@ static/d3graph.json
 static/output/*
 static/neo4j.gexf
 data/*
+*text_alert.py

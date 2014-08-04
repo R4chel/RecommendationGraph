@@ -50,6 +50,10 @@ def hello():
 def testPage():
     return render_template('test.html', name="Johnson")
 
+@app.route('/blog/')
+def blogPage():
+    return render_template('graphsblog.html', name="Johnson")
+
 @app.route('/d3/')
 def d3Vis():
     graphjs = "d3vis1.js"
@@ -80,7 +84,7 @@ if __name__ == '__main__':
     # Connect to the database
 
     # Make sure our reference data is there
-    create_graph(GRAPHDB)
+    # create_graph(GRAPHDB)
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
 

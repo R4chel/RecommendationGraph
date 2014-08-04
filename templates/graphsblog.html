@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizing Wikipedia: Working With Large Graphs</title>
+
+    <style>
+        p.readable {
+            font-size:16px;
+        }
+    </style>
+</head>
+
+<body style="padding:25px;">
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="page-header center">
+            <h1>Visualizing Wikipedia: Working With Large Graphs</h1>
+            <small><a href="http://github.com/mhfowler">Max</a></small>
+            <small><a href="http://github.com/mhfowler">Adam</a></small>
+            <small><a href="http://github.com/mhfowler">Rachel</a></small>
+        </div>
+
+        <h2>The Goal</h2>
+
+        <p class="readable">
+            For Palantir Hack Week, we wanted to build a pipeline which would allow someone to easily visualize
+            portions of Wikipedia as a graph &mdash; we thought this would be cool for four reasons:
+        <ul>
+            <li>As someone researched a topic on Wikipedia they could use
+                the graph visualization to help them choose what articles to read &mdash; a visual article recommender which would make research more efficient.</li>
+            <li>So that we could write a browser extension that would overlay your browser history on top of these graphs so that you could see topically
+                what portions of Wikipedia you had read and compare your Wikipedia history with others.</li>
+            <li>Because Wikipedia might be the best proxy to a representation of all of human knowledge and visualizing it is interesting.</li>
+            <li>To learn more about current technologies for working with and analyzing graphs.</li>
+        </ul>
+        </p>
+
+        <div>
+           <img src="http://drunksandlampposts.files.wordpress.com/2012/06/philprettyv4.png?w=750&h=750"/>
+        </div>
+
+        <h2>The Result</h2>
+
+        <p class="readable">
+            Most current visual graph technologies do not support
+
+            We found that it was very difficult to make any graphs which would give real insight into the structure of Wikipedia &mdash; we had initially
+            envisioned graphs of thousands of nodes visually displaying the relations between categories and their linked articles but as we dug deeper
+            into the problem it became clear that most visual graph technologies are not built to handle graphs with > 1000 nodes.
+        </p>
+
+    </div>
+
+</body>
+</html>

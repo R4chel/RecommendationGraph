@@ -3,6 +3,7 @@
 from recgraph.settings import PROJECT_PATH, GRAPHDB
 import os,datetime,subprocess,time,sys
 from py2neo import neo4j, node, rel
+from recgraph.transformer.neo4jToGexf import neo4jToGexf
 
 
 # what file has the links
@@ -47,16 +48,21 @@ def crawlOneStepDeeper(starting_pages, expand=True):
             splitted = line.split()
             pageA = stripLink(splitted[0])
             pageB = stripLink(splitted[2])
+
             # if expand=True, then we include any link which starts in starting set even if it goes outside
-            if (expand) and (pageA in starting_pages):
-                found_links.add((pageA, pageB))
-                found_pages.add(pageA)
-                found_pages.add(pageB)
+            if expand:
+                if (pageA in starting_pages):
+                    found_links.add((pageA, pageB))
+                    found_pages.add(pageA)
+                    found_pages.add(pageB)
             # elif expand=False, then we only include links which are between nodes already in starting set
-            elif (not expand) and (pageA in starting_pages) and (pageB in starting_pages):
-                found_links.add((pageA, pageB))
-                found_pages.add(pageA)
-                found_pages.add(pageB)
+            else:
+                if (pageA in starting_pages) and (pageB in starting_pages):
+                    found_links.add((pageA, pageB))
+                    found_pages.add(pageA)
+                    found_pages.add(pageB)
+
+
             # profiling
             if not (i % 1000000):
                 print pageA + " - " + pageB
@@ -97,12 +103,14 @@ def saveToNeo4jBatch(found_pages, found_links):
         pageA, pageB = link
         nodeA = pageToNode.get(pageA)
         nodeB = pageToNode.get(pageB)
-        batch.create(rel(nodeA, "links_to", nodeB))
+        batch.get_or_create_path(nodeA, "links_to", nodeB)
         if not i % 100:
             print "i: " + str(i)
             batch.run()
+            batch = neo4j.WriteBatch(GRAPHDB)
         i += 1
     batch.run()
+    print "total num links created: " + str(i)
 
 
 def saveToNeo4j(found_pages, found_links):
@@ -125,7 +133,6 @@ def crawlAndSave(starting_pages, search_depth):
     found_pages, found_links = crawlDbPedia(starting_pages, search_depth)
     # save to neo4j
     saveToNeo4jBatch(found_pages, found_links)
-    # saveToNeo4j(found_pages, found_links)
 
 
 # TODO: this function doesn't work
@@ -185,10 +192,15 @@ def populateNeo4j(name, search_depth):
 
 
 if __name__ == "__main__":
-    crawl_name = sys.argv[1]
+    # crawl_name = sys.argv[1]
+    crawl_name = "Autism"
     print "PROCESSING: " + crawl_name
     search_depth = 2
     populateNeo4j(crawl_name, search_depth)
+    # make .gefx file
+    filename = crawl_name + str(search_depth) + ".gexf"
+    gexf_output_path = os.path.join(os.path.join(PROJECT_PATH, "data"), filename)
+    neo4jToGexf(gexf_output_path)
 
 
 

@@ -29,22 +29,46 @@ def neo4jToGexf(output_file):
             infobox = "none"
         node_id = node._id
         # get the title of the node
-        node_name = node.get("title") or node.get("name")
+        node_name = node["name"]
         # add it to the graph
         n=graph.addNode(node_id,node_name)
         n.addAttribute(infobox_attribute_id,infobox)
 
     # edges
-    # rows, metadata = cypher.execute(GRAPHDB, "MATCH (a)-[r:RELEVANCY]->(b) RETURN a,r,b")
-    rows, metadata = cypher.execute(GRAPHDB, "MATCH (a)-[r]->(b) RETURN a,r,b")
+    # paginated version
+    result, metadata = cypher.execute(GRAPHDB, "START r=relationship(*) return count(r)")
+    total = result[0][0]
+    print "total: " + str(total)
+    skip = 0
+    limit = 100
+    found_edges = set([])
     edge_number = 0
-    for nodeA, rel, nodeB in rows:
-        # weight = rel["weight"] # TODO: make this transformer
-        weight = 1
-        e=graph.addEdge(edge_number,nodeA._id,nodeB._id,weight)
-        edge_number += 1
-        #e.setColor("255","0","0");
-		#e.addAttribute("blah","true")
+    while skip < total:
+        rows, metadata = cypher.execute(GRAPHDB, "MATCH (a)-[r]->(b) RETURN a,r,b  ORDER BY r.id SKIP %s LIMIT %s" % (skip,limit))
+        for nodeA, rel, nodeB in rows:
+            # weight = rel["weight"] # TODO: make this transformer
+            weight = 1
+            nodeA_id = nodeA._id
+            nodeB_id = nodeB._id
+            e=graph.addEdge(edge_number,nodeA_id,nodeB_id,weight)
+            edge_number += 1
+            skip += 1
+            #e.setColor("255","0","0");
+		    #e.addAttribute("blah","true")
+        if not skip % 500:
+            print "s: " + str(skip)
+
+    # unpaginated
+    # rows, metadata = cypher.execute(GRAPHDB, "MATCH (a)-[r]->(b) RETURN a,r,b")
+    # edge_number = 0
+    # for nodeA, rel, nodeB in rows:
+    #     weight = 1
+    #     e=graph.addEdge(edge_number,nodeA._id,nodeB._id,weight)
+    #     edge_number += 1
+    #     #e.setColor("255","0","0");
+    #     #e.addAttribute("blah","true")
+    # if not edge_number % 1000:
+    #     print "edge: " + str(edge_number)
 
     # write it
     with open(output_file,"w+") as f:
@@ -52,5 +76,5 @@ def neo4jToGexf(output_file):
 
 if __name__ == "__main__":
     data_path = os.path.join(PROJECT_PATH, "data")
-    output_file_path = os.path.join(data_path, "neo4j.gexf")
+    output_file_path = os.path.join(data_path, "test.gexf")
     neo4jToGexf(output_file_path)
